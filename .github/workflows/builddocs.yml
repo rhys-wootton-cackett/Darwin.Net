@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Docs
         run: |
-          mkdocs build --clean -d ../
+          mkdocs build --clean -d /home/runner/work/Darwin.Net/Darwin.Net/
 
       - name: Deploy Docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
