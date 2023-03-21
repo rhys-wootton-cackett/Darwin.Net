@@ -1,0 +1,81 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/Darwin.Net/Darwin.Net/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "MiFnR83aY9s0tcKTkOmCE53iH6deYzHs5bZYGhr8BY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/preamble.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/preamble.html",
+          "hash": "8DZhYJvbetnuDPa88e434zSm9nq8w2gKf2wsSgSv7eM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "mI+HVRjKs7IFyBV0Zgvgx5x1Wqa1nZdnPKxKt1dYD/Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Long Logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Long Logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "SzAvqQaGYB8Op9ZjDntOHpUMckJIHuEsS6ji4Trwpxc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "7lPWYwXJyKu7jr0LuP/0jWLGfhy5JEiHx3mgf5Evx64="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
