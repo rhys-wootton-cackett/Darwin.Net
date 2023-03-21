@@ -1,18 +1,3 @@
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/rhys-wootton/Darwin.Net?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/rhys-wootton/Darwin.Net?style=flat-square
-[license-url]: 
-[linkedin-shield]: 
-[linkedin-url]: 
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -145,7 +130,7 @@ Station station = Station.GlasgowCentral;
 TimeSpan timeWindow = TimeSpan.FromMinutes(60);
 TimeSpan offset = TimeSpan.FromMinutes(-60);
 
-StationBoardWithDetails response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow, timeOffset = offset);
+StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow, timeOffset = offset);
 ServiceDetails service = await darwin.Requests.GetServiceDetailsAsync(response.TrainServices[0].RetailServiceId);
 ```
 
