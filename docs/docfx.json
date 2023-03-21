@@ -4,8 +4,9 @@
       "src": [
         {
           "files": [
-            "src/**.csproj"
-          ]
+            "**/Darwin.Net.csproj"
+          ],
+          "src": "../"
         }
       ],
       "dest": "api",
@@ -51,7 +52,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
