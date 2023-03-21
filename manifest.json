@@ -9,7 +9,18 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "MiFnR83aY9s0tcKTkOmCE53iH6deYzHs5bZYGhr8BY8="
+          "hash": "ZN2mGafjXMkODzOpjEuzcFg2PiYx4NI2SXoQaLFunmg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "4UDdSckGDkJN65C6llSR4aNeh30x5vKCcrt49S47oZk="
         }
       },
       "version": ""
@@ -66,7 +77,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "7lPWYwXJyKu7jr0LuP/0jWLGfhy5JEiHx3mgf5Evx64="
+          "hash": "6EkEvnAoFGj5T1ucfZPzv1fOsbBJFLJTDYWjzLsCyEk="
         }
       },
       "version": ""
