@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -24,9 +24,8 @@ jobs:
       run: dotnet tool install --global docfx
 
     - name: Build documentation
-      run: |
-        export PATH="$HOME/.dotnet/tools:$PATH"
-        docfx docs/docfx.json --output out
+      working-directory: docs
+      run: docfx docfx.json --output out
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.5
