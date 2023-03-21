@@ -1,0 +1,1110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Requests.IRequests
+  commentId: T:Darwin.Net.Requests.IRequests
+  id: IRequests
+  parent: Darwin.Net.Requests
+  children:
+  - Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRequests
+  nameWithType: IRequests
+  fullName: Darwin.Net.Requests.IRequests
+  type: Interface
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: IRequests
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 9
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public interface IRequests
+    content.vb: Public Interface IRequests
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 21
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public arrivals for the supplied station within a defined time window, including service details.\n"
+  example: []
+  syntax:
+    content: Task<StationBoardWithDetails> GetArrivalBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+      description: A <xref href="Darwin.Net.Objects.StationBoardWithDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetArrivalBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync*
+  nameWithType.vb: IRequests.GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalDepartureBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 33
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public arrivals and departures for the supplied station within a defined time window, including service details.\n"
+  example: []
+  syntax:
+    content: Task<StationBoardWithDetails> GetArrivalDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+      description: A <xref href="Darwin.Net.Objects.StationBoardWithDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetArrivalDepartureBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync*
+  nameWithType.vb: IRequests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalBoardAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 45
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public arrivals for the supplied station within a defined time window.\n"
+  example: []
+  syntax:
+    content: Task<StationBoard> GetArrivalBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+      description: A <xref href="Darwin.Net.Objects.StationBoard" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetArrivalBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync*
+  nameWithType.vb: IRequests.GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalDepartureBoardAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 57
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public arrivals and departures for a supplied station within a defined time window.\n"
+  example: []
+  syntax:
+    content: Task<StationBoard> GetArrivalDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+      description: A <xref href="Darwin.Net.Objects.StationBoard" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetArrivalDepartureBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync*
+  nameWithType.vb: IRequests.GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetDepartureBoardAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 69
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public departures for the supplied station within a defined time window.\n"
+  example: []
+  syntax:
+    content: Task<StationBoard> GetDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+      description: A <xref href="Darwin.Net.Objects.StationBoard" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetDepartureBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync*
+  nameWithType.vb: IRequests.GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetDepartureBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 81
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns all public departures for the supplied station within a defined time window, including service details.\n"
+  example: []
+  syntax:
+    content: Task<StationBoardWithDetails> GetDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+      description: The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> of either an origin or destination location to filter in.
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+      description: The <xref href="Darwin.Net.Objects.FilterType" data-throw-if-not-resolved="false"></xref> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<xref href="Darwin.Net.Objects.FilterType.To" data-throw-if-not-resolved="false"></xref>&quot;.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+      description: A <xref href="Darwin.Net.Objects.StationBoardWithDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetDepartureBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync*
+  nameWithType.vb: IRequests.GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetFastestDeparturesAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 91
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns the public departure for the supplied station a defined time window to the locations specified in the filter with the earliest arrival time at the filtered location.\n"
+  example: []
+  syntax:
+    content: Task<DeparturesBoard> GetFastestDeparturesAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+      description: A list of <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+      description: A <xref href="Darwin.Net.Objects.DeparturesBoard" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetFastestDeparturesAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoard)
+  overload: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync*
+  nameWithType.vb: IRequests.GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetFastestDeparturesWithDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 101
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns the public departure for the supplied station a defined time window to the locations specified in the filter with the earliest arrival time at the filtered location, including service details.\n"
+  example: []
+  syntax:
+    content: Task<DeparturesBoardWithDetails> GetFastestDeparturesWithDetailsAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+      description: A list of <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> values of the destinations location to filter. At least 1 but not greater than 10 must be supplied.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+      description: A <xref href="Darwin.Net.Objects.DeparturesBoardWithDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetFastestDeparturesWithDetailsAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoardWithDetails)
+  overload: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync*
+  nameWithType.vb: IRequests.GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetNextDeparturesAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 111
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns the next public departure for the supplied station within a defined time window to the locations specified in the filter.\n"
+  example: []
+  syntax:
+    content: Task<DeparturesBoard> GetNextDeparturesAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+      description: A list of <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+      description: A <xref href="Darwin.Net.Objects.DeparturesBoard" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetNextDeparturesAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoard)
+  overload: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync*
+  nameWithType.vb: IRequests.GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetNextDeparturesWithDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 121
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns the next public departure for the supplied station within a defined time window to the locations specified in the filter, including service details.\n"
+  example: []
+  syntax:
+    content: Task<DeparturesBoardWithDetails> GetNextDeparturesWithDetailsAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+      description: The <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> for which the request is being made.
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+      description: A list of <xref href="Darwin.Net.Objects.Station" data-throw-if-not-resolved="false"></xref> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.
+    - id: timeWindow
+      type: System.TimeSpan
+      description: How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+      description: 'An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. '
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+      description: A <xref href="Darwin.Net.Objects.DeparturesBoardWithDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetNextDeparturesWithDetailsAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoardWithDetails)
+  overload: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync*
+  nameWithType.vb: IRequests.GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  commentId: M:Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  id: GetServiceDetailsAsync(System.String)
+  parent: Darwin.Net.Requests.IRequests
+  langs:
+  - csharp
+  - vb
+  name: GetServiceDetailsAsync(string)
+  nameWithType: IRequests.GetServiceDetailsAsync(string)
+  fullName: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/IRequests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetServiceDetailsAsync
+    path: ../Darwin.Net/Requests/IRequests.cs
+    startLine: 130
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nReturns service details for a specific service identified by a station board. These details are supplied relative to the station board from which the serviceID field value was generated. \nService details are only available while the service appears on the station board from which it was obtained. This is normally for two minutes after it is expected to have departed, \nor after a terminal arrival. \n"
+  example: []
+  syntax:
+    content: Task<ServiceDetails> GetServiceDetailsAsync(string serviceId)
+    parameters:
+    - id: serviceId
+      type: System.String
+      description: The service ID of the service to request the details of. The service ID is obtained from a service listed in a StationBoard object returned from any other request.
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+      description: A <xref href="Darwin.Net.Objects.ServiceDetails" data-throw-if-not-resolved="false"></xref> object containing the requested details.
+    content.vb: Function GetServiceDetailsAsync(serviceId As String) As Task(Of ServiceDetails)
+  overload: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync*
+  nameWithType.vb: IRequests.GetServiceDetailsAsync(String)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(String)
+  name.vb: GetServiceDetailsAsync(String)
+references:
+- uid: Darwin.Net.Requests
+  commentId: N:Darwin.Net.Requests
+  name: Darwin.Net.Requests
+  nameWithType: Darwin.Net.Requests
+  fullName: Darwin.Net.Requests
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+- uid: Darwin.Net.Objects.Station
+  commentId: T:Darwin.Net.Objects.Station
+  parent: Darwin.Net.Objects
+  name: Station
+  nameWithType: Station
+  fullName: Darwin.Net.Objects.Station
+- uid: Darwin.Net.Objects.FilterType
+  commentId: T:Darwin.Net.Objects.FilterType
+  parent: Darwin.Net.Objects
+  name: FilterType
+  nameWithType: FilterType
+  fullName: Darwin.Net.Objects.FilterType
+- uid: Darwin.Net.Objects.FilterType.To
+  commentId: F:Darwin.Net.Objects.FilterType.To
+  isExternal: true
+- uid: Darwin.Net.Objects.StationBoardWithDetails
+  commentId: T:Darwin.Net.Objects.StationBoardWithDetails
+  name: StationBoardWithDetails
+  nameWithType: StationBoardWithDetails
+  fullName: Darwin.Net.Objects.StationBoardWithDetails
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync
+  name: GetArrivalBoardWithDetailsAsync
+  nameWithType: IRequests.GetArrivalBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Nullable{Darwin.Net.Objects.Station}
+  commentId: T:System.Nullable{Darwin.Net.Objects.Station}
+  parent: System
+  definition: System.Nullable`1
+  name: Station?
+  nameWithType: Station?
+  fullName: Darwin.Net.Objects.Station?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+- uid: System.Nullable{Darwin.Net.Objects.FilterType}
+  commentId: T:System.Nullable{Darwin.Net.Objects.FilterType}
+  parent: System
+  definition: System.Nullable`1
+  name: FilterType?
+  nameWithType: FilterType?
+  fullName: Darwin.Net.Objects.FilterType?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StationBoardWithDetails>
+  nameWithType: Task<StationBoardWithDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.StationBoardWithDetails>
+  nameWithType.vb: Task(Of StationBoardWithDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.StationBoardWithDetails)
+  name.vb: Task(Of StationBoardWithDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.StationBoardWithDetails
+    name: StationBoardWithDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.StationBoardWithDetails
+    name: StationBoardWithDetails
+  - name: )
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync
+  name: GetArrivalDepartureBoardWithDetailsAsync
+  nameWithType: IRequests.GetArrivalDepartureBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync
+- uid: Darwin.Net.Objects.StationBoard
+  commentId: T:Darwin.Net.Objects.StationBoard
+  parent: Darwin.Net.Objects
+  name: StationBoard
+  nameWithType: StationBoard
+  fullName: Darwin.Net.Objects.StationBoard
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetArrivalBoardAsync
+  name: GetArrivalBoardAsync
+  nameWithType: IRequests.GetArrivalBoardAsync
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StationBoard>
+  nameWithType: Task<StationBoard>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.StationBoard>
+  nameWithType.vb: Task(Of StationBoard)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.StationBoard)
+  name.vb: Task(Of StationBoard)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.StationBoard
+    name: StationBoard
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.StationBoard
+    name: StationBoard
+  - name: )
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync
+  name: GetArrivalDepartureBoardAsync
+  nameWithType: IRequests.GetArrivalDepartureBoardAsync
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetDepartureBoardAsync
+  name: GetDepartureBoardAsync
+  nameWithType: IRequests.GetDepartureBoardAsync
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync
+  name: GetDepartureBoardWithDetailsAsync
+  nameWithType: IRequests.GetDepartureBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync
+- uid: Darwin.Net.Objects.DeparturesBoard
+  commentId: T:Darwin.Net.Objects.DeparturesBoard
+  parent: Darwin.Net.Objects
+  name: DeparturesBoard
+  nameWithType: DeparturesBoard
+  fullName: Darwin.Net.Objects.DeparturesBoard
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync
+  name: GetFastestDeparturesAsync
+  nameWithType: IRequests.GetFastestDeparturesAsync
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync
+- uid: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+  commentId: T:System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<Station>
+  nameWithType: IList<Station>
+  fullName: System.Collections.Generic.IList<Darwin.Net.Objects.Station>
+  nameWithType.vb: IList(Of Station)
+  fullName.vb: System.Collections.Generic.IList(Of Darwin.Net.Objects.Station)
+  name.vb: IList(Of Station)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeparturesBoard>
+  nameWithType: Task<DeparturesBoard>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.DeparturesBoard>
+  nameWithType.vb: Task(Of DeparturesBoard)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.DeparturesBoard)
+  name.vb: Task(Of DeparturesBoard)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.DeparturesBoard
+    name: DeparturesBoard
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.DeparturesBoard
+    name: DeparturesBoard
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Darwin.Net.Objects.DeparturesBoardWithDetails
+  commentId: T:Darwin.Net.Objects.DeparturesBoardWithDetails
+  name: DeparturesBoardWithDetails
+  nameWithType: DeparturesBoardWithDetails
+  fullName: Darwin.Net.Objects.DeparturesBoardWithDetails
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync
+  name: GetFastestDeparturesWithDetailsAsync
+  nameWithType: IRequests.GetFastestDeparturesWithDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeparturesBoardWithDetails>
+  nameWithType: Task<DeparturesBoardWithDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.DeparturesBoardWithDetails>
+  nameWithType.vb: Task(Of DeparturesBoardWithDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.DeparturesBoardWithDetails)
+  name.vb: Task(Of DeparturesBoardWithDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.DeparturesBoardWithDetails
+    name: DeparturesBoardWithDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.DeparturesBoardWithDetails
+    name: DeparturesBoardWithDetails
+  - name: )
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetNextDeparturesAsync
+  name: GetNextDeparturesAsync
+  nameWithType: IRequests.GetNextDeparturesAsync
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync
+  name: GetNextDeparturesWithDetailsAsync
+  nameWithType: IRequests.GetNextDeparturesWithDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync
+- uid: Darwin.Net.Objects.ServiceDetails
+  commentId: T:Darwin.Net.Objects.ServiceDetails
+  name: ServiceDetails
+  nameWithType: ServiceDetails
+  fullName: Darwin.Net.Objects.ServiceDetails
+- uid: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.IRequests.GetServiceDetailsAsync
+  name: GetServiceDetailsAsync
+  nameWithType: IRequests.GetServiceDetailsAsync
+  fullName: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServiceDetails>
+  nameWithType: Task<ServiceDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.ServiceDetails>
+  nameWithType.vb: Task(Of ServiceDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.ServiceDetails)
+  name.vb: Task(Of ServiceDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.ServiceDetails
+    name: ServiceDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.ServiceDetails
+    name: ServiceDetails
+  - name: )

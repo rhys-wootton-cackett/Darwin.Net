@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net
+  commentId: N:Darwin.Net
+  id: Darwin.Net
+  children:
+  - Darwin.Net.Darwin
+  langs:
+  - csharp
+  - vb
+  name: Darwin.Net
+  nameWithType: Darwin.Net
+  fullName: Darwin.Net
+  type: Namespace
+  assemblies:
+  - Darwin.Net
+references:
+- uid: Darwin.Net.Darwin
+  commentId: T:Darwin.Net.Darwin
+  name: Darwin
+  nameWithType: Darwin
+  fullName: Darwin.Net.Darwin

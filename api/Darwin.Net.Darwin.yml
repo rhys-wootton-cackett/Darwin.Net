@@ -1,0 +1,373 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Darwin
+  commentId: T:Darwin.Net.Darwin
+  id: Darwin
+  parent: Darwin.Net
+  children:
+  - Darwin.Net.Darwin.#ctor
+  - Darwin.Net.Darwin.Requests
+  langs:
+  - csharp
+  - vb
+  name: Darwin
+  nameWithType: Darwin
+  fullName: Darwin.Net.Darwin
+  type: Class
+  source:
+    remote:
+      path: Darwin.Net/Darwin.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Darwin
+    path: ../Darwin.Net/Darwin.cs
+    startLine: 10
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net
+  summary: "\nRepresents the main class for accessing Darwin API services.\n"
+  example: []
+  syntax:
+    content: public class Darwin
+    content.vb: Public Class Darwin
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Darwin.Net.Darwin.Requests
+  commentId: P:Darwin.Net.Darwin.Requests
+  id: Requests
+  parent: Darwin.Net.Darwin
+  langs:
+  - csharp
+  - vb
+  name: Requests
+  nameWithType: Darwin.Requests
+  fullName: Darwin.Net.Darwin.Requests
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Darwin.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Requests
+    path: ../Darwin.Net/Darwin.cs
+    startLine: 17
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net
+  summary: "\nThe collection of request methods that can be used to make requests to the Darwin API.\n"
+  example: []
+  syntax:
+    content: public IRequests Requests { get; }
+    parameters: []
+    return:
+      type: Darwin.Net.Requests.IRequests
+    content.vb: Public Property Requests As IRequests
+  overload: Darwin.Net.Darwin.Requests*
+- uid: Darwin.Net.Darwin.#ctor
+  commentId: M:Darwin.Net.Darwin.#ctor
+  id: '#ctor'
+  parent: Darwin.Net.Darwin
+  langs:
+  - csharp
+  - vb
+  name: Darwin()
+  nameWithType: Darwin.Darwin()
+  fullName: Darwin.Net.Darwin.Darwin()
+  type: Constructor
+  source:
+    remote:
+      path: Darwin.Net/Darwin.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: .ctor
+    path: ../Darwin.Net/Darwin.cs
+    startLine: 22
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net
+  summary: "\nInitializes a new instance of the <xref href=\"Darwin.Net.Darwin\" data-throw-if-not-resolved=\"false\"></xref> class with default configurations.\n"
+  example: []
+  syntax:
+    content: public Darwin()
+    content.vb: Public Sub New()
+  overload: Darwin.Net.Darwin.#ctor*
+  nameWithType.vb: Darwin.New()
+  fullName.vb: Darwin.Net.Darwin.New()
+  name.vb: New()
+references:
+- uid: Darwin.Net
+  commentId: N:Darwin.Net
+  name: Darwin.Net
+  nameWithType: Darwin.Net
+  fullName: Darwin.Net
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Darwin.Net.Darwin.Requests*
+  commentId: Overload:Darwin.Net.Darwin.Requests
+  name: Requests
+  nameWithType: Darwin.Requests
+  fullName: Darwin.Net.Darwin.Requests
+- uid: Darwin.Net.Requests.IRequests
+  commentId: T:Darwin.Net.Requests.IRequests
+  parent: Darwin.Net.Requests
+  name: IRequests
+  nameWithType: IRequests
+  fullName: Darwin.Net.Requests.IRequests
+- uid: Darwin.Net.Requests
+  commentId: N:Darwin.Net.Requests
+  name: Darwin.Net.Requests
+  nameWithType: Darwin.Net.Requests
+  fullName: Darwin.Net.Requests
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+- uid: Darwin.Net.Darwin
+  commentId: T:Darwin.Net.Darwin
+  name: Darwin
+  nameWithType: Darwin
+  fullName: Darwin.Net.Darwin
+- uid: Darwin.Net.Darwin.#ctor*
+  commentId: Overload:Darwin.Net.Darwin.#ctor
+  name: Darwin
+  nameWithType: Darwin.Darwin
+  fullName: Darwin.Net.Darwin.Darwin
+  nameWithType.vb: Darwin.New
+  fullName.vb: Darwin.Net.Darwin.New
+  name.vb: New

@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Requests
+  commentId: N:Darwin.Net.Requests
+  id: Darwin.Net.Requests
+  children:
+  - Darwin.Net.Requests.IRequests
+  - Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: Darwin.Net.Requests
+  nameWithType: Darwin.Net.Requests
+  fullName: Darwin.Net.Requests
+  type: Namespace
+  assemblies:
+  - Darwin.Net
+references:
+- uid: Darwin.Net.Requests.Requests
+  commentId: T:Darwin.Net.Requests.Requests
+  name: Requests
+  nameWithType: Requests
+  fullName: Darwin.Net.Requests.Requests
+- uid: Darwin.Net.Requests.IRequests
+  commentId: T:Darwin.Net.Requests.IRequests
+  parent: Darwin.Net.Requests
+  name: IRequests
+  nameWithType: IRequests
+  fullName: Darwin.Net.Requests.IRequests
+- uid: Darwin.Net.Requests
+  commentId: N:Darwin.Net.Requests
+  name: Darwin.Net.Requests
+  nameWithType: Darwin.Net.Requests
+  fullName: Darwin.Net.Requests
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests

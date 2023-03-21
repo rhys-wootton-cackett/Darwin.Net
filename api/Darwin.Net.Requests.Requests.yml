@@ -1,0 +1,2092 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Requests.Requests
+  commentId: T:Darwin.Net.Requests.Requests
+  id: Requests
+  parent: Darwin.Net.Requests
+  children:
+  - Darwin.Net.Requests.Requests.#ctor(System.Net.Http.HttpClient,System.Configuration.Configuration)
+  - Darwin.Net.Requests.Requests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  - Darwin.Net.Requests.Requests.GetServiceDetailsAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Requests
+  nameWithType: Requests
+  fullName: Darwin.Net.Requests.Requests
+  type: Class
+  source:
+    remote:
+      path: Darwin.Net/Requests/Requests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Requests
+    path: ../Darwin.Net/Requests/Requests.cs
+    startLine: 19
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nRepresents a collection of methods for making requests to the Darwin API.\n"
+  example: []
+  syntax:
+    content: 'public class Requests : IRequests'
+    content.vb: Public Class Requests Implements IRequests
+  inheritance:
+  - System.Object
+  implements:
+  - Darwin.Net.Requests.IRequests
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Darwin.Net.Requests.Requests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetArrivalBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetArrivalBoardAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalBoardAsync
+    path: ../Darwin.Net/Requests/GetArrivalBoardAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoard> GetArrivalBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+    content.vb: Public Function GetArrivalBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.Requests.GetArrivalBoardAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetArrivalBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetArrivalBoardWithDetailsAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/GetArrivalBoardWithDetailsAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoardWithDetails> GetArrivalBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+    content.vb: Public Function GetArrivalBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetArrivalDepartureBoardAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalDepartureBoardAsync
+    path: ../Darwin.Net/Requests/GetArrivalDepartureBoardAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoard> GetArrivalDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+    content.vb: Public Function GetArrivalDepartureBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetArrivalDepartureBoardWithDetailsAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetArrivalDepartureBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/GetArrivalDepartureBoardWithDetailsAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoardWithDetails> GetArrivalDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+    content.vb: Public Function GetArrivalDepartureBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetDepartureBoardAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetDepartureBoardAsync
+    path: ../Darwin.Net/Requests/GetDepartureBoardAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoard> GetDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+    content.vb: Public Function GetDepartureBoardAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoard)
+  overload: Darwin.Net.Requests.Requests.GetDepartureBoardAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  id: GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: Requests.GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetDepartureBoardWithDetailsAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetDepartureBoardWithDetailsAsync
+    path: ../Darwin.Net/Requests/GetDepartureBoardWithDetailsAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<StationBoardWithDetails> GetDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType? filterType = null, TimeSpan? timeOffset = null)
+    parameters:
+    - id: numRows
+      type: System.Int32
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: filterStation
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    - id: filterType
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+    content.vb: Public Function GetDepartureBoardWithDetailsAsync(numRows As Integer, station As Station, timeWindow As TimeSpan, filterStation As Station? = Nothing, filterType As FilterType? = Nothing, timeOffset As TimeSpan? = Nothing) As Task(Of StationBoardWithDetails)
+  overload: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: Requests.GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetFastestDeparturesAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetFastestDeparturesAsync
+    path: ../Darwin.Net/Requests/GetFastestDeparturesAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<DeparturesBoard> GetFastestDeparturesAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+    content.vb: Public Function GetFastestDeparturesAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoard)
+  overload: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: Requests.GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetFastestDeparturesWithDetailsAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetFastestDeparturesWithDetailsAsync
+    path: ../Darwin.Net/Requests/GetFastestDeparturesWithDetailsAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<DeparturesBoardWithDetails> GetFastestDeparturesWithDetailsAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+    content.vb: Public Function GetFastestDeparturesWithDetailsAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoardWithDetails)
+  overload: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: Requests.GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetNextDeparturesAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetNextDeparturesAsync
+    path: ../Darwin.Net/Requests/GetNextDeparturesAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<DeparturesBoard> GetNextDeparturesAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+    content.vb: Public Function GetNextDeparturesAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoard)
+  overload: Darwin.Net.Requests.Requests.GetNextDeparturesAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  id: GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: Requests.GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetNextDeparturesWithDetailsAsync.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetNextDeparturesWithDetailsAsync
+    path: ../Darwin.Net/Requests/GetNextDeparturesWithDetailsAsync.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<DeparturesBoardWithDetails> GetNextDeparturesWithDetailsAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
+    parameters:
+    - id: station
+      type: Darwin.Net.Objects.Station
+    - id: filterList
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+    - id: timeWindow
+      type: System.TimeSpan
+    - id: timeOffset
+      type: System.Nullable{System.TimeSpan}
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+    content.vb: Public Function GetNextDeparturesWithDetailsAsync(station As Station, filterList As IList(Of Station), timeWindow As TimeSpan, timeOffset As TimeSpan? = Nothing) As Task(Of DeparturesBoardWithDetails)
+  overload: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  nameWithType.vb: Requests.GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+- uid: Darwin.Net.Requests.Requests.GetServiceDetailsAsync(System.String)
+  commentId: M:Darwin.Net.Requests.Requests.GetServiceDetailsAsync(System.String)
+  id: GetServiceDetailsAsync(System.String)
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: GetServiceDetailsAsync(string)
+  nameWithType: Requests.GetServiceDetailsAsync(string)
+  fullName: Darwin.Net.Requests.Requests.GetServiceDetailsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Darwin.Net/Requests/GetServiceDetails.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GetServiceDetailsAsync
+    path: ../Darwin.Net/Requests/GetServiceDetails.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  syntax:
+    content: public Task<ServiceDetails> GetServiceDetailsAsync(string serviceId)
+    parameters:
+    - id: serviceId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+    content.vb: Public Function GetServiceDetailsAsync(serviceId As String) As Task(Of ServiceDetails)
+  overload: Darwin.Net.Requests.Requests.GetServiceDetailsAsync*
+  implements:
+  - Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  nameWithType.vb: Requests.GetServiceDetailsAsync(String)
+  fullName.vb: Darwin.Net.Requests.Requests.GetServiceDetailsAsync(String)
+  name.vb: GetServiceDetailsAsync(String)
+- uid: Darwin.Net.Requests.Requests.#ctor(System.Net.Http.HttpClient,System.Configuration.Configuration)
+  commentId: M:Darwin.Net.Requests.Requests.#ctor(System.Net.Http.HttpClient,System.Configuration.Configuration)
+  id: '#ctor(System.Net.Http.HttpClient,System.Configuration.Configuration)'
+  parent: Darwin.Net.Requests.Requests
+  langs:
+  - csharp
+  - vb
+  name: Requests(HttpClient, Configuration)
+  nameWithType: Requests.Requests(HttpClient, Configuration)
+  fullName: Darwin.Net.Requests.Requests.Requests(System.Net.Http.HttpClient, System.Configuration.Configuration)
+  type: Constructor
+  source:
+    remote:
+      path: Darwin.Net/Requests/Requests.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: .ctor
+    path: ../Darwin.Net/Requests/Requests.cs
+    startLine: 33
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Requests
+  summary: "\nInitializes a new instance of the <xref href=\"Darwin.Net.Requests.Requests\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Requests(HttpClient client, Configuration config)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+      description: The HTTP client used for making requests to the API.
+    - id: config
+      type: System.Configuration.Configuration
+      description: The configuration for the API.
+    content.vb: Public Sub New(client As HttpClient, config As Configuration)
+  overload: Darwin.Net.Requests.Requests.#ctor*
+  nameWithType.vb: Requests.New(HttpClient, Configuration)
+  fullName.vb: Darwin.Net.Requests.Requests.New(System.Net.Http.HttpClient, System.Configuration.Configuration)
+  name.vb: New(HttpClient, Configuration)
+references:
+- uid: Darwin.Net.Requests
+  commentId: N:Darwin.Net.Requests
+  name: Darwin.Net.Requests
+  nameWithType: Darwin.Net.Requests
+  fullName: Darwin.Net.Requests
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Requests
+    name: Requests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Darwin.Net.Requests.IRequests
+  commentId: T:Darwin.Net.Requests.IRequests
+  parent: Darwin.Net.Requests
+  name: IRequests
+  nameWithType: IRequests
+  fullName: Darwin.Net.Requests.IRequests
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Darwin.Net.Requests.Requests.GetArrivalBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetArrivalBoardAsync
+  name: GetArrivalBoardAsync
+  nameWithType: Requests.GetArrivalBoardAsync
+  fullName: Darwin.Net.Requests.Requests.GetArrivalBoardAsync
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Darwin.Net.Objects.Station
+  commentId: T:Darwin.Net.Objects.Station
+  parent: Darwin.Net.Objects
+  name: Station
+  nameWithType: Station
+  fullName: Darwin.Net.Objects.Station
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Nullable{Darwin.Net.Objects.Station}
+  commentId: T:System.Nullable{Darwin.Net.Objects.Station}
+  parent: System
+  definition: System.Nullable`1
+  name: Station?
+  nameWithType: Station?
+  fullName: Darwin.Net.Objects.Station?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+- uid: System.Nullable{Darwin.Net.Objects.FilterType}
+  commentId: T:System.Nullable{Darwin.Net.Objects.FilterType}
+  parent: System
+  definition: System.Nullable`1
+  name: FilterType?
+  nameWithType: FilterType?
+  fullName: Darwin.Net.Objects.FilterType?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoard}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StationBoard>
+  nameWithType: Task<StationBoard>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.StationBoard>
+  nameWithType.vb: Task(Of StationBoard)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.StationBoard)
+  name.vb: Task(Of StationBoard)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.StationBoard
+    name: StationBoard
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.StationBoard
+    name: StationBoard
+  - name: )
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync
+  name: GetArrivalBoardWithDetailsAsync
+  nameWithType: Requests.GetArrivalBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetArrivalBoardWithDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.StationBoardWithDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StationBoardWithDetails>
+  nameWithType: Task<StationBoardWithDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.StationBoardWithDetails>
+  nameWithType.vb: Task(Of StationBoardWithDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.StationBoardWithDetails)
+  name.vb: Task(Of StationBoardWithDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.StationBoardWithDetails
+    name: StationBoardWithDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.StationBoardWithDetails
+    name: StationBoardWithDetails
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync
+  name: GetArrivalDepartureBoardAsync
+  nameWithType: Requests.GetArrivalDepartureBoardAsync
+  fullName: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardAsync
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalDepartureBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalDepartureBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync
+  name: GetArrivalDepartureBoardWithDetailsAsync
+  nameWithType: Requests.GetArrivalDepartureBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetArrivalDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalDepartureBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetArrivalDepartureBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetDepartureBoardAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetDepartureBoardAsync
+  name: GetDepartureBoardAsync
+  nameWithType: Requests.GetDepartureBoardAsync
+  fullName: Darwin.Net.Requests.Requests.GetDepartureBoardAsync
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetDepartureBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetDepartureBoardAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetDepartureBoardAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync
+  name: GetDepartureBoardWithDetailsAsync
+  nameWithType: Requests.GetDepartureBoardWithDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetDepartureBoardWithDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  nameWithType: IRequests.GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(int, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(Integer, Darwin.Net.Objects.Station, System.TimeSpan, Darwin.Net.Objects.Station?, Darwin.Net.Objects.FilterType?, System.TimeSpan?)
+  name.vb: GetDepartureBoardWithDetailsAsync(Integer, Station, TimeSpan, Station?, FilterType?, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetDepartureBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetDepartureBoardWithDetailsAsync(System.Int32,Darwin.Net.Objects.Station,System.TimeSpan,System.Nullable{Darwin.Net.Objects.Station},System.Nullable{Darwin.Net.Objects.FilterType},System.Nullable{System.TimeSpan})
+    name: GetDepartureBoardWithDetailsAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetFastestDeparturesAsync
+  name: GetFastestDeparturesAsync
+  nameWithType: Requests.GetFastestDeparturesAsync
+  fullName: Darwin.Net.Requests.Requests.GetFastestDeparturesAsync
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetFastestDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetFastestDeparturesAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetFastestDeparturesAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+  commentId: T:System.Collections.Generic.IList{Darwin.Net.Objects.Station}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<Station>
+  nameWithType: IList<Station>
+  fullName: System.Collections.Generic.IList<Darwin.Net.Objects.Station>
+  nameWithType.vb: IList(Of Station)
+  fullName.vb: System.Collections.Generic.IList(Of Darwin.Net.Objects.Station)
+  name.vb: IList(Of Station)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoard}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeparturesBoard>
+  nameWithType: Task<DeparturesBoard>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.DeparturesBoard>
+  nameWithType.vb: Task(Of DeparturesBoard)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.DeparturesBoard)
+  name.vb: Task(Of DeparturesBoard)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.DeparturesBoard
+    name: DeparturesBoard
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.DeparturesBoard
+    name: DeparturesBoard
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync
+  name: GetFastestDeparturesWithDetailsAsync
+  nameWithType: Requests.GetFastestDeparturesWithDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetFastestDeparturesWithDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetFastestDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetFastestDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetFastestDeparturesWithDetailsAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetFastestDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetFastestDeparturesWithDetailsAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.DeparturesBoardWithDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeparturesBoardWithDetails>
+  nameWithType: Task<DeparturesBoardWithDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.DeparturesBoardWithDetails>
+  nameWithType.vb: Task(Of DeparturesBoardWithDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.DeparturesBoardWithDetails)
+  name.vb: Task(Of DeparturesBoardWithDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.DeparturesBoardWithDetails
+    name: DeparturesBoardWithDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.DeparturesBoardWithDetails
+    name: DeparturesBoardWithDetails
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetNextDeparturesAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetNextDeparturesAsync
+  name: GetNextDeparturesAsync
+  nameWithType: Requests.GetNextDeparturesAsync
+  fullName: Darwin.Net.Requests.Requests.GetNextDeparturesAsync
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetNextDeparturesAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetNextDeparturesAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetNextDeparturesAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetNextDeparturesAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync
+  name: GetNextDeparturesWithDetailsAsync
+  nameWithType: Requests.GetNextDeparturesWithDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetNextDeparturesWithDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  commentId: M:Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  nameWithType: IRequests.GetNextDeparturesWithDetailsAsync(Station, IList<Station>, TimeSpan, TimeSpan?)
+  fullName: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList<Darwin.Net.Objects.Station>, System.TimeSpan, System.TimeSpan?)
+  nameWithType.vb: IRequests.GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station, System.Collections.Generic.IList(Of Darwin.Net.Objects.Station), System.TimeSpan, System.TimeSpan?)
+  name.vb: GetNextDeparturesWithDetailsAsync(Station, IList(Of Station), TimeSpan, TimeSpan?)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetNextDeparturesWithDetailsAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetNextDeparturesWithDetailsAsync(Darwin.Net.Objects.Station,System.Collections.Generic.IList{Darwin.Net.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})
+    name: GetNextDeparturesWithDetailsAsync
+  - name: (
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+  - name: '?'
+  - name: )
+- uid: Darwin.Net.Requests.Requests.GetServiceDetailsAsync*
+  commentId: Overload:Darwin.Net.Requests.Requests.GetServiceDetailsAsync
+  name: GetServiceDetailsAsync
+  nameWithType: Requests.GetServiceDetailsAsync
+  fullName: Darwin.Net.Requests.Requests.GetServiceDetailsAsync
+- uid: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  commentId: M:Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+  parent: Darwin.Net.Requests.IRequests
+  isExternal: true
+  name: GetServiceDetailsAsync(string)
+  nameWithType: IRequests.GetServiceDetailsAsync(string)
+  fullName: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(string)
+  nameWithType.vb: IRequests.GetServiceDetailsAsync(String)
+  fullName.vb: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(String)
+  name.vb: GetServiceDetailsAsync(String)
+  spec.csharp:
+  - uid: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+    name: GetServiceDetailsAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Darwin.Net.Requests.IRequests.GetServiceDetailsAsync(System.String)
+    name: GetServiceDetailsAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+  commentId: T:System.Threading.Tasks.Task{Darwin.Net.Objects.ServiceDetails}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServiceDetails>
+  nameWithType: Task<ServiceDetails>
+  fullName: System.Threading.Tasks.Task<Darwin.Net.Objects.ServiceDetails>
+  nameWithType.vb: Task(Of ServiceDetails)
+  fullName.vb: System.Threading.Tasks.Task(Of Darwin.Net.Objects.ServiceDetails)
+  name.vb: Task(Of ServiceDetails)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.ServiceDetails
+    name: ServiceDetails
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.ServiceDetails
+    name: ServiceDetails
+  - name: )
+- uid: Darwin.Net.Requests.Requests
+  commentId: T:Darwin.Net.Requests.Requests
+  name: Requests
+  nameWithType: Requests
+  fullName: Darwin.Net.Requests.Requests
+- uid: Darwin.Net.Requests.Requests.#ctor*
+  commentId: Overload:Darwin.Net.Requests.Requests.#ctor
+  name: Requests
+  nameWithType: Requests.Requests
+  fullName: Darwin.Net.Requests.Requests.Requests
+  nameWithType.vb: Requests.New
+  fullName.vb: Darwin.Net.Requests.Requests.New
+  name.vb: New
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Configuration.Configuration
+  commentId: T:System.Configuration.Configuration
+  parent: System.Configuration
+  isExternal: true
+  name: Configuration
+  nameWithType: Configuration
+  fullName: System.Configuration.Configuration
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+- uid: System.Configuration
+  commentId: N:System.Configuration
+  isExternal: true
+  name: System.Configuration
+  nameWithType: System.Configuration
+  fullName: System.Configuration
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Configuration
+    name: Configuration
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Configuration
+    name: Configuration
+    isExternal: true

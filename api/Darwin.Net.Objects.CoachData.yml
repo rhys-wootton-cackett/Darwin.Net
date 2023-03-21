@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Objects.CoachData
+  commentId: T:Darwin.Net.Objects.CoachData
+  id: CoachData
+  parent: Darwin.Net.Objects
+  children:
+  - Darwin.Net.Objects.CoachData.CoachClass
+  - Darwin.Net.Objects.CoachData.CoachNumber
+  - Darwin.Net.Objects.CoachData.Loading
+  - Darwin.Net.Objects.CoachData.LoadingSpecified
+  - Darwin.Net.Objects.CoachData.Toilet
+  langs:
+  - csharp
+  - vb
+  name: CoachData
+  nameWithType: CoachData
+  fullName: Darwin.Net.Objects.CoachData
+  type: Class
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CoachData
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nProvides details about a specific coach on a train\n"
+  example: []
+  syntax:
+    content: public class CoachData
+    content.vb: Public Class CoachData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Darwin.Net.Objects.CoachData.CoachClass
+  commentId: P:Darwin.Net.Objects.CoachData.CoachClass
+  id: CoachClass
+  parent: Darwin.Net.Objects.CoachData
+  langs:
+  - csharp
+  - vb
+  name: CoachClass
+  nameWithType: CoachData.CoachClass
+  fullName: Darwin.Net.Objects.CoachData.CoachClass
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CoachClass
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 20
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe class of coach, where known. First, Mixed or Standard. Other classes may be introduced in the future.\n"
+  example: []
+  syntax:
+    content: public CoachClass CoachClass { get; }
+    parameters: []
+    return:
+      type: Darwin.Net.Objects.CoachClass
+    content.vb: Public Property CoachClass As CoachClass
+  overload: Darwin.Net.Objects.CoachData.CoachClass*
+- uid: Darwin.Net.Objects.CoachData.Loading
+  commentId: P:Darwin.Net.Objects.CoachData.Loading
+  id: Loading
+  parent: Darwin.Net.Objects.CoachData
+  langs:
+  - csharp
+  - vb
+  name: Loading
+  nameWithType: CoachData.Loading
+  fullName: Darwin.Net.Objects.CoachData.Loading
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Loading
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 25
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe loading value (0-100) for the coach.\n"
+  example: []
+  syntax:
+    content: public int? Loading { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Loading As Integer?
+  overload: Darwin.Net.Objects.CoachData.Loading*
+- uid: Darwin.Net.Objects.CoachData.LoadingSpecified
+  commentId: P:Darwin.Net.Objects.CoachData.LoadingSpecified
+  id: LoadingSpecified
+  parent: Darwin.Net.Objects.CoachData
+  langs:
+  - csharp
+  - vb
+  name: LoadingSpecified
+  nameWithType: CoachData.LoadingSpecified
+  fullName: Darwin.Net.Objects.CoachData.LoadingSpecified
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: LoadingSpecified
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 30
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nSpecifies whether loading has been specified or not.\n"
+  example: []
+  syntax:
+    content: public bool? LoadingSpecified { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property LoadingSpecified As Boolean?
+  overload: Darwin.Net.Objects.CoachData.LoadingSpecified*
+- uid: Darwin.Net.Objects.CoachData.CoachNumber
+  commentId: P:Darwin.Net.Objects.CoachData.CoachNumber
+  id: CoachNumber
+  parent: Darwin.Net.Objects.CoachData
+  langs:
+  - csharp
+  - vb
+  name: CoachNumber
+  nameWithType: CoachData.CoachNumber
+  fullName: Darwin.Net.Objects.CoachData.CoachNumber
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CoachNumber
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 35
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe number/identifier for this coach, e.g. &quot;A&quot; or &quot;12&quot;. Maximum of two characters.\n"
+  example: []
+  syntax:
+    content: public string CoachNumber { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CoachNumber As String
+  overload: Darwin.Net.Objects.CoachData.CoachNumber*
+- uid: Darwin.Net.Objects.CoachData.Toilet
+  commentId: P:Darwin.Net.Objects.CoachData.Toilet
+  id: Toilet
+  parent: Darwin.Net.Objects.CoachData
+  langs:
+  - csharp
+  - vb
+  name: Toilet
+  nameWithType: CoachData.Toilet
+  fullName: Darwin.Net.Objects.CoachData.Toilet
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Toilet
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 40
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA <see cref=\"!:ToiletAvailability\"></see> object representing toilet data. (2017-10-01 schema onwards)\n"
+  example: []
+  syntax:
+    content: public Toilet? Toilet { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Darwin.Net.Objects.Toilet}
+    content.vb: Public Property Toilet As Toilet?
+  overload: Darwin.Net.Objects.CoachData.Toilet*
+references:
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Darwin.Net.Objects.CoachData.CoachClass*
+  commentId: Overload:Darwin.Net.Objects.CoachData.CoachClass
+  name: CoachClass
+  nameWithType: CoachData.CoachClass
+  fullName: Darwin.Net.Objects.CoachData.CoachClass
+- uid: Darwin.Net.Objects.CoachClass
+  commentId: T:Darwin.Net.Objects.CoachClass
+  parent: Darwin.Net.Objects
+  name: CoachClass
+  nameWithType: CoachClass
+  fullName: Darwin.Net.Objects.CoachClass
+- uid: Darwin.Net.Objects.CoachData.Loading*
+  commentId: Overload:Darwin.Net.Objects.CoachData.Loading
+  name: Loading
+  nameWithType: CoachData.Loading
+  fullName: Darwin.Net.Objects.CoachData.Loading
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Darwin.Net.Objects.CoachData.LoadingSpecified*
+  commentId: Overload:Darwin.Net.Objects.CoachData.LoadingSpecified
+  name: LoadingSpecified
+  nameWithType: CoachData.LoadingSpecified
+  fullName: Darwin.Net.Objects.CoachData.LoadingSpecified
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'
+- uid: Darwin.Net.Objects.CoachData.CoachNumber*
+  commentId: Overload:Darwin.Net.Objects.CoachData.CoachNumber
+  name: CoachNumber
+  nameWithType: CoachData.CoachNumber
+  fullName: Darwin.Net.Objects.CoachData.CoachNumber
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Darwin.Net.Objects.CoachData.Toilet*
+  commentId: Overload:Darwin.Net.Objects.CoachData.Toilet
+  name: Toilet
+  nameWithType: CoachData.Toilet
+  fullName: Darwin.Net.Objects.CoachData.Toilet
+- uid: System.Nullable{Darwin.Net.Objects.Toilet}
+  commentId: T:System.Nullable{Darwin.Net.Objects.Toilet}
+  parent: System
+  definition: System.Nullable`1
+  name: Toilet?
+  nameWithType: Toilet?
+  fullName: Darwin.Net.Objects.Toilet?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.Toilet
+    name: Toilet
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.Toilet
+    name: Toilet
+  - name: '?'

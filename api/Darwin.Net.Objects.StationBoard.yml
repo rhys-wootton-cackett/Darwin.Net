@@ -1,0 +1,950 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Objects.StationBoard
+  commentId: T:Darwin.Net.Objects.StationBoard
+  id: StationBoard
+  parent: Darwin.Net.Objects
+  children:
+  - Darwin.Net.Objects.StationBoard.AreServicesAvailable
+  - Darwin.Net.Objects.StationBoard.BusServices
+  - Darwin.Net.Objects.StationBoard.FerryServices
+  - Darwin.Net.Objects.StationBoard.FilterLocationName
+  - Darwin.Net.Objects.StationBoard.FilterStation
+  - Darwin.Net.Objects.StationBoard.FilterType
+  - Darwin.Net.Objects.StationBoard.GeneratedAt
+  - Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+  - Darwin.Net.Objects.StationBoard.LocationName
+  - Darwin.Net.Objects.StationBoard.NrccMessages
+  - Darwin.Net.Objects.StationBoard.Station
+  - Darwin.Net.Objects.StationBoard.TrainServices
+  langs:
+  - csharp
+  - vb
+  name: StationBoard
+  nameWithType: StationBoard
+  fullName: Darwin.Net.Objects.StationBoard
+  type: Class
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: StationBoard
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nDefines a station board located at a station\n"
+  example: []
+  syntax:
+    content: public class StationBoard
+    content.vb: Public Class StationBoard
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Darwin.Net.Objects.StationBoardWithDetails
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Darwin.Net.Objects.StationBoard.GeneratedAt
+  commentId: P:Darwin.Net.Objects.StationBoard.GeneratedAt
+  id: GeneratedAt
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: GeneratedAt
+  nameWithType: StationBoard.GeneratedAt
+  fullName: Darwin.Net.Objects.StationBoard.GeneratedAt
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: GeneratedAt
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 19
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe time at which the <xref href=\"Darwin.Net.Objects.StationBoard\" data-throw-if-not-resolved=\"false\"></xref> was generated\n"
+  example: []
+  syntax:
+    content: public DateTime GeneratedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property GeneratedAt As Date
+  overload: Darwin.Net.Objects.StationBoard.GeneratedAt*
+- uid: Darwin.Net.Objects.StationBoard.LocationName
+  commentId: P:Darwin.Net.Objects.StationBoard.LocationName
+  id: LocationName
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: LocationName
+  nameWithType: StationBoard.LocationName
+  fullName: Darwin.Net.Objects.StationBoard.LocationName
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: LocationName
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 24
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe name of the location that the station board is for.\n"
+  example: []
+  syntax:
+    content: public string LocationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LocationName As String
+  overload: Darwin.Net.Objects.StationBoard.LocationName*
+- uid: Darwin.Net.Objects.StationBoard.Station
+  commentId: P:Darwin.Net.Objects.StationBoard.Station
+  id: Station
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: Station
+  nameWithType: StationBoard.Station
+  fullName: Darwin.Net.Objects.StationBoard.Station
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Station
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 29
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe station for the station board.\n"
+  example: []
+  syntax:
+    content: public Station Station { get; }
+    parameters: []
+    return:
+      type: Darwin.Net.Objects.Station
+    content.vb: Public Property Station As Station
+  overload: Darwin.Net.Objects.StationBoard.Station*
+- uid: Darwin.Net.Objects.StationBoard.FilterLocationName
+  commentId: P:Darwin.Net.Objects.StationBoard.FilterLocationName
+  id: FilterLocationName
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: FilterLocationName
+  nameWithType: StationBoard.FilterLocationName
+  fullName: Darwin.Net.Objects.StationBoard.FilterLocationName
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FilterLocationName
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 34
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nIf a filter was requested, the location name of the filter location.\n"
+  example: []
+  syntax:
+    content: public string? FilterLocationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FilterLocationName As String
+  overload: Darwin.Net.Objects.StationBoard.FilterLocationName*
+- uid: Darwin.Net.Objects.StationBoard.FilterStation
+  commentId: P:Darwin.Net.Objects.StationBoard.FilterStation
+  id: FilterStation
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: FilterStation
+  nameWithType: StationBoard.FilterStation
+  fullName: Darwin.Net.Objects.StationBoard.FilterStation
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FilterStation
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 39
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nIf a filter was requested, the <xref href=\"Darwin.Net.Objects.Station\" data-throw-if-not-resolved=\"false\"></xref> of the filter location.\n"
+  example: []
+  syntax:
+    content: public Station? FilterStation { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Darwin.Net.Objects.Station}
+    content.vb: Public Property FilterStation As Station?
+  overload: Darwin.Net.Objects.StationBoard.FilterStation*
+- uid: Darwin.Net.Objects.StationBoard.FilterType
+  commentId: P:Darwin.Net.Objects.StationBoard.FilterType
+  id: FilterType
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: FilterType
+  nameWithType: StationBoard.FilterType
+  fullName: Darwin.Net.Objects.StationBoard.FilterType
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FilterType
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 44
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nIf a filter was requested, the type of filter.\n"
+  example: []
+  syntax:
+    content: public FilterType? FilterType { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Darwin.Net.Objects.FilterType}
+    content.vb: Public Property FilterType As FilterType?
+  overload: Darwin.Net.Objects.StationBoard.FilterType*
+- uid: Darwin.Net.Objects.StationBoard.NrccMessages
+  commentId: P:Darwin.Net.Objects.StationBoard.NrccMessages
+  id: NrccMessages
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: NrccMessages
+  nameWithType: StationBoard.NrccMessages
+  fullName: Darwin.Net.Objects.StationBoard.NrccMessages
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: NrccMessages
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 50
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional list of textual messages that should be displayed with the station board. The messages are typically used to display important disruption information \nthat applies to the location that the station board was for. \n"
+  example: []
+  syntax:
+    content: public IList<string>? NrccMessages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Property NrccMessages As IList(Of String)
+  overload: Darwin.Net.Objects.StationBoard.NrccMessages*
+- uid: Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+  commentId: P:Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+  id: IsPlatformAvailable
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: IsPlatformAvailable
+  nameWithType: StationBoard.IsPlatformAvailable
+  fullName: Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: IsPlatformAvailable
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 56
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional value that indicates if platform information is available. If this value is present with the value &quot;true&quot; then platform information will be returned in the service lists. \nIf this value is not present, or has the value &quot;false&quot;, then the platform &quot;heading&quot; should be suppressed in the user interface for this station board.\n"
+  example: []
+  syntax:
+    content: public bool? IsPlatformAvailable { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsPlatformAvailable As Boolean?
+  overload: Darwin.Net.Objects.StationBoard.IsPlatformAvailable*
+- uid: Darwin.Net.Objects.StationBoard.AreServicesAvailable
+  commentId: P:Darwin.Net.Objects.StationBoard.AreServicesAvailable
+  id: AreServicesAvailable
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: AreServicesAvailable
+  nameWithType: StationBoard.AreServicesAvailable
+  fullName: Darwin.Net.Objects.StationBoard.AreServicesAvailable
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: AreServicesAvailable
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 63
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional value that indicates if services are currently available for this station board. If this value is present with the value &quot;false&quot; then no services will be returned in the service lists. \nThis value may be set, for example, if access to a station has been closed to the public at short notice, even though the scheduled services are still running. \nIt would be usual in such cases for one of the nrccMessages to describe why the list of services has been suppressed.\n"
+  example: []
+  syntax:
+    content: public bool AreServicesAvailable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AreServicesAvailable As Boolean
+  overload: Darwin.Net.Objects.StationBoard.AreServicesAvailable*
+- uid: Darwin.Net.Objects.StationBoard.TrainServices
+  commentId: P:Darwin.Net.Objects.StationBoard.TrainServices
+  id: TrainServices
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: TrainServices
+  nameWithType: StationBoard.TrainServices
+  fullName: Darwin.Net.Objects.StationBoard.TrainServices
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: TrainServices
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 68
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceItem\" data-throw-if-not-resolved=\"false\"></xref> objects for the train services appearing on the station board. If no services exist, this will contain zero items or be null.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceItem>? TrainServices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceItem}
+    content.vb: Public Property TrainServices As IList(Of ServiceItem)
+  overload: Darwin.Net.Objects.StationBoard.TrainServices*
+- uid: Darwin.Net.Objects.StationBoard.BusServices
+  commentId: P:Darwin.Net.Objects.StationBoard.BusServices
+  id: BusServices
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: BusServices
+  nameWithType: StationBoard.BusServices
+  fullName: Darwin.Net.Objects.StationBoard.BusServices
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: BusServices
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 73
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceItem\" data-throw-if-not-resolved=\"false\"></xref> objects for the bus services appearing on the station board. If no services exist, this will contain zero items or be null.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceItem>? BusServices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceItem}
+    content.vb: Public Property BusServices As IList(Of ServiceItem)
+  overload: Darwin.Net.Objects.StationBoard.BusServices*
+- uid: Darwin.Net.Objects.StationBoard.FerryServices
+  commentId: P:Darwin.Net.Objects.StationBoard.FerryServices
+  id: FerryServices
+  parent: Darwin.Net.Objects.StationBoard
+  langs:
+  - csharp
+  - vb
+  name: FerryServices
+  nameWithType: StationBoard.FerryServices
+  fullName: Darwin.Net.Objects.StationBoard.FerryServices
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/StationBoard.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FerryServices
+    path: ../Darwin.Net/Objects/StationBoard.cs
+    startLine: 78
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceItem\" data-throw-if-not-resolved=\"false\"></xref> objects for the ferry services appearing on the station board. If no services exist, this will contain zero items or be null.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceItem>? FerryServices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceItem}
+    content.vb: Public Property FerryServices As IList(Of ServiceItem)
+  overload: Darwin.Net.Objects.StationBoard.FerryServices*
+references:
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Darwin.Net.Objects.StationBoard
+  commentId: T:Darwin.Net.Objects.StationBoard
+  parent: Darwin.Net.Objects
+  name: StationBoard
+  nameWithType: StationBoard
+  fullName: Darwin.Net.Objects.StationBoard
+- uid: Darwin.Net.Objects.StationBoard.GeneratedAt*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.GeneratedAt
+  name: GeneratedAt
+  nameWithType: StationBoard.GeneratedAt
+  fullName: Darwin.Net.Objects.StationBoard.GeneratedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Darwin.Net.Objects.StationBoard.LocationName*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.LocationName
+  name: LocationName
+  nameWithType: StationBoard.LocationName
+  fullName: Darwin.Net.Objects.StationBoard.LocationName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Darwin.Net.Objects.StationBoard.Station*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.Station
+  name: Station
+  nameWithType: StationBoard.Station
+  fullName: Darwin.Net.Objects.StationBoard.Station
+- uid: Darwin.Net.Objects.Station
+  commentId: T:Darwin.Net.Objects.Station
+  parent: Darwin.Net.Objects
+  name: Station
+  nameWithType: Station
+  fullName: Darwin.Net.Objects.Station
+- uid: Darwin.Net.Objects.StationBoard.FilterLocationName*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.FilterLocationName
+  name: FilterLocationName
+  nameWithType: StationBoard.FilterLocationName
+  fullName: Darwin.Net.Objects.StationBoard.FilterLocationName
+- uid: Darwin.Net.Objects.StationBoard.FilterStation*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.FilterStation
+  name: FilterStation
+  nameWithType: StationBoard.FilterStation
+  fullName: Darwin.Net.Objects.StationBoard.FilterStation
+- uid: System.Nullable{Darwin.Net.Objects.Station}
+  commentId: T:System.Nullable{Darwin.Net.Objects.Station}
+  parent: System
+  definition: System.Nullable`1
+  name: Station?
+  nameWithType: Station?
+  fullName: Darwin.Net.Objects.Station?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.Station
+    name: Station
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Darwin.Net.Objects.StationBoard.FilterType*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.FilterType
+  name: FilterType
+  nameWithType: StationBoard.FilterType
+  fullName: Darwin.Net.Objects.StationBoard.FilterType
+- uid: System.Nullable{Darwin.Net.Objects.FilterType}
+  commentId: T:System.Nullable{Darwin.Net.Objects.FilterType}
+  parent: System
+  definition: System.Nullable`1
+  name: FilterType?
+  nameWithType: FilterType?
+  fullName: Darwin.Net.Objects.FilterType?
+  spec.csharp:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+  spec.vb:
+  - uid: Darwin.Net.Objects.FilterType
+    name: FilterType
+  - name: '?'
+- uid: Darwin.Net.Objects.StationBoard.NrccMessages*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.NrccMessages
+  name: NrccMessages
+  nameWithType: StationBoard.NrccMessages
+  fullName: Darwin.Net.Objects.StationBoard.NrccMessages
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Darwin.Net.Objects.StationBoard.IsPlatformAvailable*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+  name: IsPlatformAvailable
+  nameWithType: StationBoard.IsPlatformAvailable
+  fullName: Darwin.Net.Objects.StationBoard.IsPlatformAvailable
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'
+- uid: Darwin.Net.Objects.StationBoard.AreServicesAvailable*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.AreServicesAvailable
+  name: AreServicesAvailable
+  nameWithType: StationBoard.AreServicesAvailable
+  fullName: Darwin.Net.Objects.StationBoard.AreServicesAvailable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Darwin.Net.Objects.ServiceItem
+  commentId: T:Darwin.Net.Objects.ServiceItem
+  parent: Darwin.Net.Objects
+  name: ServiceItem
+  nameWithType: ServiceItem
+  fullName: Darwin.Net.Objects.ServiceItem
+- uid: Darwin.Net.Objects.StationBoard.TrainServices*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.TrainServices
+  name: TrainServices
+  nameWithType: StationBoard.TrainServices
+  fullName: Darwin.Net.Objects.StationBoard.TrainServices
+- uid: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceItem}
+  commentId: T:System.Collections.Generic.IList{Darwin.Net.Objects.ServiceItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ServiceItem>
+  nameWithType: IList<ServiceItem>
+  fullName: System.Collections.Generic.IList<Darwin.Net.Objects.ServiceItem>
+  nameWithType.vb: IList(Of ServiceItem)
+  fullName.vb: System.Collections.Generic.IList(Of Darwin.Net.Objects.ServiceItem)
+  name.vb: IList(Of ServiceItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.ServiceItem
+    name: ServiceItem
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.ServiceItem
+    name: ServiceItem
+  - name: )
+- uid: Darwin.Net.Objects.StationBoard.BusServices*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.BusServices
+  name: BusServices
+  nameWithType: StationBoard.BusServices
+  fullName: Darwin.Net.Objects.StationBoard.BusServices
+- uid: Darwin.Net.Objects.StationBoard.FerryServices*
+  commentId: Overload:Darwin.Net.Objects.StationBoard.FerryServices
+  name: FerryServices
+  nameWithType: StationBoard.FerryServices
+  fullName: Darwin.Net.Objects.StationBoard.FerryServices

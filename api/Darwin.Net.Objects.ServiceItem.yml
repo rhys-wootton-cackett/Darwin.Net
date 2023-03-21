@@ -1,0 +1,1405 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Objects.ServiceItem
+  commentId: T:Darwin.Net.Objects.ServiceItem
+  id: ServiceItem
+  parent: Darwin.Net.Objects
+  children:
+  - Darwin.Net.Objects.ServiceItem.AdhocAlerts
+  - Darwin.Net.Objects.ServiceItem.CancellationReason
+  - Darwin.Net.Objects.ServiceItem.CurrentDestinations
+  - Darwin.Net.Objects.ServiceItem.CurrentOrigins
+  - Darwin.Net.Objects.ServiceItem.DelayReason
+  - Darwin.Net.Objects.ServiceItem.Destination
+  - Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+  - Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+  - Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+  - Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+  - Darwin.Net.Objects.ServiceItem.Formation
+  - Darwin.Net.Objects.ServiceItem.IsCircularRoute
+  - Darwin.Net.Objects.ServiceItem.IsReverseFormation
+  - Darwin.Net.Objects.ServiceItem.Operator
+  - Darwin.Net.Objects.ServiceItem.OperatorCode
+  - Darwin.Net.Objects.ServiceItem.Origin
+  - Darwin.Net.Objects.ServiceItem.Platform
+  - Darwin.Net.Objects.ServiceItem.RetailServiceId
+  - Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+  - Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+  - Darwin.Net.Objects.ServiceItem.ServiceId
+  - Darwin.Net.Objects.ServiceItem.ServiceType
+  - Darwin.Net.Objects.ServiceItem.TrainLength
+  langs:
+  - csharp
+  - vb
+  name: ServiceItem
+  nameWithType: ServiceItem
+  fullName: Darwin.Net.Objects.ServiceItem
+  type: Class
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: ServiceItem
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 14
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nDefines a service item\n"
+  example: []
+  syntax:
+    content: public class ServiceItem
+    content.vb: Public Class ServiceItem
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Darwin.Net.Objects.ServiceItemWithCallingPoints
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Darwin.Net.Objects.ServiceItem.RetailServiceId
+  commentId: P:Darwin.Net.Objects.ServiceItem.RetailServiceId
+  id: RetailServiceId
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: RetailServiceId
+  nameWithType: ServiceItem.RetailServiceId
+  fullName: Darwin.Net.Objects.ServiceItem.RetailServiceId
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: RetailServiceId
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 20
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe Retail Service ID of the service, if known.\n"
+  example: []
+  syntax:
+    content: public string? RetailServiceId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RetailServiceId As String
+  overload: Darwin.Net.Objects.ServiceItem.RetailServiceId*
+- uid: Darwin.Net.Objects.ServiceItem.Origin
+  commentId: P:Darwin.Net.Objects.ServiceItem.Origin
+  id: Origin
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: ServiceItem.Origin
+  fullName: Darwin.Net.Objects.ServiceItem.Origin
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Origin
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 25
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceLocation\" data-throw-if-not-resolved=\"false\"></xref> giving original origins of this service.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceLocation> Origin { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+    content.vb: Public Property Origin As IList(Of ServiceLocation)
+  overload: Darwin.Net.Objects.ServiceItem.Origin*
+- uid: Darwin.Net.Objects.ServiceItem.Destination
+  commentId: P:Darwin.Net.Objects.ServiceItem.Destination
+  id: Destination
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: Destination
+  nameWithType: ServiceItem.Destination
+  fullName: Darwin.Net.Objects.ServiceItem.Destination
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Destination
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 30
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceLocation\" data-throw-if-not-resolved=\"false\"></xref> giving original destinations of this service.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceLocation> Destination { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+    content.vb: Public Property Destination As IList(Of ServiceLocation)
+  overload: Darwin.Net.Objects.ServiceItem.Destination*
+- uid: Darwin.Net.Objects.ServiceItem.CurrentOrigins
+  commentId: P:Darwin.Net.Objects.ServiceItem.CurrentOrigins
+  id: CurrentOrigins
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: CurrentOrigins
+  nameWithType: ServiceItem.CurrentOrigins
+  fullName: Darwin.Net.Objects.ServiceItem.CurrentOrigins
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CurrentOrigins
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 35
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceLocation\" data-throw-if-not-resolved=\"false\"></xref> giving live/current origins of this service which is not starting at original cancelled origins.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceLocation>? CurrentOrigins { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+    content.vb: Public Property CurrentOrigins As IList(Of ServiceLocation)
+  overload: Darwin.Net.Objects.ServiceItem.CurrentOrigins*
+- uid: Darwin.Net.Objects.ServiceItem.CurrentDestinations
+  commentId: P:Darwin.Net.Objects.ServiceItem.CurrentDestinations
+  id: CurrentDestinations
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: CurrentDestinations
+  nameWithType: ServiceItem.CurrentDestinations
+  fullName: Darwin.Net.Objects.ServiceItem.CurrentDestinations
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CurrentDestinations
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 40
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Collections.Generic.IList%601\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Darwin.Net.Objects.ServiceLocation\" data-throw-if-not-resolved=\"false\"></xref> giving live/current destinations of this service which is not starting at original cancelled destinations.\n"
+  example: []
+  syntax:
+    content: public IList<ServiceLocation>? CurrentDestinations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+    content.vb: Public Property CurrentDestinations As IList(Of ServiceLocation)
+  overload: Darwin.Net.Objects.ServiceItem.CurrentDestinations*
+- uid: Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+  commentId: P:Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+  id: ScheduledTimeArrival
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: ScheduledTimeArrival
+  nameWithType: ServiceItem.ScheduledTimeArrival
+  fullName: Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: ScheduledTimeArrival
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 46
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Tuple\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> specifying the Scheduled Time of Arrival (STA) of the service at the station board location.\nIf not null, one of the value is present.\n"
+  example: []
+  syntax:
+    content: public (string? Text, DateTime? Time)? ScheduledTimeArrival { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+    content.vb: Public Property ScheduledTimeArrival As (Text As String, Time As Date?)?
+  overload: Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival*
+- uid: Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+  commentId: P:Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+  id: EstimatedTimeArrival
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: EstimatedTimeArrival
+  nameWithType: ServiceItem.EstimatedTimeArrival
+  fullName: Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: EstimatedTimeArrival
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 52
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Tuple\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> specifying the Estimated Time of Arrival (ETA) of the service at the station board location.\nIf not null, one of the value is present.\n"
+  example: []
+  syntax:
+    content: public (string? Text, DateTime? Time)? EstimatedTimeArrival { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+    content.vb: Public Property EstimatedTimeArrival As (Text As String, Time As Date?)?
+  overload: Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival*
+- uid: Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+  commentId: P:Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+  id: ScheduledTimeDeparture
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: ScheduledTimeDeparture
+  nameWithType: ServiceItem.ScheduledTimeDeparture
+  fullName: Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: ScheduledTimeDeparture
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 58
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Tuple\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> specifying the Scheduled Time of Departure (STD) of the service at the station board location.\nIf not null, one of the value is present.\n"
+  example: []
+  syntax:
+    content: public (string? Text, DateTime? Time)? ScheduledTimeDeparture { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+    content.vb: Public Property ScheduledTimeDeparture As (Text As String, Time As Date?)?
+  overload: Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture*
+- uid: Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+  commentId: P:Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+  id: EstimatedTimeDeparture
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: EstimatedTimeDeparture
+  nameWithType: ServiceItem.EstimatedTimeDeparture
+  fullName: Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: EstimatedTimeDeparture
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 64
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional <xref href=\"System.Tuple\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> specifying the Estimated Time of Departure (ETD) of the service at the station board location.\nIf not null, one of the value is present.\n"
+  example: []
+  syntax:
+    content: public (string? Text, DateTime? Time)? EstimatedTimeDeparture { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+    content.vb: Public Property EstimatedTimeDeparture As (Text As String, Time As Date?)?
+  overload: Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture*
+- uid: Darwin.Net.Objects.ServiceItem.Platform
+  commentId: P:Darwin.Net.Objects.ServiceItem.Platform
+  id: Platform
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: Platform
+  nameWithType: ServiceItem.Platform
+  fullName: Darwin.Net.Objects.ServiceItem.Platform
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Platform
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 69
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nAn optional platform number for the service at this location. This will only be present where available and where the IsPlatformAvailable value is &quot;true&quot;.\n"
+  example: []
+  syntax:
+    content: public string? Platform { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Platform As String
+  overload: Darwin.Net.Objects.ServiceItem.Platform*
+- uid: Darwin.Net.Objects.ServiceItem.Operator
+  commentId: P:Darwin.Net.Objects.ServiceItem.Operator
+  id: Operator
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: ServiceItem.Operator
+  fullName: Darwin.Net.Objects.ServiceItem.Operator
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Operator
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 74
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: >
+    S
+
+    The name of the Train Operating Company that operates the service.
+  example: []
+  syntax:
+    content: public string Operator { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property [Operator] As String
+  overload: Darwin.Net.Objects.ServiceItem.Operator*
+- uid: Darwin.Net.Objects.ServiceItem.OperatorCode
+  commentId: P:Darwin.Net.Objects.ServiceItem.OperatorCode
+  id: OperatorCode
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: OperatorCode
+  nameWithType: ServiceItem.OperatorCode
+  fullName: Darwin.Net.Objects.ServiceItem.OperatorCode
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: OperatorCode
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 79
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe code of the Train Operating Company that operates the service.\n"
+  example: []
+  syntax:
+    content: public string OperatorCode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OperatorCode As String
+  overload: Darwin.Net.Objects.ServiceItem.OperatorCode*
+- uid: Darwin.Net.Objects.ServiceItem.IsCircularRoute
+  commentId: P:Darwin.Net.Objects.ServiceItem.IsCircularRoute
+  id: IsCircularRoute
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: IsCircularRoute
+  nameWithType: ServiceItem.IsCircularRoute
+  fullName: Darwin.Net.Objects.ServiceItem.IsCircularRoute
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: IsCircularRoute
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 84
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nIf this value is present and has the value &quot;true&quot; then the service is operating on a circular route through the network and will call again at this location later on its journey.\n"
+  example: []
+  syntax:
+    content: public bool? IsCircularRoute { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsCircularRoute As Boolean?
+  overload: Darwin.Net.Objects.ServiceItem.IsCircularRoute*
+- uid: Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+  commentId: P:Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+  id: FilterLocationCancelled
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: FilterLocationCancelled
+  nameWithType: ServiceItem.FilterLocationCancelled
+  fullName: Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FilterLocationCancelled
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 93
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA flag to indicate that this service is cancelled at this location.\n"
+  example: []
+  syntax:
+    content: public bool? FilterLocationCancelled { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property FilterLocationCancelled As Boolean?
+  overload: Darwin.Net.Objects.ServiceItem.FilterLocationCancelled*
+- uid: Darwin.Net.Objects.ServiceItem.ServiceType
+  commentId: P:Darwin.Net.Objects.ServiceItem.ServiceType
+  id: ServiceType
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: ServiceType
+  nameWithType: ServiceItem.ServiceType
+  fullName: Darwin.Net.Objects.ServiceItem.ServiceType
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: ServiceType
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 98
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe type of service (train, bus, ferry) that this item represents. Note that real-time information (e.g. eta, etd, ata, atd, etc.) is only available and present for train services.\n"
+  example: []
+  syntax:
+    content: public ServiceType ServiceType { get; }
+    parameters: []
+    return:
+      type: Darwin.Net.Objects.ServiceType
+    content.vb: Public Property ServiceType As ServiceType
+  overload: Darwin.Net.Objects.ServiceItem.ServiceType*
+- uid: Darwin.Net.Objects.ServiceItem.TrainLength
+  commentId: P:Darwin.Net.Objects.ServiceItem.TrainLength
+  id: TrainLength
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: TrainLength
+  nameWithType: ServiceItem.TrainLength
+  fullName: Darwin.Net.Objects.ServiceItem.TrainLength
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: TrainLength
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 103
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe train length (number of units) at this location. If not supplied, or zero, the length is unknown.\n"
+  example: []
+  syntax:
+    content: public int? TrainLength { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property TrainLength As Integer?
+  overload: Darwin.Net.Objects.ServiceItem.TrainLength*
+- uid: Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+  commentId: P:Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+  id: DoesTrainDetachAtFront
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: DoesTrainDetachAtFront
+  nameWithType: ServiceItem.DoesTrainDetachAtFront
+  fullName: Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: DoesTrainDetachAtFront
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 108
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nTrue if the service detaches units from the front at this location.\n"
+  example: []
+  syntax:
+    content: public bool? DoesTrainDetachAtFront { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property DoesTrainDetachAtFront As Boolean?
+  overload: Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront*
+- uid: Darwin.Net.Objects.ServiceItem.IsReverseFormation
+  commentId: P:Darwin.Net.Objects.ServiceItem.IsReverseFormation
+  id: IsReverseFormation
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: IsReverseFormation
+  nameWithType: ServiceItem.IsReverseFormation
+  fullName: Darwin.Net.Objects.ServiceItem.IsReverseFormation
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: IsReverseFormation
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 113
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nTrue if the service is operating in the reverse of its normal formation.\n"
+  example: []
+  syntax:
+    content: public bool? IsReverseFormation { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsReverseFormation As Boolean?
+  overload: Darwin.Net.Objects.ServiceItem.IsReverseFormation*
+- uid: Darwin.Net.Objects.ServiceItem.CancellationReason
+  commentId: P:Darwin.Net.Objects.ServiceItem.CancellationReason
+  id: CancellationReason
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: CancellationReason
+  nameWithType: ServiceItem.CancellationReason
+  fullName: Darwin.Net.Objects.ServiceItem.CancellationReason
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CancellationReason
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 118
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA cancellation reason for this service.\n"
+  example: []
+  syntax:
+    content: public string? CancellationReason { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CancellationReason As String
+  overload: Darwin.Net.Objects.ServiceItem.CancellationReason*
+- uid: Darwin.Net.Objects.ServiceItem.DelayReason
+  commentId: P:Darwin.Net.Objects.ServiceItem.DelayReason
+  id: DelayReason
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: DelayReason
+  nameWithType: ServiceItem.DelayReason
+  fullName: Darwin.Net.Objects.ServiceItem.DelayReason
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: DelayReason
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 123
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA delay reason for this service.\n"
+  example: []
+  syntax:
+    content: public string? DelayReason { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DelayReason As String
+  overload: Darwin.Net.Objects.ServiceItem.DelayReason*
+- uid: Darwin.Net.Objects.ServiceItem.ServiceId
+  commentId: P:Darwin.Net.Objects.ServiceItem.ServiceId
+  id: ServiceId
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: ServiceItem.ServiceId
+  fullName: Darwin.Net.Objects.ServiceItem.ServiceId
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: ServiceId
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 128
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nThe unique service identifier of this service relative to the station board on which it is displayed. This value can be passed to GetServiceDetails to obtain the full details of the individual service.\n"
+  example: []
+  syntax:
+    content: public string ServiceId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceId As String
+  overload: Darwin.Net.Objects.ServiceItem.ServiceId*
+- uid: Darwin.Net.Objects.ServiceItem.AdhocAlerts
+  commentId: P:Darwin.Net.Objects.ServiceItem.AdhocAlerts
+  id: AdhocAlerts
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: AdhocAlerts
+  nameWithType: ServiceItem.AdhocAlerts
+  fullName: Darwin.Net.Objects.ServiceItem.AdhocAlerts
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: AdhocAlerts
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 133
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nA list of Adhoc Alerts (strings) for this <xref href=\"Darwin.Net.Objects.CallingPoint\" data-throw-if-not-resolved=\"false\"></xref>. If there are no alerts, it will be null.\n"
+  example: []
+  syntax:
+    content: public IList<string>? AdhocAlerts { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Property AdhocAlerts As IList(Of String)
+  overload: Darwin.Net.Objects.ServiceItem.AdhocAlerts*
+- uid: Darwin.Net.Objects.ServiceItem.Formation
+  commentId: P:Darwin.Net.Objects.ServiceItem.Formation
+  id: Formation
+  parent: Darwin.Net.Objects.ServiceItem
+  langs:
+  - csharp
+  - vb
+  name: Formation
+  nameWithType: ServiceItem.Formation
+  fullName: Darwin.Net.Objects.ServiceItem.Formation
+  type: Property
+  source:
+    remote:
+      path: Darwin.Net/Objects/ServiceItem.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Formation
+    path: ../Darwin.Net/Objects/ServiceItem.cs
+    startLine: 138
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  summary: "\nContains <xref href=\"Darwin.Net.Objects.FormationData\" data-throw-if-not-resolved=\"false\"></xref> for this <xref href=\"Darwin.Net.Objects.ServiceItem\" data-throw-if-not-resolved=\"false\"></xref>, if any.\n"
+  example: []
+  syntax:
+    content: public FormationData? Formation { get; }
+    parameters: []
+    return:
+      type: Darwin.Net.Objects.FormationData
+    content.vb: Public Property Formation As FormationData
+  overload: Darwin.Net.Objects.ServiceItem.Formation*
+references:
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Darwin.Net.Objects.ServiceItem.RetailServiceId*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.RetailServiceId
+  name: RetailServiceId
+  nameWithType: ServiceItem.RetailServiceId
+  fullName: Darwin.Net.Objects.ServiceItem.RetailServiceId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Darwin.Net.Objects.ServiceLocation
+  commentId: T:Darwin.Net.Objects.ServiceLocation
+  name: ServiceLocation
+  nameWithType: ServiceLocation
+  fullName: Darwin.Net.Objects.ServiceLocation
+- uid: Darwin.Net.Objects.ServiceItem.Origin*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.Origin
+  name: Origin
+  nameWithType: ServiceItem.Origin
+  fullName: Darwin.Net.Objects.ServiceItem.Origin
+- uid: System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+  commentId: T:System.Collections.Generic.IList{Darwin.Net.Objects.ServiceLocation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ServiceLocation>
+  nameWithType: IList<ServiceLocation>
+  fullName: System.Collections.Generic.IList<Darwin.Net.Objects.ServiceLocation>
+  nameWithType.vb: IList(Of ServiceLocation)
+  fullName.vb: System.Collections.Generic.IList(Of Darwin.Net.Objects.ServiceLocation)
+  name.vb: IList(Of ServiceLocation)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: Darwin.Net.Objects.ServiceLocation
+    name: ServiceLocation
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Darwin.Net.Objects.ServiceLocation
+    name: ServiceLocation
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Darwin.Net.Objects.ServiceItem.Destination*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.Destination
+  name: Destination
+  nameWithType: ServiceItem.Destination
+  fullName: Darwin.Net.Objects.ServiceItem.Destination
+- uid: Darwin.Net.Objects.ServiceItem.CurrentOrigins*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.CurrentOrigins
+  name: CurrentOrigins
+  nameWithType: ServiceItem.CurrentOrigins
+  fullName: Darwin.Net.Objects.ServiceItem.CurrentOrigins
+- uid: Darwin.Net.Objects.ServiceItem.CurrentDestinations*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.CurrentDestinations
+  name: CurrentDestinations
+  nameWithType: ServiceItem.CurrentDestinations
+  fullName: Darwin.Net.Objects.ServiceItem.CurrentDestinations
+- uid: System.Tuple
+  commentId: T:System.Tuple
+  isExternal: true
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+  name: ScheduledTimeArrival
+  nameWithType: ServiceItem.ScheduledTimeArrival
+  fullName: Darwin.Net.Objects.ServiceItem.ScheduledTimeArrival
+- uid: System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+  commentId: T:System.Nullable{System.ValueTuple{System.String,System.Nullable{System.DateTime}}}
+  parent: System
+  definition: System.Nullable`1
+  name: (string Text, DateTime? Time)?
+  nameWithType: (string Text, DateTime? Time)?
+  fullName: (string Text, System.DateTime? Time)?
+  nameWithType.vb: (Text As String, Time As Date?)?
+  fullName.vb: (Text As String, Time As Date?)?
+  name.vb: (Text As String, Time As Date?)?
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Nullable{System.DateTime}}.Text
+    name: Text
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+  - name: '?'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Nullable{System.DateTime}}.Time
+    name: Time
+  - name: )
+  - name: '?'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Nullable{System.DateTime}}.Text
+    name: Text
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Nullable{System.DateTime}}.Time
+    name: Time
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+  - name: '?'
+  - name: )
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+  name: EstimatedTimeArrival
+  nameWithType: ServiceItem.EstimatedTimeArrival
+  fullName: Darwin.Net.Objects.ServiceItem.EstimatedTimeArrival
+- uid: Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+  name: ScheduledTimeDeparture
+  nameWithType: ServiceItem.ScheduledTimeDeparture
+  fullName: Darwin.Net.Objects.ServiceItem.ScheduledTimeDeparture
+- uid: Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+  name: EstimatedTimeDeparture
+  nameWithType: ServiceItem.EstimatedTimeDeparture
+  fullName: Darwin.Net.Objects.ServiceItem.EstimatedTimeDeparture
+- uid: Darwin.Net.Objects.ServiceItem.Platform*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.Platform
+  name: Platform
+  nameWithType: ServiceItem.Platform
+  fullName: Darwin.Net.Objects.ServiceItem.Platform
+- uid: Darwin.Net.Objects.ServiceItem.Operator*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.Operator
+  name: Operator
+  nameWithType: ServiceItem.Operator
+  fullName: Darwin.Net.Objects.ServiceItem.Operator
+- uid: Darwin.Net.Objects.ServiceItem.OperatorCode*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.OperatorCode
+  name: OperatorCode
+  nameWithType: ServiceItem.OperatorCode
+  fullName: Darwin.Net.Objects.ServiceItem.OperatorCode
+- uid: Darwin.Net.Objects.ServiceItem.IsCircularRoute*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.IsCircularRoute
+  name: IsCircularRoute
+  nameWithType: ServiceItem.IsCircularRoute
+  fullName: Darwin.Net.Objects.ServiceItem.IsCircularRoute
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: '?'
+- uid: Darwin.Net.Objects.ServiceItem.FilterLocationCancelled*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+  name: FilterLocationCancelled
+  nameWithType: ServiceItem.FilterLocationCancelled
+  fullName: Darwin.Net.Objects.ServiceItem.FilterLocationCancelled
+- uid: Darwin.Net.Objects.ServiceItem.ServiceType*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.ServiceType
+  name: ServiceType
+  nameWithType: ServiceItem.ServiceType
+  fullName: Darwin.Net.Objects.ServiceItem.ServiceType
+- uid: Darwin.Net.Objects.ServiceType
+  commentId: T:Darwin.Net.Objects.ServiceType
+  parent: Darwin.Net.Objects
+  name: ServiceType
+  nameWithType: ServiceType
+  fullName: Darwin.Net.Objects.ServiceType
+- uid: Darwin.Net.Objects.ServiceItem.TrainLength*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.TrainLength
+  name: TrainLength
+  nameWithType: ServiceItem.TrainLength
+  fullName: Darwin.Net.Objects.ServiceItem.TrainLength
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: '?'
+- uid: Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+  name: DoesTrainDetachAtFront
+  nameWithType: ServiceItem.DoesTrainDetachAtFront
+  fullName: Darwin.Net.Objects.ServiceItem.DoesTrainDetachAtFront
+- uid: Darwin.Net.Objects.ServiceItem.IsReverseFormation*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.IsReverseFormation
+  name: IsReverseFormation
+  nameWithType: ServiceItem.IsReverseFormation
+  fullName: Darwin.Net.Objects.ServiceItem.IsReverseFormation
+- uid: Darwin.Net.Objects.ServiceItem.CancellationReason*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.CancellationReason
+  name: CancellationReason
+  nameWithType: ServiceItem.CancellationReason
+  fullName: Darwin.Net.Objects.ServiceItem.CancellationReason
+- uid: Darwin.Net.Objects.ServiceItem.DelayReason*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.DelayReason
+  name: DelayReason
+  nameWithType: ServiceItem.DelayReason
+  fullName: Darwin.Net.Objects.ServiceItem.DelayReason
+- uid: Darwin.Net.Objects.ServiceItem.ServiceId*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.ServiceId
+  name: ServiceId
+  nameWithType: ServiceItem.ServiceId
+  fullName: Darwin.Net.Objects.ServiceItem.ServiceId
+- uid: Darwin.Net.Objects.CallingPoint
+  commentId: T:Darwin.Net.Objects.CallingPoint
+  name: CallingPoint
+  nameWithType: CallingPoint
+  fullName: Darwin.Net.Objects.CallingPoint
+- uid: Darwin.Net.Objects.ServiceItem.AdhocAlerts*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.AdhocAlerts
+  name: AdhocAlerts
+  nameWithType: ServiceItem.AdhocAlerts
+  fullName: Darwin.Net.Objects.ServiceItem.AdhocAlerts
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Darwin.Net.Objects.FormationData
+  commentId: T:Darwin.Net.Objects.FormationData
+  parent: Darwin.Net.Objects
+  name: FormationData
+  nameWithType: FormationData
+  fullName: Darwin.Net.Objects.FormationData
+- uid: Darwin.Net.Objects.ServiceItem
+  commentId: T:Darwin.Net.Objects.ServiceItem
+  parent: Darwin.Net.Objects
+  name: ServiceItem
+  nameWithType: ServiceItem
+  fullName: Darwin.Net.Objects.ServiceItem
+- uid: Darwin.Net.Objects.ServiceItem.Formation*
+  commentId: Overload:Darwin.Net.Objects.ServiceItem.Formation
+  name: Formation
+  nameWithType: ServiceItem.Formation
+  fullName: Darwin.Net.Objects.ServiceItem.Formation

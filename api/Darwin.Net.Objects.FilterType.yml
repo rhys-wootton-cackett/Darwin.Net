@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Objects.FilterType
+  commentId: T:Darwin.Net.Objects.FilterType
+  id: FilterType
+  parent: Darwin.Net.Objects
+  children:
+  - Darwin.Net.Objects.FilterType.From
+  - Darwin.Net.Objects.FilterType.To
+  langs:
+  - csharp
+  - vb
+  name: FilterType
+  nameWithType: FilterType
+  fullName: Darwin.Net.Objects.FilterType
+  type: Enum
+  source:
+    remote:
+      path: Darwin.Net/Objects/FilterType.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: FilterType
+    path: ../Darwin.Net/Objects/FilterType.cs
+    startLine: 9
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: public enum FilterType
+    content.vb: Public Enum FilterType
+- uid: Darwin.Net.Objects.FilterType.To
+  commentId: F:Darwin.Net.Objects.FilterType.To
+  id: To
+  parent: Darwin.Net.Objects.FilterType
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: FilterType.To
+  fullName: Darwin.Net.Objects.FilterType.To
+  type: Field
+  source:
+    remote:
+      path: Darwin.Net/Objects/FilterType.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: To
+    path: ../Darwin.Net/Objects/FilterType.cs
+    startLine: 11
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: To = 0
+    return:
+      type: Darwin.Net.Objects.FilterType
+- uid: Darwin.Net.Objects.FilterType.From
+  commentId: F:Darwin.Net.Objects.FilterType.From
+  id: From
+  parent: Darwin.Net.Objects.FilterType
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: FilterType.From
+  fullName: Darwin.Net.Objects.FilterType.From
+  type: Field
+  source:
+    remote:
+      path: Darwin.Net/Objects/FilterType.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: From
+    path: ../Darwin.Net/Objects/FilterType.cs
+    startLine: 13
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: From = 1
+    return:
+      type: Darwin.Net.Objects.FilterType
+references:
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: Darwin.Net.Objects.FilterType
+  commentId: T:Darwin.Net.Objects.FilterType
+  parent: Darwin.Net.Objects
+  name: FilterType
+  nameWithType: FilterType
+  fullName: Darwin.Net.Objects.FilterType

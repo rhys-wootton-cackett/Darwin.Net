@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Darwin.Net.Objects.CoachClass
+  commentId: T:Darwin.Net.Objects.CoachClass
+  id: CoachClass
+  parent: Darwin.Net.Objects
+  children:
+  - Darwin.Net.Objects.CoachClass.First
+  - Darwin.Net.Objects.CoachClass.Mixed
+  - Darwin.Net.Objects.CoachClass.Standard
+  langs:
+  - csharp
+  - vb
+  name: CoachClass
+  nameWithType: CoachClass
+  fullName: Darwin.Net.Objects.CoachClass
+  type: Enum
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: CoachClass
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 43
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: public enum CoachClass
+    content.vb: Public Enum CoachClass
+- uid: Darwin.Net.Objects.CoachClass.First
+  commentId: F:Darwin.Net.Objects.CoachClass.First
+  id: First
+  parent: Darwin.Net.Objects.CoachClass
+  langs:
+  - csharp
+  - vb
+  name: First
+  nameWithType: CoachClass.First
+  fullName: Darwin.Net.Objects.CoachClass.First
+  type: Field
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: First
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 45
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: First = 0
+    return:
+      type: Darwin.Net.Objects.CoachClass
+- uid: Darwin.Net.Objects.CoachClass.Mixed
+  commentId: F:Darwin.Net.Objects.CoachClass.Mixed
+  id: Mixed
+  parent: Darwin.Net.Objects.CoachClass
+  langs:
+  - csharp
+  - vb
+  name: Mixed
+  nameWithType: CoachClass.Mixed
+  fullName: Darwin.Net.Objects.CoachClass.Mixed
+  type: Field
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Mixed
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 47
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: Mixed = 1
+    return:
+      type: Darwin.Net.Objects.CoachClass
+- uid: Darwin.Net.Objects.CoachClass.Standard
+  commentId: F:Darwin.Net.Objects.CoachClass.Standard
+  id: Standard
+  parent: Darwin.Net.Objects.CoachClass
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: CoachClass.Standard
+  fullName: Darwin.Net.Objects.CoachClass.Standard
+  type: Field
+  source:
+    remote:
+      path: Darwin.Net/Objects/CoachData.cs
+      branch: master
+      repo: https://github.com/rhys-wootton/Darwin.Net
+    id: Standard
+    path: ../Darwin.Net/Objects/CoachData.cs
+    startLine: 49
+  assemblies:
+  - Darwin.Net
+  namespace: Darwin.Net.Objects
+  syntax:
+    content: Standard = 2
+    return:
+      type: Darwin.Net.Objects.CoachClass
+references:
+- uid: Darwin.Net.Objects
+  commentId: N:Darwin.Net.Objects
+  name: Darwin.Net.Objects
+  nameWithType: Darwin.Net.Objects
+  fullName: Darwin.Net.Objects
+  spec.csharp:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+  spec.vb:
+  - uid: Darwin
+    name: Darwin
+  - name: .
+  - uid: Darwin.Net
+    name: Net
+  - name: .
+  - uid: Darwin.Net.Objects
+    name: Objects
+- uid: Darwin.Net.Objects.CoachClass
+  commentId: T:Darwin.Net.Objects.CoachClass
+  parent: Darwin.Net.Objects
+  name: CoachClass
+  nameWithType: CoachClass
+  fullName: Darwin.Net.Objects.CoachClass
