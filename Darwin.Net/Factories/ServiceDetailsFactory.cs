@@ -28,14 +28,14 @@ namespace Darwin.Net.Factories
         /// <returns>An instance of <see cref="ServiceDetails"/></returns>
         public ServiceDetails Create(XmlDocument response)
         {
-            List<IList<CallingPoint>> prev = new() {
+            var prev = new List<IList<CallingPoint>>() {
                 response.SelectSingleNode("//previousCallingPoints[1]/callingPointList[1]")?.ChildNodes
                     .Cast<XmlNode>()
                     .Select(e => FactoryLoader.XmlElementToT(CallingPointFactory.Instance, e))
                     .ToList() ?? new List<CallingPoint>()
             };
 
-            List<IList<CallingPoint>> sub = new() {
+            var sub = new List<IList<CallingPoint>> () {
                 response.SelectSingleNode("//subsequentCallingPoints[1]/callingPointList[1]")?.ChildNodes
                     .Cast<XmlNode>()
                     .Select(e => FactoryLoader.XmlElementToT(CallingPointFactory.Instance, e))

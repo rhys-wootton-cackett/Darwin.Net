@@ -18,13 +18,13 @@ namespace Darwin.Net.Helpers
         public static string CleanHtml(this string input)
         {
             // Remove HTML tags
-            string output = RemoveHtmlRegex().Replace(input, string.Empty);
+            string output = Regex.Replace(input, "<.*?>", string.Empty);
 
             // Remove new lines
             output = output.Replace("\n", string.Empty).Replace("\r", string.Empty);
 
             // Remove extra spaces
-            output = RemoveExtraSpaces().Replace(output, " ");
+            output = Regex.Replace(output, "\\s+", " ");
 
             // Add full stops after sentences if they are missing
             if (output.EndsWith(" "))
@@ -54,10 +54,5 @@ namespace Darwin.Net.Helpers
 
             return (value, null);
         }
-
-        [GeneratedRegex("<.*?>")]
-        private static partial Regex RemoveHtmlRegex();
-        [GeneratedRegex("\\s+")]
-        private static partial Regex RemoveExtraSpaces();
     }
 }

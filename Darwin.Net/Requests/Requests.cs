@@ -49,7 +49,7 @@ namespace Darwin.Net.Requests
         /// <returns>The SOAP envelope as a string.</returns>
         private string BuildDarwinSoapEnvelope(string methodName, Dictionary<string, object> requestParams)
         {
-            StringBuilder soapEnvelopeParams = new();
+            var soapEnvelopeParams = new StringBuilder();
 
             foreach (var param in requestParams)
             {
@@ -64,24 +64,7 @@ namespace Darwin.Net.Requests
                 soapEnvelopeParams.AppendLine($"<ldb:{param.Key}>{param.Value}</ldb:{param.Key}>");
             }
 
-            return $"""
-                <soapenv:Envelope
-                	xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/'
-                	xmlns:ldb='{_darwinActionNameUrl}'
-                	xmlns:typ='{_darwinTokenTypeUrl}'>
-                	<soapenv:Header>
-                		<typ:AccessToken>
-                			<typ:TokenValue>{_darwinApiKey}</typ:TokenValue>
-                		</typ:AccessToken>
-                		<soapenv:Action>{_darwinActionNameUrl}{methodName}</soapenv:Action>
-                	</soapenv:Header>
-                	<soapenv:Body>
-                		<ldb:{methodName}Request>
-                			{soapEnvelopeParams}
-                		</ldb:{methodName}Request>
-                	</soapenv:Body>
-                </soapenv:Envelope>
-                """;
+            return $"<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ldb='{_darwinActionNameUrl}' xmlns:typ='{_darwinTokenTypeUrl}'><soapenv:Header><typ:AccessToken><typ:TokenValue>{_darwinApiKey}</typ:TokenValue></typ:AccessToken><soapenv:Action>{_darwinActionNameUrl}{methodName}</soapenv:Action></soapenv:Header><soapenv:Body><ldb:{methodName}Request>{soapEnvelopeParams}</ldb:{methodName}Request></soapenv:Body></soapenv:Envelope>";
         }
 
         /// <summary>
