@@ -1,6 +1,7 @@
 ﻿using Darwin.Net.Objects;
 using Darwin.Net.Requests;
 using System.Configuration;
+using System.Net.Http;
 
 namespace Darwin.Net
 {
@@ -9,7 +10,7 @@ namespace Darwin.Net
     /// </summary>
     public class Darwin
     {
-        private readonly HttpClient _client = new();
+        private readonly HttpClient _client = new HttpClient();
 
         /// <summary>
         /// The collection of request methods that can be used to make requests to the Darwin API.
