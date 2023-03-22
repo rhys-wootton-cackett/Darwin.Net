@@ -36,7 +36,7 @@ namespace DarwinNet.Objects
         public string CoachNumber { get; internal set; } = string.Empty;
 
         /// <summary>
-        /// A <see cref="ToiletAvailability"/> object representing toilet data. (2017-10-01 schema onwards)
+        /// A <see cref="Toilet"/> enum representing a toilet on a coach
         /// </summary>
         public Toilet? Toilet { get; internal set; }
     }
