@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Darwin.Net", "Darwin.Net\Darwin.Net.csproj", "{4D2A2242-3CFD-4CA7-B531-4F6127562470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DarwinNet", "DarwinNet\DarwinNet.csproj", "{4D2A2242-3CFD-4CA7-B531-4F6127562470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darwin.Tests", "Darwin.Tests\Darwin.Tests.csproj", "{B3D4DA4D-DC56-40DA-8782-ABD8C5988EE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarwinTests", "DarwinTests\DarwinTests.csproj", "{4AF0040C-E1DC-4B67-802A-356FADF5401B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4D2A2242-3CFD-4CA7-B531-4F6127562470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D2A2242-3CFD-4CA7-B531-4F6127562470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D2A2242-3CFD-4CA7-B531-4F6127562470}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3D4DA4D-DC56-40DA-8782-ABD8C5988EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3D4DA4D-DC56-40DA-8782-ABD8C5988EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3D4DA4D-DC56-40DA-8782-ABD8C5988EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3D4DA4D-DC56-40DA-8782-ABD8C5988EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF0040C-E1DC-4B67-802A-356FADF5401B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF0040C-E1DC-4B67-802A-356FADF5401B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF0040C-E1DC-4B67-802A-356FADF5401B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF0040C-E1DC-4B67-802A-356FADF5401B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ The repository containing the source code for this library can be found [here][1
 
 <!-- LINKS -->
 [1]:  https://github.com/rhys-wootton/Darwin.Net "Darwin.Net - GitHub"
-[2]:  xref:articles.preamble
+[2]:  /articles/preamble.html
 [3]:  /api/
 [4]:  https://github.com/rhys-wootton/Darwin.Net/blob/master/LICENSE.txt "Darwin.Net License"
 [5]:  https://www.nationalrail.co.uk/100296.aspx "National Rail Enquiries - Darwin Data Feeds"
