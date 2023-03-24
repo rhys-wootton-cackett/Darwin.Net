@@ -22,7 +22,7 @@ namespace DarwinNet.Objects
         /// <summary>
         /// The name of the location that the station board is for.
         /// </summary>        
-        public string LocationName { get; internal set; }
+        public string LocationName { get; internal set; } = string.Empty;
 
         /// <summary>
         /// The station for the station board.

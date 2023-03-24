@@ -23,12 +23,12 @@ namespace DarwinNet.Objects
         /// <summary>
         /// A <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving original origins of this service.
         /// </summary>        
-        public IList<ServiceLocation> Origin { get; internal set; }
+        public IList<ServiceLocation> Origin { get; internal set; } = new List<ServiceLocation>();
 
         /// <summary>
         /// A <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving original destinations of this service.
         /// </summary>        
-        public IList<ServiceLocation> Destination { get; internal set; }
+        public IList<ServiceLocation> Destination { get; internal set; } = new List<ServiceLocation>();
 
         /// <summary>
         /// An optional <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving live/current origins of this service which is not starting at original cancelled origins.

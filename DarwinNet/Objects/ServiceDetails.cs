@@ -32,7 +32,7 @@ namespace DarwinNet.Objects
         /// <summary>
         /// The display name of the departure board location that these service details were accessed from.
         /// </summary>        
-        public string LocationName { get; internal set; }
+        public string LocationName { get; internal set; } = string.Empty;
 
         /// <summary>
         /// The station in the service details.

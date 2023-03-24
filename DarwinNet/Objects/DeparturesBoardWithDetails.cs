@@ -18,6 +18,6 @@ namespace DarwinNet.Objects
         /// An <see cref="IList{T}"/> of <see cref="DepartureItemWithCallingPoints"/> for each service that is to appear on the departures board. A <see cref="DepartureItemWithCallingPoints"/> will 
         /// exist for each CRS code requested in the filter but if no information is available the <see cref="ServiceItemWithCallingPoints"/> part will be empty.
         /// </summary>    
-        public new IList<DepartureItemWithCallingPoints> Departures { get; internal set; }
+        public new IList<DepartureItemWithCallingPoints> Departures { get; internal set; } = new List<DepartureItemWithCallingPoints>();
     }
 }

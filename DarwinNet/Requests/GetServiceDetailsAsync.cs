@@ -21,7 +21,7 @@ namespace DarwinNet.Requests
         /// <returns>A <see cref="ServiceDetails"/> object containing the requested details.</returns>
         public Task<ServiceDetails> GetServiceDetailsAsync(string serviceId)
         {
-            var requestParams = new Dictionary<string, object>()
+            var requestParams = new Dictionary<string, object?>()
             {
                 { "serviceID", serviceId }
             };
@@ -29,7 +29,7 @@ namespace DarwinNet.Requests
             return GetServiceDetailsInternal(requestParams);
         }
 
-        private async Task<ServiceDetails> GetServiceDetailsInternal(Dictionary<string, object> requestParams)
+        private async Task<ServiceDetails> GetServiceDetailsInternal(Dictionary<string, object?> requestParams)
         {
             var soapEnvelope = BuildDarwinSoapEnvelope("GetServiceDetails", requestParams);
             var response = await SendDarwinSoapRequestAsync(soapEnvelope, ServiceDetailsFactory.Instance);

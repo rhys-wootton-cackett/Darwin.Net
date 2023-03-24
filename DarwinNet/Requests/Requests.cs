@@ -47,7 +47,7 @@ namespace DarwinNet.Requests
         /// <param name="methodName">The name of the Darwin API method to call.</param>
         /// <param name="requestParams">A dictionary of parameters to pass to the API method.</param>
         /// <returns>The SOAP envelope as a string.</returns>
-        private string BuildDarwinSoapEnvelope(string methodName, Dictionary<string, object> requestParams)
+        private string BuildDarwinSoapEnvelope(string methodName, Dictionary<string, object?> requestParams)
         {
             var soapEnvelopeParams = new StringBuilder();
 

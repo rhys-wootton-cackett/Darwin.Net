@@ -17,6 +17,6 @@ namespace DarwinNet.Objects
         /// <summary>
         /// A <see cref="IList{T}"/> of <see cref="ServiceItemWithCallingPoints"/> related to the Station.
         /// </summary>
-        public new IList<ServiceItemWithCallingPoints> Services { get; internal set; }
+        public new IList<ServiceItemWithCallingPoints> Services { get; internal set; } = new List<ServiceItemWithCallingPoints>();
     }
 }

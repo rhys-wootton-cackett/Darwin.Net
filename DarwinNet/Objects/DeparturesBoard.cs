@@ -23,7 +23,7 @@ namespace DarwinNet.Objects
         /// <summary>
         /// The name of the location that the station board is for.
         /// </summary>
-        public string LocationName { get; internal set; }
+        public string LocationName { get; internal set; } = string.Empty;
 
         /// <summary>
         /// The station in the departures board.
@@ -67,6 +67,6 @@ namespace DarwinNet.Objects
         /// An <see cref="IList{T}"/> of <see cref="DepartureItem"/> for each service that is to appear on the departures board. A <see cref="DepartureItem"/> will exist for each CRS code requested 
         /// in the filter but if no information is available the <see cref="ServiceItem"/> part will be empty.
         /// </summary>
-        public IList<DepartureItem> Departures { get; internal set; }
+        public IList<DepartureItem> Departures { get; internal set; } = new List<DepartureItem>();
     }
 }

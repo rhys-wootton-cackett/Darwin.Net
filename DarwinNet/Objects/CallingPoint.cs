@@ -18,7 +18,7 @@ namespace DarwinNet.Objects
         /// <summary>
         /// The display name of this location.
         /// </summary>
-        public string LocationName { get; internal set; }
+        public string LocationName { get; internal set; } = string.Empty;
 
         /// <summary>
         /// The station the train is scheduled at
