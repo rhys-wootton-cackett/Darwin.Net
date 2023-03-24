@@ -42,7 +42,7 @@ jobs:
           title: "Merge Release-${{ github.event.release.tag_name }} into master"
           commit-message: "Merge Release-${{ github.event.release.tag_name }} into master"
           branch: master
-          base: release-${{ github.event.release.tag_name }}
+          base: Release-${{ github.event.release.tag_name }}
           body: |
             - Include release artifacts:
               - DarwinNet/bin/Release/*.nupkg

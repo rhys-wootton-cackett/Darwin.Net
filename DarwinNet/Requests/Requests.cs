@@ -20,25 +20,20 @@ namespace DarwinNet.Requests
     public partial class Requests : IRequests
     {
         private HttpClient _client;
-        private readonly Configuration _config;
-        private readonly string _darwinUrl;
-        private readonly string _darwinActionNameUrl;
+        private readonly string _darwinUrl = "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb12.asmx";
+        private readonly string _darwinActionNameUrl = "http://thalesgroup.com/RTTI/2021-11-01/ldb/";
         private readonly string _darwinApiKey;
-        private readonly string _darwinTokenTypeUrl;
+        private readonly string _darwinTokenTypeUrl = "http://thalesgroup.com/RTTI/2013-11-28/Token/types";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Requests"/> class.
         /// </summary>
         /// <param name="client">The HTTP client used for making requests to the API.</param>
-        /// <param name="config">The configuration for the API.</param>
-        internal Requests(HttpClient client, Configuration config)
+        /// <param name="apiKey">The API key being used.</param>
+        internal Requests(HttpClient client, string apiKey)
         {
             this._client = client;
-            this._config = config;
-            this._darwinUrl = this._config.AppSettings.Settings["DarwinUrl"].Value ?? throw new InvalidOperationException("The DarwinUrl app setting is missing or invalid.");
-            this._darwinActionNameUrl = this._config.AppSettings.Settings["DarwinActionNameUrl"].Value ?? throw new InvalidOperationException("The DarwinActionNameUrl app setting is missing or invalid.");
-            this._darwinApiKey = this._config.AppSettings.Settings["DarwinApiKey"].Value ?? throw new InvalidOperationException("The DarwinApiKey app setting is missing or invalid.");
-            this._darwinTokenTypeUrl = this._config.AppSettings.Settings["DarwinTokenTypeUrl"].Value ?? throw new InvalidOperationException("The DarwinTokenTypeUrl app setting is missing or invalid.");
+            this._darwinApiKey = apiKey;
         }
 
         /// <summary>

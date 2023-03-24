@@ -20,13 +20,10 @@ namespace DarwinNet
         /// <summary>
         /// Initializes a new instance of the <see cref="Darwin"/> class with default configurations.
         /// </summary>
-        public Darwin()
+        /// <param name="apiKey">Your API key to access the service</param>
+        public Darwin(string apiKey)
         {
-            var configFile = "app.config";
-            var fileMap = new ExeConfigurationFileMap { ExeConfigFilename = configFile };
-            var configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
-
-            this.Requests = new Requests.Requests(this._client, configuration);
+            this.Requests = new Requests.Requests(this._client, apiKey);
         }
     }
 }

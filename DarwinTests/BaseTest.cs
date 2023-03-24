@@ -1,3 +1,5 @@
+using System.Configuration;
+
 namespace DarwinTests
 {
     /// <summary>
@@ -10,7 +12,11 @@ namespace DarwinTests
         [SetUp]
         public void Setup()
         {
-            Darwin = new DarwinNet.Darwin();
+            var configFile = "app.config";
+            var fileMap = new ExeConfigurationFileMap { ExeConfigFilename = configFile };
+            var configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
+
+            Darwin = new DarwinNet.Darwin(configuration.AppSettings.Settings["DarwinApiKey"].Value);
         }
     }
 }
