@@ -133,7 +133,7 @@ Represents a collection of methods for making requests to the Darwin API.
 
   <h3 id="DarwinNet_Requests_Requests_GetArrivalBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -178,6 +178,10 @@ Returns all public arrivals for the supplied station within a defined time windo
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -186,7 +190,7 @@ Returns all public arrivals for the supplied station within a defined time windo
 
   <h3 id="DarwinNet_Requests_Requests_GetArrivalBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardWithDetailsAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -231,6 +235,10 @@ Returns all public arrivals for the supplied station within a defined time windo
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -239,7 +247,7 @@ Returns all public arrivals for the supplied station within a defined time windo
 
   <h3 id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -284,6 +292,10 @@ Returns all public arrivals and departures for a supplied station within a defin
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -292,7 +304,7 @@ Returns all public arrivals and departures for a supplied station within a defin
 
   <h3 id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardWithDetailsAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -337,6 +349,10 @@ Returns all public arrivals and departures for the supplied station within a def
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -345,7 +361,7 @@ Returns all public arrivals and departures for the supplied station within a def
 
   <h3 id="DarwinNet_Requests_Requests_GetDepartureBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -390,6 +406,10 @@ Returns all public departures for the supplied station within a defined time win
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -398,7 +418,7 @@ Returns all public departures for the supplied station within a defined time win
 
   <h3 id="DarwinNet_Requests_Requests_GetDepartureBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
   GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardWithDetailsAsync.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -443,6 +463,10 @@ Returns all public departures for the supplied station within a defined time win
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
+    <dt><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></dt>
+    <dd>When filterType doesn&apos;t have a valid string value associated with it.</dd>
   </dl>
 
 
@@ -451,7 +475,7 @@ Returns all public departures for the supplied station within a defined time win
 
   <h3 id="DarwinNet_Requests_Requests_GetFastestDeparturesAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
   GetFastestDeparturesAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesAsync.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -492,6 +516,8 @@ Returns the public departure for the supplied station a defined time window to t
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
   </dl>
 
 
@@ -500,7 +526,7 @@ Returns the public departure for the supplied station a defined time window to t
 
   <h3 id="DarwinNet_Requests_Requests_GetFastestDeparturesWithDetailsAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesWithDetailsAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
   GetFastestDeparturesWithDetailsAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesWithDetailsAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesWithDetailsAsync.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -541,6 +567,8 @@ Returns the public departure for the supplied station a defined time window to t
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
   </dl>
 
 
@@ -549,7 +577,7 @@ Returns the public departure for the supplied station a defined time window to t
 
   <h3 id="DarwinNet_Requests_Requests_GetNextDeparturesAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
   GetNextDeparturesAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesAsync.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -590,6 +618,8 @@ Returns the next public departure for the supplied station within a defined time
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
   </dl>
 
 
@@ -598,7 +628,7 @@ Returns the next public departure for the supplied station within a defined time
 
   <h3 id="DarwinNet_Requests_Requests_GetNextDeparturesWithDetailsAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesWithDetailsAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
   GetNextDeparturesWithDetailsAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesWithDetailsAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesWithDetailsAsync.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary">
@@ -639,6 +669,8 @@ Returns the next public departure for the supplied station within a defined time
   <dl class="parameters">
     <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
     <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+    <dt><a class="xref" href="DarwinNet.Exceptions.StationCrsNullException.html">StationCrsNullException</a></dt>
+    <dd>When station or filterStation do not have a CRS code associated with them.</dd>
   </dl>
 
 
