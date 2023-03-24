@@ -12,7 +12,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
-          ref: refs/heads/Release-${{ github.event.release.tag_name }}
+          ref: ${{ github.event.release.target_commitish }}
 
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
@@ -37,12 +37,13 @@ jobs:
         run: dotnet nuget push ./DarwinNet/bin/Release/*.nupkg --skip-duplicate -k ${{ secrets.NUGETKEY }} -s https://api.nuget.org/v3/index.json
 
       - name: Create pull request
+        if: github.event_name == 'release' && github.ref != 'refs/heads/master'
         uses: peter-evans/create-pull-request@v3
         with:
-          title: "Merge Release-${{ github.event.release.tag_name }} into master"
-          commit-message: "Merge Release-${{ github.event.release.tag_name }} into master"
+          title: "Merge release-${{ github.event.release.tag_name }} into master"
+          commit-message: "Merge release-${{ github.event.release.tag_name }} into master"
           branch: master
-          base: Release-${{ github.event.release.tag_name }}
+          base: release-${{ github.event.release.tag_name }}
           body: |
             - Include release artifacts:
               - DarwinNet/bin/Release/*.nupkg
