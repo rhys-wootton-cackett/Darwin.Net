@@ -37,7 +37,7 @@ jobs:
         run: dotnet nuget push ./DarwinNet/bin/Release/*.nupkg --skip-duplicate -k ${{ secrets.NUGETKEY }} -s https://api.nuget.org/v3/index.json
 
       - name: Create pull request
-        if: github.event_name == 'release' && github.ref != 'refs/heads/master'
+        if: github.event_name == 'release' && "${{ github.event.release.target_commitish }}" != "master"
         uses: peter-evans/create-pull-request@v3
         with:
           title: "Merge release-${{ github.event.release.tag_name }} into master"
