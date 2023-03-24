@@ -2,6 +2,9 @@ name: Build and Test Darwin.Net
 
 on:
   push:
+    paths-ignore:
+      - "docs/**"
+      - ".gitassets/**"
 
 jobs:
   build-and-test:
