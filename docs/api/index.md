@@ -1,2 +1,3 @@
-# PLACEHOLDER
-TODO: Add .NET projects to the *src* folder and run `docfx` to generate **REAL** *API Documentation*!
+# API Reference
+
+Welcome to the Darwin.Net API documentation. You will find namespaces, and within those classes, related to Darwin.Net.

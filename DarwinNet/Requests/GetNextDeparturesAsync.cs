@@ -12,6 +12,15 @@ namespace DarwinNet.Requests
 {
     public partial class Requests : IRequests
     {
+        /// <summary>
+        /// Returns the next public departure for the supplied station within a defined time window to the locations specified in the filter.
+        /// </summary>
+        /// <param name="station">The <see cref="Station"/> for which the request is being made.</param>
+        /// <param name="timeWindow">How far into the past or future, in minutes (relative to <paramref name="timeOffset"/>), to return services for. Has to be between -120 and 120 minutes exclusive.</param>
+        /// <param name="filterList">A list of <see cref="Station"/> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.</param>
+        /// <param name="timeOffset">An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </param>
+        /// <returns>A <see cref="DeparturesBoard"/> object containing the requested details.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">When timeWindow, filterList or timeOffset are out of range.</exception>
         public Task<DeparturesBoard> GetNextDeparturesAsync(Station station, IList<Station> filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)
         {
             // Check that params are valid, if not throw exceptions or handle them elsewhere

@@ -1,2 +1,8 @@
 - name: Preamble
   href: preamble.md
+- name: Getting Started
+  items:
+    - name: Build Locally
+      href: getting_started/build.md
+    - name: Using Darwin.Net
+      href: getting_started/using.md

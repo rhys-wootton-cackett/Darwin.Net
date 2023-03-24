@@ -15,7 +15,7 @@ namespace DarwinNet
         /// <summary>
         /// The collection of request methods that can be used to make requests to the Darwin API.
         /// </summary>
-        public IRequests Requests { get; private set; }
+        public Requests.Requests Requests { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Darwin"/> class with default configurations.

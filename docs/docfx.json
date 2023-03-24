@@ -3,18 +3,16 @@
     {
       "src": [
         {
-          "files": [
-            "**/Darwin.Net.csproj"
-          ],
-          "src": "../"
+          "src": "../",
+          "files": "DarwinNet/**/*.csproj",
+          "exclude": [
+            "**/obj/**",
+            "_site/**"
+          ]
         }
       ],
       "dest": "api",
-      "includePrivateMembers": false,
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "noRestore": false,
-      "namespaceLayout": "flattened"
+      "shouldSkipMarkup": true
     }
   ],
   "build": {
@@ -31,6 +29,10 @@
           "articles/**/toc.yml",
           "toc.yml",
           "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
@@ -38,6 +40,10 @@
       {
         "files": [
           "images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
@@ -52,15 +58,27 @@
         ]
       }
     ],
-    "dest": "",
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Darwin.Net",
+      "_appName": "Darwin.Net",
+      "_appFooter": "© 2023 Darwin.Net Contributors",
+      "_appLogoPath": "images/logo.png",
+      "_appFaviconPath": "images/favicon.ico",
+      "_enableSearch": "true"
+    },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "modern",
+      "memberpage"
     ],
-    "postProcessors": [],
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
     "noLangKeyword": false,
     "keepFileLink": false,
-    "disableGitFeatures": false
+    "cleanupCacheHistory": false
   }
 }

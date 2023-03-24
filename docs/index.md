@@ -1,9 +1,4 @@
----
-uid: index
-title: DSharpPlus Documentation
----
-
-<img class="logo-center" src="images/Long Logo.svg" alt="DSharpPlus Logo" width=500>
+<img class="logo-center" src="images/longlogo.svg" alt="Darwin.Net Logo" width=500>
 <h1 class="delet-this">Darwin.Net Documentation</h1>
 
 [Darwin.Net][1] (D#+) is a powerful and user-friendly C# wrapper for the [National Rail UK Darwin][5] OpenLDBWS API.

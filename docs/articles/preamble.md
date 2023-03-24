@@ -1,5 +1,3 @@
-
-
 # Preamble
 
 To utilize this wrapper, it's essential to have a solid grasp of Object Oriented Programming, the C# programming language, and Task-based Asynchronous Pattern. It is also advised that you have a good understanding of the Darwin system used by National Rail UK, and what content it can deliver depending on what you request.

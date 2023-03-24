@@ -31,7 +31,7 @@ namespace DarwinNet.Requests
         /// </summary>
         /// <param name="client">The HTTP client used for making requests to the API.</param>
         /// <param name="config">The configuration for the API.</param>
-        public Requests(HttpClient client, Configuration config)
+        internal Requests(HttpClient client, Configuration config)
         {
             this._client = client;
             this._config = config;

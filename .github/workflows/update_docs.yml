@@ -1,4 +1,4 @@
-name: Update Documentation
+name: Build and Publish Darwin.Net Documentation
 
 on:
   push:
@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        ref: master
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
@@ -26,11 +24,19 @@ jobs:
     - name: Build documentation
       run: |
         export PATH="$HOME/.dotnet/tools:$PATH"
-        docfx docs/docfx.json --output out --trace
-        
+        docfx docs/docfx.json
+
+    - name: Configure Git
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"        
+                
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.5
+      uses: JamesIves/github-pages-deploy-action@4.1.6
       with:
         branch: gh-pages
-        folder: out
+        folder: docs/_site
         token: ${{ secrets.PAT }}

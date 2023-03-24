@@ -48,7 +48,7 @@ Its features include:
 - **Asynchronous Requests**: Leverage the power of async/await to make non-blocking requests.
 - **HttpClient**: By using HttpClient instead of SOAP/WCF, Darwin.Net benefits from improved performance, better resource management, and modern networking capabilities. HttpClient is lighter, faster, and more flexible than its alternatives, making it the ideal choice for a contemporary C# wrapper.
 - **Multi-platform Support**: Harness the cross-platform capabilities of .NET to deploy applications using Darwin.Net on a wide range of operating systems, including Windows, macOS, and Linux.
-- **Zero Dependencies**: Darwin.Net library is self-contained and does not rely on any external packages, making it easy to integrate and maintain in your projects."
+- **Zero Dependencies**: Darwin.Net library is self-contained and does not rely on any external packages, making it easy to integrate and maintain in your projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,9 +56,9 @@ Its features include:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy built, follow these simple example steps.
+### Build Locally
 
-### Installation
+To get a local copy built, follow these simple example steps.
 
 1. Obtain an API key from [National Rail Enquiries](http://realtime.nationalrail.co.uk/OpenLDBWSRegistration/)
 2. Clone the repository
@@ -85,14 +85,14 @@ To get a local copy built, follow these simple example steps.
 
 To get started, this single line of code will give you access to all the requests that Darwin.Net can make:
 
-```c#
+```csharp
 Darwin.Net.Darwin darwin = new Darwin.Net.Darwin();
 ```
 
 From here, you are able to call some of the following requests:
 
 ##### Get up to 10 arrivals at a station for the next 90 minutes
-```c#
+```csharp
 int maxArrivals = 10;
 Station station = Station.LondonBridge;
 TimeSpan timeWindow = TimeSpan.FromMinutes(90);
@@ -101,17 +101,17 @@ StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, 
 ```
 
 ##### Get up to 5 departures at a station within the last hour with specific calling points
-```c#
+```csharp
 int maxArrivals = 5;
 Station station = Station.GlasgowCentral;
 TimeSpan timeWindow = TimeSpan.FromMinutes(60);
 TimeSpan offset = TimeSpan.FromMinutes(-60);
 
-StationBoardWithDetails response = await darwin.Requests.GetDepartureBoardWithDetailsAsync(maxArrivals, station, timeWindow, timeOffset = offset);
+StationBoardWithDetails response = await darwin.Requests.GetDepartureBoardWithDetailsAsync(maxArrivals, station, timeWindow, timeOffset: offset);
 ```
 
 ##### Get the next fastest services from a station to a list of station within the next 30 minutes
-```c#
+```csharp
 Station station = Station.LondonEuston;
 List<Station> stationList = new List<Station>() {
   Station.Coventry,
@@ -124,13 +124,13 @@ DeparturesBoardWithDetails response = await darwin.Requests.GetFastestDepartures
 ```
 
 ##### Get specific services details
-```c#
+```csharp
 int maxArrivals = 5;
 Station station = Station.GlasgowCentral;
 TimeSpan timeWindow = TimeSpan.FromMinutes(60);
 TimeSpan offset = TimeSpan.FromMinutes(-60);
 
-StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow, timeOffset = offset);
+StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow, timeOffset: offset);
 ServiceDetails service = await darwin.Requests.GetServiceDetailsAsync(response.TrainServices[0].RetailServiceId);
 ```
 
