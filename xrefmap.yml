@@ -13,15 +13,15 @@ references:
   commentId: T:DarwinNet.Darwin
   fullName: DarwinNet.Darwin
   nameWithType: Darwin
-- uid: DarwinNet.Darwin.#ctor
-  name: Darwin()
-  href: api/DarwinNet.Darwin.html#DarwinNet_Darwin__ctor
-  commentId: M:DarwinNet.Darwin.#ctor
-  name.vb: New()
-  fullName: DarwinNet.Darwin.Darwin()
-  fullName.vb: DarwinNet.Darwin.New()
-  nameWithType: Darwin.Darwin()
-  nameWithType.vb: Darwin.New()
+- uid: DarwinNet.Darwin.#ctor(System.String)
+  name: Darwin(string)
+  href: api/DarwinNet.Darwin.html#DarwinNet_Darwin__ctor_System_String_
+  commentId: M:DarwinNet.Darwin.#ctor(System.String)
+  name.vb: New(String)
+  fullName: DarwinNet.Darwin.Darwin(string)
+  fullName.vb: DarwinNet.Darwin.New(String)
+  nameWithType: Darwin.Darwin(string)
+  nameWithType.vb: Darwin.New(String)
 - uid: DarwinNet.Darwin.#ctor*
   name: Darwin
   href: api/DarwinNet.Darwin.html#DarwinNet_Darwin__ctor_

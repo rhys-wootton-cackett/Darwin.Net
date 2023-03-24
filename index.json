@@ -2,7 +2,7 @@
   "api/DarwinNet.Darwin.html": {
     "href": "api/DarwinNet.Darwin.html",
     "title": "Class Darwin | Darwin.Net",
-    "keywords": "Class Darwin Namespace DarwinNet Assembly DarwinNet.dll Represents the main class for accessing Darwin API services. public class Darwin Inheritance object Darwin Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Darwin() Initializes a new instance of the Darwin class with default configurations. public Darwin() Properties Requests The collection of request methods that can be used to make requests to the Darwin API. public Requests Requests { get; } Property Value Requests"
+    "keywords": "Class Darwin Namespace DarwinNet Assembly DarwinNet.dll Represents the main class for accessing Darwin API services. public class Darwin Inheritance object Darwin Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Darwin(string) Initializes a new instance of the Darwin class with default configurations. public Darwin(string apiKey) Parameters apiKey string Your API key to access the service Properties Requests The collection of request methods that can be used to make requests to the Darwin API. public Requests Requests { get; } Property Value Requests"
   },
   "api/DarwinNet.Exceptions.html": {
     "href": "api/DarwinNet.Exceptions.html",
