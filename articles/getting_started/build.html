@@ -2,26 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Darwin.Net Documentation | Darwin.Net </title>
+      <title>Build Locally | Darwin.Net </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Darwin.Net Documentation | Darwin.Net ">
+      <meta name="title" content="Build Locally | Darwin.Net ">
       
-      <link rel="icon" href="images/favicon.ico">
-      <link rel="stylesheet" href="styles/docfx.min.css">
-      <link rel="stylesheet" href="styles/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.min.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
-      <meta name="docfx:rel" content="">
-      <meta name="docfx:docurl" content="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/index.md/#L1">
+      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:docurl" content="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/articles/getting_started/build.md/#L1">
   </head>
 
   <body data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="images/logo.png" alt="Darwin.Net">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.png" alt="Darwin.Net">
             Darwin.Net
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,20 +60,33 @@
         </div>
 
         <article data-uid="">
+<h3 id="build-locally">Build Locally</h3>
 
-<img class="logo-center" src="images/longlogo.svg" alt="Darwin.Net Logo" width="500">
-<h1 class="delet-this">Darwin.Net Documentation</h1>
-<p><a href="https://github.com/rhys-wootton/Darwin.Net" title="Darwin.Net - GitHub">Darwin.Net</a> (D#+) is a powerful and user-friendly C# wrapper for the <a href="https://www.nationalrail.co.uk/100296.aspx" title="National Rail Enquiries - Darwin Data Feeds">National Rail UK Darwin</a> OpenLDBWS API.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>New users are recommended to head over to <a href="/articles/preamble.html">articles</a> for quick start guides, tutorials, and examples of use. Once you've gotten through the articles, head on over to the <a href="/api/">API Documentation</a> for all classes and methods provided by Darwin.Net.</p>
-<h2 id="source-and-contributors">Source and Contributors</h2>
-<p>Darwin.Net is licensed under GNU Affero General Public License v3.0 License, as detailed in the <a href="https://github.com/rhys-wootton/Darwin.Net/blob/master/LICENSE.txt" title="Darwin.Net License">license</a> found in the repository.<br></p>
-<p>The repository containing the source code for this library can be found <a href="https://github.com/rhys-wootton/Darwin.Net" title="Darwin.Net - GitHub">here</a>. Contributions are welcomed.</p>
-<!-- LINKS -->
+<p>To get a local copy built, follow these simple example steps.</p>
+<ol>
+<li>Obtain an API key from <a href="http://realtime.nationalrail.co.uk/OpenLDBWSRegistration/">National Rail Enquiries</a></li>
+<li>Clone the repository
+<pre><code class="lang-sh">git clone https://github.com/rhys-wootton/Darwin.Net.git
+</code></pre>
+</li>
+<li>Create an <code>app.config</code> file within the Darwin.Net project and add the following
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+ &lt;configuration&gt;
+     &lt;appSettings&gt;
+         &lt;add key=&quot;DarwinApiKey&quot; value=&quot;YOUR_API_KEY&quot; /&gt;
+         &lt;add key=&quot;DarwinUrl&quot; value=&quot;https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb12.asmx&quot;/&gt;
+         &lt;add key=&quot;DarwinActionNameUrl&quot; value=&quot;http://thalesgroup.com/RTTI/2021-11-01/ldb/&quot;/&gt;
+         &lt;add key=&quot;DarwinTokenTypeUrl&quot; value=&quot;http://thalesgroup.com/RTTI/2013-11-28/Token/types&quot;/&gt;
+     &lt;/appSettings&gt;
+ &lt;/configuration&gt;
+</code></pre>
+</li>
+<li>Build  the project</li>
+</ol>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/articles/getting_started/build.md/#L1" class="edit-link">Edit this page</a>
         </div>
       </div>
 
@@ -92,7 +105,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="styles/docfx.min.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.min.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

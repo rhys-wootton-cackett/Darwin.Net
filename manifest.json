@@ -4,12 +4,306 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Darwin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Darwin.html",
+          "hash": "wxoBYAguziQxaK7e2Hv9I67sa0gdMPutrUYC6SKEubY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Exceptions.InvalidDarwinDataException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Exceptions.InvalidDarwinDataException.html",
+          "hash": "2m8WAgIZxW9NgV7seF63lFqhyAOTMm++MNMthCkwn5c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Exceptions.StationCrsNullException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Exceptions.StationCrsNullException.html",
+          "hash": "BnNzR4RNn3iKSxy+lE3Wq+p30CXyl6Iy5wg3yOceou8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Exceptions.html",
+          "hash": "3+z3D44blHpqCHLrpiwsFRec21gsMC4A6Wx5fAV1FHE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.CallingPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.CallingPoint.html",
+          "hash": "rFjgihSN6xbGiAYdR4CLAyxygKs99SyPEdO0y8GgPCo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.CoachClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.CoachClass.html",
+          "hash": "oQoxBDsEiXJ3qTQtrvrkXs70QdddNUTav2N7JNTueyw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.CoachData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.CoachData.html",
+          "hash": "zfofaRLSr3Z187Yj/WHqnvBLwLtwMfZs5v0epX4MZao="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.DepartureItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.DepartureItem.html",
+          "hash": "T6hB0KSGfvHkuHX1I5Wgs5cfG5E3k8DFV2+ySeNSiDI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.DepartureItemWithCallingPoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.DepartureItemWithCallingPoints.html",
+          "hash": "rFgeSZmx1YkRSl/vKLhfP5HWUxtZZAgS3v+H3IRbNC4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.DeparturesBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.DeparturesBoard.html",
+          "hash": "6Rhh+K2xHNuP5RH+SJP+eqVKrIJZiGaNGu8b2F6W3GE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.DeparturesBoardWithDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.DeparturesBoardWithDetails.html",
+          "hash": "+WNiERXkDwawcbSBzueDUA7ourZczfTiLst6jz7D92I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.FilterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.FilterType.html",
+          "hash": "FkHz1cx0+92xnKb9Vpol020zyu0taa9kCbfWNIyVRfU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.FormationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.FormationData.html",
+          "hash": "yEealJLfQ+gHCIliRxlZHByA4hl8D1DETIjeejUwYRg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.ServiceDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.ServiceDetails.html",
+          "hash": "fRFzhYIxyG+y270cqh9Y83H7pavzmaeboBWz9oBGyOw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.ServiceItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.ServiceItem.html",
+          "hash": "HVGKWz7x5KqHxdkn1CkgKgwaHk+aIR599cLruJlP+rA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.ServiceItemWithCallingPoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.ServiceItemWithCallingPoints.html",
+          "hash": "RVYYqX73d+QM+rvTB1QuFtKeSZQRZfPmEA+4Uqw1KXs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.ServiceLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.ServiceLocation.html",
+          "hash": "iv86Y0ajkICqMIMqgw+r1IUgNxANJ76JDWKVucAE8Hw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.ServiceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.ServiceType.html",
+          "hash": "OH+7G9uBUnuVyRrRQ+9LcUi/QPimN7QuULJDUSJtCCg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.Station.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.Station.html",
+          "hash": "uJmyTMs0dl5MErcobTnJxroownNyPWXjujTy+p+S1Ek="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.StationBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.StationBoard.html",
+          "hash": "5XSC6dOsHB68rFTFyI33sfljHlkYXJGIgszl0d/vJ7k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.StationBoardWithDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.StationBoardWithDetails.html",
+          "hash": "RLVKTc8dd1vFqOzogEkLYAkwZKaaUXwWNmA8+n8TP1U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.Toilet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.Toilet.html",
+          "hash": "Iu2WPS3XShVkIIg0mH4A3MBPj1aFdnttJHp10qTrFTM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Objects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Objects.html",
+          "hash": "os2elqwjSoLETOPv/VnelcXuuQBQaa+e3O6k19VX2MA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Requests.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Requests.Requests.html",
+          "hash": "Qzjdaob6upOHVD3UnVEYAuzbYyaa9jtfRaF39COmyHs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.Requests.html",
+          "hash": "KfvblDGILzmnmkVZSUK3QlM0asidI7YhZv079WXEPL4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DarwinNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DarwinNet.html",
+          "hash": "VYAOkKkg5RikYojTkc1LM1B087fnayCb5umbbON7c4Y="
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "ZN2mGafjXMkODzOpjEuzcFg2PiYx4NI2SXoQaLFunmg="
+          "hash": "pl94g+c+yI/FEzHVlVZwkr0wBkvju47qj6+FmQH1p5Q="
         }
       },
       "version": ""
@@ -20,7 +314,33 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4UDdSckGDkJN65C6llSR4aNeh30x5vKCcrt49S47oZk="
+          "hash": "ursvgpoNxceOeiurH4oN01D48KTre+xj72IeWWmPYKU="
+        },
+        ".json": {
+          "relative_path": "api/toc.json",
+          "hash": "Fk3/UfSZk1YEoTWylz6bjapQAK4GbaggcYIDMrIIc78="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/build.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/build.html",
+          "hash": "9QSNlhQitlKIBTbKKZrOr8jwcoS9tdFwvARkvq4f5g8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/using.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/using.html",
+          "hash": "OUxj5dapfXoiyB1+NVXTVG56mu4LsRpF+wL7IpYCm/g="
         }
       },
       "version": ""
@@ -31,7 +351,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/preamble.html",
-          "hash": "8DZhYJvbetnuDPa88e434zSm9nq8w2gKf2wsSgSv7eM="
+          "hash": "iTILZLIYSBbzAdDf4+4CjqQgS3Rueonb+uXeouEusQw="
         }
       },
       "version": ""
@@ -42,17 +362,51 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "mI+HVRjKs7IFyBV0Zgvgx5x1Wqa1nZdnPKxKt1dYD/Q="
+          "hash": "c7TnIFYqrg9zUN+rQXVh0jZ1rvHJOnIIUhhYtdPaGno="
+        },
+        ".json": {
+          "relative_path": "articles/toc.json",
+          "hash": "XmM3D+rQgt0IUhSDArAOm0NsXTMFH7yCWceQ68Kw0+4="
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/Long Logo.svg",
+      "source_relative_path": "images/favicon.ico",
       "output": {
         "resource": {
-          "relative_path": "images/Long Logo.svg"
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/longlogo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/longlogo.svg"
         }
       },
       "version": ""
@@ -63,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "cwSBnmUhCYmcVi/ArDdobQBQ96N5hCqDJL2AQX7E7Hc="
+          "hash": "rf1YOTkmZ2VuPKVj3JYAzApMpEMShRt6gIbwUgLOzbM="
         }
       },
       "version": ""
@@ -75,6 +429,10 @@
         ".html": {
           "relative_path": "toc.html",
           "hash": "6EkEvnAoFGj5T1ucfZPzv1fOsbBJFLJTDYWjzLsCyEk="
+        },
+        ".json": {
+          "relative_path": "toc.json",
+          "hash": "hoi0R2KvOP5IpebvfYshMdY+GjPIkUsZSYKez7z989w="
         }
       },
       "version": ""

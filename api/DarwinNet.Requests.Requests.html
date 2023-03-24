@@ -1,0 +1,711 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Requests
+ | Darwin.Net </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Requests
+ | Darwin.Net ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:docurl" content="https://github.com/rhys-wootton/Darwin.Net/new/master/apiSpec/new?filename=DarwinNet_Requests_Requests.md&amp;value=---%0Auid%3A%20DarwinNet.Requests.Requests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <body data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="Darwin.Net">
+            Darwin.Net
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="d-flex ms-auto" role="search" id="search">
+              <i class="bi bi-search"></i>
+              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DarwinNet.Requests.Requests">
+
+
+  <h1 id="DarwinNet_Requests_Requests" data-uid="DarwinNet.Requests.Requests" class="text-break">
+    Class Requests
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/Requests.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DarwinNet.html">DarwinNet</a>.<a class="xref" href="DarwinNet.Requests.html">Requests</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>DarwinNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary">
+Represents a collection of methods for making requests to the Darwin API.
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Requests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Requests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <a id="DarwinNet_Requests_Requests_GetArrivalBoardAsync_" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetArrivalBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetArrivalBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public arrivals for the supplied station within a defined time window.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoard&gt; GetArrivalBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetArrivalBoardWithDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardWithDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetArrivalBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetArrivalBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public arrivals for the supplied station within a defined time window, including service details.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoardWithDetails&gt; GetArrivalBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardAsync_" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetArrivalDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public arrivals and departures for a supplied station within a defined time window.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoard&gt; GetArrivalDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardWithDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetArrivalDepartureBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetArrivalDepartureBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetArrivalDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetArrivalDepartureBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public arrivals and departures for the supplied station within a defined time window, including service details.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoardWithDetails&gt; GetArrivalDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetDepartureBoardAsync_" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetDepartureBoardAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetDepartureBoardAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public departures for the supplied station within a defined time window.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoard&gt; GetDepartureBoardAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 150 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetDepartureBoardWithDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardWithDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetDepartureBoardWithDetailsAsync_System_Int32_DarwinNet_Objects_Station_System_TimeSpan_System_Nullable_DarwinNet_Objects_Station__DarwinNet_Objects_FilterType_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetDepartureBoardWithDetailsAsync(System.Int32,DarwinNet.Objects.Station,System.TimeSpan,System.Nullable{DarwinNet.Objects.Station},DarwinNet.Objects.FilterType,System.Nullable{System.TimeSpan})">
+  GetDepartureBoardWithDetailsAsync(int, Station, TimeSpan, Station?, FilterType, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetDepartureBoardWithDetailsAsync.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns all public departures for the supplied station within a defined time window, including service details.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StationBoardWithDetails&gt; GetDepartureBoardWithDetailsAsync(int numRows, Station station, TimeSpan timeWindow, Station? filterStation = null, FilterType filterType = FilterType.To, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numRows</code> <span class="xref">int</span></dt>
+    <dd>The number of services to return in the resulting station board. Has to be between 0 and 10 exclusive.</dd>
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>filterStation</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a>?</dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> of either an origin or destination location to filter in.</dd>
+    <dt><code>filterType</code> <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.FilterType.html">FilterType</a> to apply. Filters services to include only those originating or terminating at the <code data-dev-comment-type="paramref" class="paramref">filterStation</code>. Defaults to &quot;<a class="xref" href="DarwinNet.Objects.FilterType.html#DarwinNet_Objects_FilterType_To">To</a>&quot;.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When numRows, timeWindow or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetFastestDeparturesAsync_" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetFastestDeparturesAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
+  GetFastestDeparturesAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns the public departure for the supplied station a defined time window to the locations specified in the filter with the earliest arrival time at the filtered location.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeparturesBoard&gt; GetFastestDeparturesAsync(Station station, IList&lt;Station&gt; filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>filterList</code> <span class="xref">IList</span>&lt;<a class="xref" href="DarwinNet.Objects.Station.html">Station</a>&gt;</dt>
+    <dd>A list of <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.DeparturesBoard.html">DeparturesBoard</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.DeparturesBoard.html">DeparturesBoard</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetFastestDeparturesWithDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesWithDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetFastestDeparturesWithDetailsAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetFastestDeparturesWithDetailsAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
+  GetFastestDeparturesWithDetailsAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetFastestDeparturesWithDetailsAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns the public departure for the supplied station a defined time window to the locations specified in the filter with the earliest arrival time at the filtered location, including service details.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeparturesBoardWithDetails&gt; GetFastestDeparturesWithDetailsAsync(Station station, IList&lt;Station&gt; filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>filterList</code> <span class="xref">IList</span>&lt;<a class="xref" href="DarwinNet.Objects.Station.html">Station</a>&gt;</dt>
+    <dd>A list of <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> values of the destinations location to filter. At least 1 but not greater than 10 must be supplied.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.DeparturesBoardWithDetails.html">DeparturesBoardWithDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.DeparturesBoardWithDetails.html">DeparturesBoardWithDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetNextDeparturesAsync_" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetNextDeparturesAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
+  GetNextDeparturesAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns the next public departure for the supplied station within a defined time window to the locations specified in the filter.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeparturesBoard&gt; GetNextDeparturesAsync(Station station, IList&lt;Station&gt; filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>filterList</code> <span class="xref">IList</span>&lt;<a class="xref" href="DarwinNet.Objects.Station.html">Station</a>&gt;</dt>
+    <dd>A list of <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.DeparturesBoard.html">DeparturesBoard</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.DeparturesBoard.html">DeparturesBoard</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetNextDeparturesWithDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesWithDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetNextDeparturesWithDetailsAsync_DarwinNet_Objects_Station_System_Collections_Generic_IList_DarwinNet_Objects_Station__System_TimeSpan_System_Nullable_System_TimeSpan__" data-uid="DarwinNet.Requests.Requests.GetNextDeparturesWithDetailsAsync(DarwinNet.Objects.Station,System.Collections.Generic.IList{DarwinNet.Objects.Station},System.TimeSpan,System.Nullable{System.TimeSpan})">
+  GetNextDeparturesWithDetailsAsync(Station, IList&lt;Station&gt;, TimeSpan, TimeSpan?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetNextDeparturesWithDetailsAsync.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns the next public departure for the supplied station within a defined time window to the locations specified in the filter, including service details.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeparturesBoardWithDetails&gt; GetNextDeparturesWithDetailsAsync(Station station, IList&lt;Station&gt; filterList, TimeSpan timeWindow, TimeSpan? timeOffset = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>station</code> <a class="xref" href="DarwinNet.Objects.Station.html">Station</a></dt>
+    <dd>The <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> for which the request is being made.</dd>
+    <dt><code>filterList</code> <span class="xref">IList</span>&lt;<a class="xref" href="DarwinNet.Objects.Station.html">Station</a>&gt;</dt>
+    <dd>A list of <a class="xref" href="DarwinNet.Objects.Station.html">Station</a> values of the destinations location to filter. At least 1 but not greater than 15 must be supplied.</dd>
+    <dt><code>timeWindow</code> <span class="xref">TimeSpan</span></dt>
+    <dd>How far into the past or future, in minutes (relative to <code data-dev-comment-type="paramref" class="paramref">timeOffset</code>), to return services for. Has to be between -120 and 120 minutes exclusive.</dd>
+    <dt><code>timeOffset</code> <span class="xref">TimeSpan</span>?</dt>
+    <dd>An offset in minutes against the current time to provide the station board for. Has to be between -120 and 120 minutes exclusive. </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.DeparturesBoardWithDetails.html">DeparturesBoardWithDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.DeparturesBoardWithDetails.html">DeparturesBoardWithDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">System.ArgumentOutOfRangeException</span></dt>
+    <dd>When timeWindow, filterList or timeOffset are out of range.</dd>
+  </dl>
+
+
+
+  <a id="DarwinNet_Requests_Requests_GetServiceDetailsAsync_" data-uid="DarwinNet.Requests.Requests.GetServiceDetailsAsync*"></a>
+
+  <h3 id="DarwinNet_Requests_Requests_GetServiceDetailsAsync_System_String_" data-uid="DarwinNet.Requests.Requests.GetServiceDetailsAsync(System.String)">
+  GetServiceDetailsAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/rhys-wootton/Darwin.Net/blob/master/DarwinNet/Requests/GetServiceDetailsAsync.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary">
+Returns service details for a specific service identified by a station board. These details are supplied relative to the station board from which the serviceID field value was generated. 
+Service details are only available while the service appears on the station board from which it was obtained. This is normally for two minutes after it is expected to have departed, 
+or after a terminal arrival. 
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ServiceDetails&gt; GetServiceDetailsAsync(string serviceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serviceId</code> <span class="xref">string</span></dt>
+    <dd>The service ID of the service to request the details of. The service ID is obtained from a service listed in a StationBoard object returned from any other request.</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<a class="xref" href="DarwinNet.Objects.ServiceDetails.html">ServiceDetails</a>&gt;</dt>
+    <dd>A <a class="xref" href="DarwinNet.Objects.ServiceDetails.html">ServiceDetails</a> object containing the requested details.</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/rhys-wootton/Darwin.Net/new/master/apiSpec/new?filename=DarwinNet_Requests_Requests.md&amp;value=---%0Auid%3A%20DarwinNet.Requests.Requests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+        </div>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Darwin.Net Contributors
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../styles/docfx.min.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Using Darwin.Net | Darwin.Net </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Using Darwin.Net | Darwin.Net ">
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.min.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:docurl" content="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/articles/getting_started/using.md/#L1">
+  </head>
+
+  <body data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.png" alt="Darwin.Net">
+            Darwin.Net
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="d-flex ms-auto" role="search" id="search">
+              <i class="bi bi-search"></i>
+              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="using-darwinnet">Using Darwin.Net</h2>
+
+<p>To get started, this single line of code will give you access to all the requests that Darwin.Net can make:</p>
+<pre><code class="lang-csharp">Darwin.Net.Darwin darwin = new Darwin.Net.Darwin();
+</code></pre>
+<p>From here, you are able to call some of the following requests:</p>
+<h5 id="get-up-to-10-arrivals-at-a-station-for-the-next-90-minutes">Get up to 10 arrivals at a station for the next 90 minutes</h5>
+<pre><code class="lang-csharp">int maxArrivals = 10;
+Station station = Station.LondonBridge;
+TimeSpan timeWindow = TimeSpan.FromMinutes(90);
+
+StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow);
+</code></pre>
+<h5 id="get-up-to-5-departures-at-a-station-within-the-last-hour-with-specific-calling-points">Get up to 5 departures at a station within the last hour with specific calling points</h5>
+<pre><code class="lang-csharp">int maxArrivals = 5;
+Station station = Station.GlasgowCentral;
+TimeSpan timeWindow = TimeSpan.FromMinutes(60);
+TimeSpan offset = TimeSpan.FromMinutes(-60);
+
+StationBoardWithDetails response = await darwin.Requests.GetDepartureBoardWithDetailsAsync(maxArrivals, station, timeWindow, timeOffset: offset);
+</code></pre>
+<h5 id="get-the-next-fastest-services-from-a-station-to-a-list-of-station-within-the-next-30-minutes">Get the next fastest services from a station to a list of station within the next 30 minutes</h5>
+<pre><code class="lang-csharp">Station station = Station.LondonEuston;
+List&lt;Station&gt; stationList = new List&lt;Station&gt;() {
+  Station.Coventry,
+  Station.WatfordJunction,
+  Station.MiltonKeynesCentral
+};
+TimeSpan timeWindow = TimeSpan.FromMinutes(30);
+
+DeparturesBoardWithDetails response = await darwin.Requests.GetFastestDeparturesWithDetailsAsync(station, stationList, timeWindow);
+</code></pre>
+<h5 id="get-specific-services-details">Get specific services details</h5>
+<pre><code class="lang-csharp">int maxArrivals = 5;
+Station station = Station.GlasgowCentral;
+TimeSpan timeWindow = TimeSpan.FromMinutes(60);
+TimeSpan offset = TimeSpan.FromMinutes(-60);
+
+StationBoard response = await darwin.Requests.GetArrivalBoardAsync(maxArrivals, station, timeWindow, timeOffset: offset);
+ServiceDetails service = await darwin.Requests.GetServiceDetailsAsync(response.TrainServices[0].RetailServiceId);
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/rhys-wootton/Darwin.Net/blob/master/docs/articles/getting_started/using.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Darwin.Net Contributors
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../../styles/docfx.min.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
