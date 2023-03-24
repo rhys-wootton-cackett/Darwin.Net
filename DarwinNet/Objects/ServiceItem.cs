@@ -21,22 +21,22 @@ namespace DarwinNet.Objects
         public string? RetailServiceId { get; internal set; }
 
         /// <summary>
-        /// A <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving original origins of this service.
+        /// A <see cref="IList{ServiceLocation}"/> of <see cref="ServiceLocation"/> giving original origins of this service.
         /// </summary>        
         public IList<ServiceLocation> Origin { get; internal set; } = new List<ServiceLocation>();
 
         /// <summary>
-        /// A <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving original destinations of this service.
+        /// A <see cref="IList{ServiceLocation}"/> of <see cref="ServiceLocation"/> giving original destinations of this service.
         /// </summary>        
         public IList<ServiceLocation> Destination { get; internal set; } = new List<ServiceLocation>();
 
         /// <summary>
-        /// An optional <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving live/current origins of this service which is not starting at original cancelled origins.
+        /// An optional <see cref="IList{ServiceLocation}"/> of <see cref="ServiceLocation"/> giving live/current origins of this service which is not starting at original cancelled origins.
         /// </summary>        
         public IList<ServiceLocation>? CurrentOrigins { get; internal set; }
 
         /// <summary>
-        /// An optional <see cref="IList{}"/> of <see cref="ServiceLocation"/> giving live/current destinations of this service which is not starting at original cancelled destinations.
+        /// An optional <see cref="IList{ServiceLocation}"/> of <see cref="ServiceLocation"/> giving live/current destinations of this service which is not starting at original cancelled destinations.
         /// </summary>         
         public IList<ServiceLocation>? CurrentDestinations { get; internal set; }
 
