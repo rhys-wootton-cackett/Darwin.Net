@@ -24,15 +24,7 @@ jobs:
     - name: Build documentation
       run: |
         export PATH="$HOME/.dotnet/tools:$PATH"
-        docfx docs/docfx.json
-
-    - name: Configure Git
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-      run: |
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"        
+        docfx docs/docfx.json    
                 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.6
