@@ -11,14 +11,14 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Create app.config file
-      run: echo '<?xml version="1.0" encoding="utf-8" ?> \
-        <configuration> 
-            <appSettings> 
+      run: echo '<?xml version="1.0" encoding="utf-8" ?>
+        <configuration>
+            <appSettings>
                 <add key="DarwinApiKey" value="${{ secrets.DARWINDEVKEY }}" />
-                <add key="DarwinUrl" value="https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb12.asmx"/> 
-                <add key="DarwinActionNameUrl" value="http://thalesgroup.com/RTTI/2021-11-01/ldb/"/> 
-                <add key="DarwinTokenTypeUrl" value="http://thalesgroup.com/RTTI/2013-11-28/Token/types"/> 
-            </appSettings> 
+                <add key="DarwinUrl" value="https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb12.asmx"/>
+                <add key="DarwinActionNameUrl" value="http://thalesgroup.com/RTTI/2021-11-01/ldb/"/>
+                <add key="DarwinTokenTypeUrl" value="http://thalesgroup.com/RTTI/2013-11-28/Token/types"/>
+            </appSettings>
         </configuration>' > DarwinNet/app.config
       env:
         MY_SECRET: ${{ secrets.DARWINDEVKEY }}
