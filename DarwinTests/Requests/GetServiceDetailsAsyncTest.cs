@@ -15,7 +15,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = 1;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             DateTime requestTimeWindow = DateTime.UtcNow.Add(timeWindow);
 

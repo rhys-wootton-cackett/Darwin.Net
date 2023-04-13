@@ -14,7 +14,7 @@ namespace DarwinTests.Requests
         public async Task GetFastestDeparturesAsync_ValidParams_ReturnsDeparturesBoardWithValidData()
         {
             // Arrange
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             List<Station> stationList = new() { Station.LondonBridge, Station.WestHampsteadThameslink };
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             DateTime requestTimeWindow = DateTime.UtcNow.Add(timeWindow);
@@ -37,7 +37,7 @@ namespace DarwinTests.Requests
         public void GetFastestDeparturesAsync_InvalidFilterList_ThrowsArgumentOutOfRangeException()
         {
             // Arrange
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             List<Station> stationList = new();
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
 
@@ -49,7 +49,7 @@ namespace DarwinTests.Requests
         public void GetFastestDeparturesAsync_InvalidTimeWindow_ThrowsArgumentOutOfRangeException()
         {
             // Arrange
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             List<Station> stationList = new();
             TimeSpan timeWindow = TimeSpan.FromMinutes(-150);
 
@@ -61,7 +61,7 @@ namespace DarwinTests.Requests
         public async Task GetFastestDeparturesAsync_TimeOffset_ReturnsDeparturesBoardWithValidData()
         {
             // Arrange
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             List<Station> stationList = new() { Station.LondonBridge, Station.WestHampsteadThameslink };
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             TimeSpan timeOffset = TimeSpan.FromMinutes(-30);

@@ -15,7 +15,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = 5;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             DateTime requestTimeWindow = DateTime.UtcNow.Add(timeWindow);
 
@@ -38,7 +38,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = -1;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
 
             // Act and Assert
@@ -50,7 +50,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = 5;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(-150);
 
             // Act and Assert
@@ -62,7 +62,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = 5;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             Station filterStation = Station.LondonBridge;
             DateTime requestTimeWindow = DateTime.UtcNow.Add(timeWindow);
@@ -86,7 +86,7 @@ namespace DarwinTests.Requests
         public async Task GetDepartureBoardWithDetailsAsync_FilterType_ReturnsStationBoardWithDetailsWithValid()
         {
             int numRows = 5;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             Station filterStation = Station.LondonBridge;
             FilterType filterType = FilterType.From;
@@ -112,7 +112,7 @@ namespace DarwinTests.Requests
         {
             // Arrange
             int numRows = 5;
-            Station station = Station.LondonStPancrasInternational;
+            Station station = Station.LondonStPancrasIntl;
             TimeSpan timeWindow = TimeSpan.FromMinutes(60);
             TimeSpan timeOffset = TimeSpan.FromMinutes(-30);
             DateTime requestTimeWindow = DateTime.UtcNow.Add(timeWindow).Add(timeOffset);
