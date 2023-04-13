@@ -30,9 +30,11 @@ namespace DarwinNet.Objects
         [StringValue("AGV")]
         Abergavenny,
         [StringValue("AGL")]
-        AbergeleAndPensarn,
+        AbergelePensarn,
         [StringValue("AYW")]
         Aberystwyth,
+        [StringValue("XAE")]
+        AbingdonBus,
         [StringValue("ACR")]
         Accrington,
         [StringValue("AAT")]
@@ -48,7 +50,7 @@ namespace DarwinNet.Objects
         [StringValue("ACG")]
         AcocksGreen,
         [StringValue("ACB")]
-        ActonBridgeCheshire,
+        ActonBridge,
         [StringValue("ACC")]
         ActonCentral,
         [StringValue("AML")]
@@ -64,7 +66,7 @@ namespace DarwinNet.Objects
         [StringValue("ADC")]
         AdlingtonCheshire,
         [StringValue("ADL")]
-        AdlingtonLancs,
+        AdlingtonLancashire,
         [StringValue("AWK")]
         Adwick,
         [StringValue("AIG")]
@@ -106,17 +108,19 @@ namespace DarwinNet.Objects
         [StringValue("ALM")]
         Alnmouth,
         [StringValue("ALR")]
-        AlresfordEssex,
+        Alresford,
         [StringValue("ASG")]
         Alsager,
         [StringValue("ALN")]
-        AlthorneEssex,
+        Althorne,
         [StringValue("ALP")]
         Althorpe,
         [StringValue("ABC")]
         Altnabreac,
         [StringValue("AON")]
         Alton,
+        [StringValue("ATW")]
+        AltonTowersBus,
         [StringValue("ALT")]
         Altrincham,
         [StringValue("ALV")]
@@ -129,6 +133,10 @@ namespace DarwinNet.Objects
         Amersham,
         [StringValue("AMF")]
         Ammanford,
+        [StringValue("AMD")]
+        AmpfieldSchoolBus,
+        [StringValue("AMS")]
+        AmsterdamCs,
         [StringValue("ANC")]
         Ancaster,
         [StringValue("AND")]
@@ -137,6 +145,8 @@ namespace DarwinNet.Objects
         Andover,
         [StringValue("ANZ")]
         Anerley,
+        [StringValue("AGR")]
+        AngelRoad,
         [StringValue("ANG")]
         Angmering,
         [StringValue("ANN")]
@@ -144,7 +154,7 @@ namespace DarwinNet.Objects
         [StringValue("ANL")]
         Anniesland,
         [StringValue("AFV")]
-        AnsdellAndFairhaven,
+        AnsdellFairhaven,
         [StringValue("APY")]
         ApperleyBridge,
         [StringValue("APP")]
@@ -178,7 +188,9 @@ namespace DarwinNet.Objects
         [StringValue("ARL")]
         Arlesey,
         [StringValue("ARM")]
-        ArmadaleWestLothian,
+        Armadale,
+        [StringValue("ARA")]
+        ArmadaleBus,
         [StringValue("AWT")]
         Armathwaite,
         [StringValue("ARN")]
@@ -186,11 +198,11 @@ namespace DarwinNet.Objects
         [StringValue("ARR")]
         Arram,
         [StringValue("ART")]
-        ArrocharAndTarbet,
+        ArrocharTarbet,
         [StringValue("ARU")]
         Arundel,
         [StringValue("ACT")]
-        AscotBerks,
+        Ascot,
         [StringValue("AUW")]
         AscottUnderWychwood,
         [StringValue("ASH")]
@@ -200,15 +212,13 @@ namespace DarwinNet.Objects
         [StringValue("ABY")]
         Ashburys,
         [StringValue("ASC")]
-        AshchurchforTewkesbury,
+        AshchurchForTewkesbury,
         [StringValue("ASF")]
         Ashfield,
         [StringValue("AFS")]
         AshfordSurrey,
         [StringValue("AFK")]
         AshfordInternational,
-        [StringValue("ASI")]
-        AshfordInternationalEurostar,
         [StringValue("ASY")]
         Ashley,
         [StringValue("AHD")]
@@ -216,11 +226,11 @@ namespace DarwinNet.Objects
         [StringValue("AHN")]
         AshtonUnderLyne,
         [StringValue("AHS")]
-        AshurstKent,
+        Ashurst,
         [StringValue("ANF")]
         AshurstNewForest,
         [StringValue("AWM")]
-        AshwellAndMorden,
+        AshwellMorden,
         [StringValue("ASK")]
         Askam,
         [StringValue("ALK")]
@@ -239,6 +249,8 @@ namespace DarwinNet.Objects
         Attadale,
         [StringValue("ATB")]
         Attenborough,
+        [StringValue("ATE")]
+        AttercliffeTram,
         [StringValue("ATL")]
         Attleborough,
         [StringValue("AUK")]
@@ -247,8 +259,12 @@ namespace DarwinNet.Objects
         AudleyEnd,
         [StringValue("AUG")]
         AughtonPark,
+        [StringValue("XAF")]
+        AveburyBus,
         [StringValue("AVM")]
         Aviemore,
+        [StringValue("AVI")]
+        Avignon,
         [StringValue("AVF")]
         Avoncliff,
         [StringValue("AVN")]
@@ -275,6 +291,10 @@ namespace DarwinNet.Objects
         Baildon,
         [StringValue("BIO")]
         Baillieston,
+        [StringValue("ZBS")]
+        BakerStreetUnderground,
+        [StringValue("BKZ")]
+        BakewellBus,
         [StringValue("BAB")]
         Balcombe,
         [StringValue("BDK")]
@@ -302,7 +322,7 @@ namespace DarwinNet.Objects
         [StringValue("BSS")]
         Barassie,
         [StringValue("ZBB")]
-        Barbican,
+        BarbicanUnderground,
         [StringValue("BLL")]
         BardonMill,
         [StringValue("BAR")]
@@ -313,8 +333,14 @@ namespace DarwinNet.Objects
         Bargoed,
         [StringValue("BKG")]
         Barking,
+        [StringValue("BGV")]
+        BarkingRiverside,
+        [StringValue("ZBK")]
+        BarkingUnderground,
         [StringValue("BRT")]
         Barlaston,
+        [StringValue("BPL")]
+        BarlastonOrchardPlaceBus,
         [StringValue("BMG")]
         Barming,
         [StringValue("BRM")]
@@ -333,10 +359,14 @@ namespace DarwinNet.Objects
         Barnhill,
         [StringValue("BNY")]
         Barnsley,
+        [StringValue("BNX")]
+        BarnsleyBus,
         [StringValue("BNP")]
         Barnstaple,
         [StringValue("BTG")]
         BarntGreen,
+        [StringValue("ZBC")]
+        BaronsCourtUnderground,
         [StringValue("BRR")]
         Barrhead,
         [StringValue("BRL")]
@@ -362,7 +392,9 @@ namespace DarwinNet.Objects
         [StringValue("BSK")]
         Basingstoke,
         [StringValue("BBL")]
-        BatAndBall,
+        BatBall,
+        [StringValue("XDO")]
+        BathBusStation,
         [StringValue("BTH")]
         BathSpa,
         [StringValue("BHG")]
@@ -403,6 +435,8 @@ namespace DarwinNet.Objects
         BeckenhamJunction,
         [StringValue("BDM")]
         Bedford,
+        [StringValue("XDW")]
+        BedfordBus,
         [StringValue("BSJ")]
         BedfordStJohns,
         [StringValue("BDH")]
@@ -417,6 +451,10 @@ namespace DarwinNet.Objects
         Beeston,
         [StringValue("BKS")]
         Bekesbourne,
+        [StringValue("BFQ")]
+        BelfastDonegallQuayBus,
+        [StringValue("BFA")]
+        BelfastPort,
         [StringValue("BLV")]
         BelleVue,
         [StringValue("BLG")]
@@ -442,9 +480,11 @@ namespace DarwinNet.Objects
         [StringValue("BEN")]
         Bentham,
         [StringValue("BTY")]
-        BentleyHants,
+        BentleyHampshire,
         [StringValue("BYK")]
-        BentleySouthYorks,
+        BentleySouthYorkshire,
+        [StringValue("BNO")]
+        BentonTWMetro,
         [StringValue("BAS")]
         BereAlston,
         [StringValue("BFE")]
@@ -454,7 +494,7 @@ namespace DarwinNet.Objects
         [StringValue("BKW")]
         Berkswell,
         [StringValue("BEP")]
-        BermudaPark,
+        BermudaParkNuneaton,
         [StringValue("BYA")]
         BerneyArms,
         [StringValue("BBW")]
@@ -483,6 +523,8 @@ namespace DarwinNet.Objects
         Bexley,
         [StringValue("BXH")]
         Bexleyheath,
+        [StringValue("XEZ")]
+        BicesterBus,
         [StringValue("BCS")]
         BicesterNorth,
         [StringValue("BIT")]
@@ -498,7 +540,7 @@ namespace DarwinNet.Objects
         [StringValue("BIC")]
         Billericay,
         [StringValue("BIL")]
-        BillinghamCleveland,
+        Billingham,
         [StringValue("BIG")]
         Billingshurst,
         [StringValue("BIN")]
@@ -517,16 +559,18 @@ namespace DarwinNet.Objects
         Birkdale,
         [StringValue("BKC")]
         BirkenheadCentral,
-        [StringValue("BKQ")]
-        BirkenheadHamiltonSquare,
         [StringValue("BKN")]
         BirkenheadNorth,
         [StringValue("BKP")]
         BirkenheadPark,
+        [StringValue("XFG")]
+        BirminghamAirportBus,
         [StringValue("BHI")]
         BirminghamInternational,
         [StringValue("BMO")]
         BirminghamMoorStreet,
+        [StringValue("XNE")]
+        BirminghamNecBus,
         [StringValue("BHM")]
         BirminghamNewStreet,
         [StringValue("BSW")]
@@ -535,12 +579,16 @@ namespace DarwinNet.Objects
         BishopAuckland,
         [StringValue("BBG")]
         Bishopbriggs,
+        [StringValue("BIB")]
+        BishopsLydeard,
+        [StringValue("XLU")]
+        BishopsLydeardBus,
         [StringValue("BIS")]
         BishopsStortford,
         [StringValue("BIP")]
-        BishopstoneSussex,
+        Bishopstone,
         [StringValue("BPT")]
-        BishoptonStrathclyde,
+        Bishopton,
         [StringValue("BTE")]
         Bitterne,
         [StringValue("BBN")]
@@ -561,6 +609,8 @@ namespace DarwinNet.Objects
         Blackrod,
         [StringValue("BAW")]
         Blackwater,
+        [StringValue("XKW")]
+        BlackwoodBus,
         [StringValue("BFF")]
         BlaenauFfestiniog,
         [StringValue("BLA")]
@@ -584,11 +634,15 @@ namespace DarwinNet.Objects
         [StringValue("BWN")]
         BloxwichNorth,
         [StringValue("BLN")]
-        BlundellsandsAndCrosby,
+        BlundellsandsCrosby,
         [StringValue("BYB")]
         BlytheBridge,
+        [StringValue("BGR")]
+        BoatOfGartenPostOffBus,
         [StringValue("BOD")]
         BodminParkway,
+        [StringValue("BDF")]
+        BodminTsbBankBus,
         [StringValue("BOR")]
         Bodorgan,
         [StringValue("BOG")]
@@ -598,19 +652,23 @@ namespace DarwinNet.Objects
         [StringValue("BON")]
         Bolton,
         [StringValue("BTD")]
-        BoltonUponDearne,
+        BoltonOnDearne,
+        [StringValue("BDS")]
+        BondStreet,
         [StringValue("BKA")]
         Bookham,
         [StringValue("BOC")]
-        BootleCumbria,
+        Bootle,
         [StringValue("BNW")]
         BootleNewStrand,
         [StringValue("BOT")]
         BootleOrielRoad,
         [StringValue("BBS")]
         Bordesley,
+        [StringValue("BDZ")]
+        BordonCampBus,
         [StringValue("BRG")]
-        BoroughGreenAndWrotham,
+        BoroughGreenWrotham,
         [StringValue("BRH")]
         Borth,
         [StringValue("BOH")]
@@ -621,20 +679,26 @@ namespace DarwinNet.Objects
         Botley,
         [StringValue("BTF")]
         Bottesford,
+        [StringValue("XIB")]
+        BourgStMaurice,
         [StringValue("BNE")]
         BourneEnd,
         [StringValue("BMH")]
         Bournemouth,
+        [StringValue("BHA")]
+        BournemouthHurnAirportBus,
         [StringValue("BRV")]
         Bournville,
         [StringValue("BWB")]
         BowBrickhill,
+        [StringValue("BOW")]
+        BowStreet,
         [StringValue("BOP")]
         BowesPark,
         [StringValue("BWG")]
         Bowling,
         [StringValue("BXW")]
-        BoxHillAndWesthumble,
+        BoxhillWesthumble,
         [StringValue("BCE")]
         Bracknell,
         [StringValue("BDQ")]
@@ -652,9 +716,9 @@ namespace DarwinNet.Objects
         [StringValue("BML")]
         Bramhall,
         [StringValue("BMY")]
-        BramleyHants,
+        BramleyHampshire,
         [StringValue("BLE")]
-        BramleyWYorks,
+        BramleyWestYorkshire,
         [StringValue("BMP")]
         BramptonCumbria,
         [StringValue("BRP")]
@@ -666,11 +730,15 @@ namespace DarwinNet.Objects
         [StringValue("BSM")]
         Branksome,
         [StringValue("BYS")]
-        BraystonesCumbria,
+        Braystones,
+        [StringValue("BEO")]
+        BreconSquareBus,
         [StringValue("BDY")]
         Bredbury,
         [StringValue("BRC")]
         Breich,
+        [StringValue("BCZ")]
+        BrentCrossWest,
         [StringValue("BFD")]
         Brentford,
         [StringValue("BRE")]
@@ -678,9 +746,9 @@ namespace DarwinNet.Objects
         [StringValue("BWO")]
         BricketWood,
         [StringValue("BEA")]
-        BridgeofAllan,
+        BridgeOfAllan,
         [StringValue("BRO")]
-        BridgeofOrchy,
+        BridgeOfOrchy,
         [StringValue("BGN")]
         Bridgend,
         [StringValue("BDG")]
@@ -696,17 +764,23 @@ namespace DarwinNet.Objects
         [StringValue("BGH")]
         Brighouse,
         [StringValue("BTN")]
-        BrightonEastSussex,
+        Brighton,
         [StringValue("BMD")]
         Brimsdown,
         [StringValue("BNT")]
         Brinnington,
+        [StringValue("XPB")]
+        BristolIntlAirportBus,
         [StringValue("BPW")]
         BristolParkway,
+        [StringValue("XDU")]
+        BristolTempleGateBus,
         [StringValue("BRI")]
         BristolTempleMeads,
         [StringValue("BHD")]
         Brithdir,
+        [StringValue("RBS")]
+        BritishSteelRedcar,
         [StringValue("BNF")]
         BritonFerry,
         [StringValue("BRX")]
@@ -723,12 +797,16 @@ namespace DarwinNet.Objects
         Brockholes,
         [StringValue("BCY")]
         Brockley,
+        [StringValue("BNR")]
+        BrockleyWhinsTWMetro,
+        [StringValue("BDC")]
+        BrodickBus,
         [StringValue("BOM")]
         Bromborough,
         [StringValue("BMR")]
         BromboroughRake,
         [StringValue("BMC")]
-        BromleyCrossLancs,
+        BromleyCross,
         [StringValue("BMN")]
         BromleyNorth,
         [StringValue("BMS")]
@@ -765,18 +843,24 @@ namespace DarwinNet.Objects
         Brunstane,
         [StringValue("BRW")]
         Brunswick,
+        [StringValue("BXS")]
+        BrusselsMidi,
         [StringValue("BRU")]
         Bruton,
         [StringValue("BYN")]
         Bryn,
         [StringValue("BUC")]
-        BuckenhamNorfolk,
+        Buckenham,
+        [StringValue("XEY")]
+        BuckinghamBus,
         [StringValue("BCK")]
         Buckley,
         [StringValue("BUK")]
         Bucknell,
         [StringValue("BSV")]
         BuckshawParkway,
+        [StringValue("BUA")]
+        BudeStrandBus,
         [StringValue("BGL")]
         Bugle,
         [StringValue("BHR")]
@@ -794,9 +878,11 @@ namespace DarwinNet.Objects
         [StringValue("BNA")]
         Burnage,
         [StringValue("BUD")]
-        BurnesideCumbria,
+        Burneside,
         [StringValue("BNM")]
-        BurnhamBucks,
+        Burnham,
+        [StringValue("BMK")]
+        BurnhamMarketBus,
         [StringValue("BUU")]
         BurnhamOnCrouch,
         [StringValue("BUB")]
@@ -806,7 +892,7 @@ namespace DarwinNet.Objects
         [StringValue("BYM")]
         BurnleyManchesterRoad,
         [StringValue("BUI")]
-        BurnsideStrathclyde,
+        Burnside,
         [StringValue("BTS")]
         Burntisland,
         [StringValue("BCB")]
@@ -819,6 +905,8 @@ namespace DarwinNet.Objects
         BurtonJoyce,
         [StringValue("BUT")]
         BurtonOnTrent,
+        [StringValue("BUR")]
+        BuryMetrolinkBus,
         [StringValue("BSE")]
         BuryStEdmunds,
         [StringValue("BUS")]
@@ -833,34 +921,50 @@ namespace DarwinNet.Objects
         Buxted,
         [StringValue("BUX")]
         Buxton,
+        [StringValue("BUZ")]
+        BuxtonBus,
         [StringValue("BFN")]
-        ByfleetAndNewHaw,
+        ByfleetNewHaw,
         [StringValue("BYE")]
         Bynea,
         [StringValue("CAD")]
         Cadoxton,
+        [StringValue("XKC")]
+        CaerauParkBus,
+        [StringValue("CSQ")]
+        CaerauSquareBus,
         [StringValue("CGW")]
         Caergwrle,
         [StringValue("CPH")]
         Caerphilly,
         [StringValue("CWS")]
         Caersws,
+        [StringValue("CRP")]
+        CairnyanPort,
+        [StringValue("FRH")]
+        CalaisFrethun,
         [StringValue("CAC")]
         Caldercruix,
         [StringValue("CDT")]
         Caldicot,
         [StringValue("CIR")]
-        CaledonianRdAndBarnsbury,
+        CaledonianRdBarnsbury,
+        [StringValue("XAH")]
+        CallingtonBus,
+        [StringValue("XAI")]
+        CalneBus,
         [StringValue("CSK")]
         Calstock,
         [StringValue("CDU")]
-        CamAndDursley,
+        CamDursley,
         [StringValue("CAM")]
         Camberley,
         [StringValue("CBN")]
         Camborne,
         [StringValue("CBG")]
         Cambridge,
+        [StringValue("XEC")]
+        CambridgeBus,
         [StringValue("CBH")]
         CambridgeHeath,
         [StringValue("CMB")]
@@ -873,8 +977,12 @@ namespace DarwinNet.Objects
         Camelon,
         [StringValue("ZCW")]
         CanadaWater,
+        [StringValue("CWX")]
+        CanaryWharfElizabethLine,
         [StringValue("CNL")]
         Canley,
+        [StringValue("CNA")]
+        CannaBus,
         [StringValue("CAO")]
         Cannock,
         [StringValue("CNN")]
@@ -889,12 +997,18 @@ namespace DarwinNet.Objects
         Capenhurst,
         [StringValue("CBB")]
         CarbisBay,
+        [StringValue("CAE")]
+        CarbrookTram,
         [StringValue("CDD")]
         Cardenden,
         [StringValue("CDB")]
         CardiffBay,
         [StringValue("CDF")]
         CardiffCentral,
+        [StringValue("CCB")]
+        CardiffCentralBusStn,
+        [StringValue("XCF")]
+        CardiffIntlAirportBus,
         [StringValue("CDQ")]
         CardiffQueenStreet,
         [StringValue("CDO")]
@@ -904,7 +1018,7 @@ namespace DarwinNet.Objects
         [StringValue("CRF")]
         Carfin,
         [StringValue("CAK")]
-        CarkAndCartmel,
+        Cark,
         [StringValue("CAR")]
         Carlisle,
         [StringValue("CTO")]
@@ -937,10 +1051,16 @@ namespace DarwinNet.Objects
         CastleBarPark,
         [StringValue("CLC")]
         CastleCary,
+        [StringValue("CAQ")]
+        CastleHowardBus,
+        [StringValue("CAX")]
+        CastleSquareTram,
+        [StringValue("CTB")]
+        CastlebayBarraBus,
         [StringValue("CFD")]
         Castleford,
         [StringValue("CAS")]
-        CastletonManchester,
+        Castleton,
         [StringValue("CSM")]
         CastletonMoor,
         [StringValue("CAT")]
@@ -955,6 +1075,12 @@ namespace DarwinNet.Objects
         Cathcart,
         [StringValue("CTL")]
         Cattal,
+        [StringValue("XGO")]
+        CatterickCampCentreBus,
+        [StringValue("CAZ")]
+        CatterickGarrisonBus,
+        [StringValue("CGT")]
+        CatterickGarrisonTescoBus,
         [StringValue("CAU")]
         Causeland,
         [StringValue("CYB")]
@@ -962,23 +1088,23 @@ namespace DarwinNet.Objects
         [StringValue("CTH")]
         ChadwellHeath,
         [StringValue("CFH")]
-        ChaffordHundredLakeside,
+        ChaffordHundred,
         [StringValue("CFO")]
-        ChalfontAndLatimer,
+        ChalfontLatimer,
         [StringValue("CHW")]
         Chalkwell,
         [StringValue("CFR")]
         ChandlersFord,
         [StringValue("CEF")]
         ChapelEnLeFrith,
-        [StringValue("CPN")]
-        ChapeltonDevon,
         [StringValue("CLN")]
-        ChapeltownSouthYorks,
+        Chapeltown,
+        [StringValue("CPN")]
+        Chapleton,
         [StringValue("CWC")]
-        ChappelAndWakesColne,
+        ChappelWakesColne,
         [StringValue("CHG")]
-        CharingKent,
+        Charing,
         [StringValue("CHC")]
         CharingCrossGlasgow,
         [StringValue("CBY")]
@@ -995,6 +1121,8 @@ namespace DarwinNet.Objects
         Chatham,
         [StringValue("CHT")]
         Chathill,
+        [StringValue("CHZ")]
+        ChatsworthHouseBus,
         [StringValue("CHU")]
         CheadleHulme,
         [StringValue("CHE")]
@@ -1002,7 +1130,7 @@ namespace DarwinNet.Objects
         [StringValue("CED")]
         Cheddington,
         [StringValue("CEL")]
-        ChelfordCheshire,
+        Chelford,
         [StringValue("CHM")]
         Chelmsford,
         [StringValue("CLD")]
@@ -1025,12 +1153,12 @@ namespace DarwinNet.Objects
         Chester,
         [StringValue("CRD")]
         ChesterRoad,
-        [StringValue("CHD")]
-        Chesterfield,
         [StringValue("CLS")]
         ChesterLeStreet,
+        [StringValue("CHD")]
+        Chesterfield,
         [StringValue("CSW")]
-        ChestfieldAndSwalecliffe,
+        ChestfieldSwalecliffe,
         [StringValue("CNO")]
         Chetnole,
         [StringValue("CCH")]
@@ -1043,8 +1171,16 @@ namespace DarwinNet.Objects
         Chingford,
         [StringValue("CLY")]
         Chinley,
+        [StringValue("XCQ")]
+        ChinnorBus,
         [StringValue("CPM")]
         Chippenham,
+        [StringValue("XDM")]
+        ChippenhamBathRoadBus,
+        [StringValue("XDN")]
+        ChippenhamNewRoadBus,
+        [StringValue("CPG")]
+        ChippingNortonWestStBus,
         [StringValue("CHP")]
         Chipstead,
         [StringValue("CRK")]
@@ -1064,7 +1200,7 @@ namespace DarwinNet.Objects
         [StringValue("CHH")]
         ChristsHospital,
         [StringValue("CTW")]
-        ChurchAndOswaldtwistle,
+        ChurchOswaldtwistle,
         [StringValue("CHF")]
         ChurchFenton,
         [StringValue("CTT")]
@@ -1098,7 +1234,7 @@ namespace DarwinNet.Objects
         [StringValue("CEA")]
         Cleland,
         [StringValue("CLI")]
-        CliftonManchester,
+        Clifton,
         [StringValue("CFN")]
         CliftonDown,
         [StringValue("CLH")]
@@ -1116,7 +1252,11 @@ namespace DarwinNet.Objects
         [StringValue("COA")]
         Coatdyke,
         [StringValue("CSD")]
-        CobhamAndStokedAbernon,
+        CobhamStokeDAbernon,
+        [StringValue("COX")]
+        CockermouthBus,
+        [StringValue("ZCK")]
+        CockfostersUnderground,
         [StringValue("CSL")]
         Codsall,
         [StringValue("CGN")]
@@ -1127,18 +1267,22 @@ namespace DarwinNet.Objects
         ColchesterTown,
         [StringValue("CEH")]
         ColeshillParkway,
+        [StringValue("CLO")]
+        CollBus,
         [StringValue("CLM")]
         Collingham,
         [StringValue("CLL")]
         Collington,
         [StringValue("CNE")]
         Colne,
+        [StringValue("CYA")]
+        ColonsayBus,
         [StringValue("CWL")]
         Colwall,
         [StringValue("CWB")]
         ColwynBay,
         [StringValue("CME")]
-        CombeOxon,
+        Combe,
         [StringValue("COM")]
         Commondale,
         [StringValue("CNG")]
@@ -1169,6 +1313,8 @@ namespace DarwinNet.Objects
         Corbridge,
         [StringValue("COR")]
         Corby,
+        [StringValue("CBZ")]
+        CorbyGeorgeStreetBus,
         [StringValue("CFC")]
         CorfeCastle,
         [StringValue("CKH")]
@@ -1179,6 +1325,8 @@ namespace DarwinNet.Objects
         Corpach,
         [StringValue("CRR")]
         Corrour,
+        [StringValue("XAO")]
+        CorshamBus,
         [StringValue("COY")]
         Coryton,
         [StringValue("CSY")]
@@ -1200,13 +1348,15 @@ namespace DarwinNet.Objects
         [StringValue("CAA")]
         CoventryArena,
         [StringValue("CWN")]
-        CowdenKent,
+        Cowden,
         [StringValue("COW")]
         Cowdenbeath,
         [StringValue("CRA")]
         CradleyHeath,
         [StringValue("CGD")]
         Craigendoran,
+        [StringValue("CRU")]
+        CraignureMullBus,
         [StringValue("CRM")]
         Cramlington,
         [StringValue("CBK")]
@@ -1220,7 +1370,7 @@ namespace DarwinNet.Objects
         [StringValue("CDI")]
         Crediton,
         [StringValue("CES")]
-        CressingEssex,
+        Cressing,
         [StringValue("CSG")]
         Cressington,
         [StringValue("CWD")]
@@ -1235,6 +1385,8 @@ namespace DarwinNet.Objects
         Crianlarich,
         [StringValue("CCC")]
         Criccieth,
+        [StringValue("CIN")]
+        CricketInnRoadTram,
         [StringValue("CRI")]
         Cricklewood,
         [StringValue("CFF")]
@@ -1269,6 +1421,8 @@ namespace DarwinNet.Objects
         Crowle,
         [StringValue("CRN")]
         Crowthorne,
+        [StringValue("ZCO")]
+        CroxleyUnderground,
         [StringValue("CRO")]
         Croy,
         [StringValue("CYP")]
@@ -1277,16 +1431,24 @@ namespace DarwinNet.Objects
         Cuddington,
         [StringValue("CUF")]
         Cuffley,
+        [StringValue("XAM")]
+        CuldroseRnasBus,
         [StringValue("CUM")]
         Culham,
+        [StringValue("XDX")]
+        CullomptonBus,
         [StringValue("CUA")]
         Culrain,
         [StringValue("CUB")]
         Cumbernauld,
+        [StringValue("CUL")]
+        CumbraeSlipBus,
         [StringValue("CUP")]
         Cupar,
         [StringValue("CUH")]
         Curriehill,
+        [StringValue("CUS")]
+        CustomHouse,
         [StringValue("CUX")]
         Cuxton,
         [StringValue("CMH")]
@@ -1297,6 +1459,8 @@ namespace DarwinNet.Objects
         Cynghordy,
         [StringValue("DDK")]
         DagenhamDock,
+        [StringValue("ZDE")]
+        DagenhamEastUnderground,
         [StringValue("DSY")]
         DaisyHill,
         [StringValue("DAG")]
@@ -1314,13 +1478,13 @@ namespace DarwinNet.Objects
         [StringValue("DLY")]
         Dalry,
         [StringValue("DLS")]
-        DalstonCumbria,
+        Dalston,
         [StringValue("DLJ")]
         DalstonJunction,
         [StringValue("DLK")]
         DalstonKingsland,
         [StringValue("DLT")]
-        DaltonCumbria,
+        Dalton,
         [StringValue("DLW")]
         Dalwhinnie,
         [StringValue("DNY")]
@@ -1329,6 +1493,8 @@ namespace DarwinNet.Objects
         Danescourt,
         [StringValue("DZY")]
         Danzey,
+        [StringValue("DFZ")]
+        DarfieldBus,
         [StringValue("DAR")]
         Darlington,
         [StringValue("DAN")]
@@ -1337,6 +1503,8 @@ namespace DarwinNet.Objects
         Darsham,
         [StringValue("DFD")]
         Dartford,
+        [StringValue("XAP")]
+        DartmouthBus,
         [StringValue("DRT")]
         Darton,
         [StringValue("DWN")]
@@ -1352,7 +1520,9 @@ namespace DarwinNet.Objects
         [StringValue("DEA")]
         Deal,
         [StringValue("DEN")]
-        DeanWilts,
+        Dean,
+        [StringValue("DNN")]
+        DeanLane,
         [StringValue("DGT")]
         Deansgate,
         [StringValue("DGY")]
@@ -1378,23 +1548,27 @@ namespace DarwinNet.Objects
         [StringValue("DBY")]
         Derby,
         [StringValue("DBR")]
-        DerbyRoadIpswich,
+        DerbyRoad,
+        [StringValue("DEB")]
+        DerehamMarketPlaceBus,
+        [StringValue("DKR")]
+        Derker,
+        [StringValue("XAQ")]
+        DevizesBus,
         [StringValue("DPT")]
-        DevonportDevon,
-        [StringValue("DOC")]
-        DevonportDockyard,
+        Devonport,
         [StringValue("DEW")]
         Dewsbury,
         [StringValue("DID")]
         DidcotParkway,
         [StringValue("DIG")]
-        DigbyAndSowton,
+        DigbySowton,
         [StringValue("DMH")]
         DiltonMarsh,
-        [StringValue("DMG")]
-        DinasRhondda,
         [StringValue("DNS")]
         DinasPowys,
+        [StringValue("DMG")]
+        DinasRhondda,
         [StringValue("DGL")]
         DingleRoad,
         [StringValue("DIN")]
@@ -1407,6 +1581,8 @@ namespace DarwinNet.Objects
         Disley,
         [StringValue("DIS")]
         Diss,
+        [StringValue("DOC")]
+        Dockyard,
         [StringValue("DOD")]
         Dodworth,
         [StringValue("DOL")]
@@ -1419,14 +1595,16 @@ namespace DarwinNet.Objects
         Dolwyddelan,
         [StringValue("DON")]
         Doncaster,
+        [StringValue("DOZ")]
+        DoncasterNorthBusStn,
         [StringValue("DCH")]
         DorchesterSouth,
         [StringValue("DCW")]
         DorchesterWest,
         [StringValue("DOR")]
-        DoreAndTotley,
+        Dore,
         [StringValue("DKG")]
-        DorkingMain,
+        Dorking,
         [StringValue("DPD")]
         DorkingDeepdene,
         [StringValue("DKT")]
@@ -1435,6 +1613,8 @@ namespace DarwinNet.Objects
         Dormans,
         [StringValue("DDG")]
         Dorridge,
+        [StringValue("DGS")]
+        DouglasIsleOfMan,
         [StringValue("DVH")]
         DoveHoles,
         [StringValue("DVP")]
@@ -1493,6 +1673,8 @@ namespace DarwinNet.Objects
         Dumfries,
         [StringValue("DMP")]
         DumptonPark,
+        [StringValue("DLO")]
+        DunLaoghaire,
         [StringValue("DUN")]
         Dunbar,
         [StringValue("DBL")]
@@ -1506,11 +1688,19 @@ namespace DarwinNet.Objects
         [StringValue("DFE")]
         DunfermlineTown,
         [StringValue("DKD")]
-        DunkeldAndBirnam,
+        DunkeldBirnam,
         [StringValue("DNL")]
         Dunlop,
+        [StringValue("DUO")]
+        DunoonBus,
         [StringValue("DNO")]
         DunrobinCastle,
+        [StringValue("DUU")]
+        DunsBus,
+        [StringValue("XAD")]
+        DunstableBus,
+        [StringValue("XDY")]
+        DunsterBus,
         [StringValue("DOT")]
         Dunston,
         [StringValue("DNG")]
@@ -1527,16 +1717,22 @@ namespace DarwinNet.Objects
         Eaglescliffe,
         [StringValue("EAL")]
         EalingBroadway,
+        [StringValue("ZET")]
+        EarlSCourtUnderground,
         [StringValue("ERL")]
         Earlestown,
         [StringValue("EAR")]
         Earley,
         [StringValue("EAD")]
         Earlsfield,
+        [StringValue("EAS")]
+        EarlstonBordersBus,
         [StringValue("ELD")]
         EarlswoodSurrey,
         [StringValue("EWD")]
         EarlswoodWestMidlands,
+        [StringValue("EBL")]
+        EastBoldonTWMetro,
         [StringValue("ECR")]
         EastCroydon,
         [StringValue("EDY")]
@@ -1551,8 +1747,12 @@ namespace DarwinNet.Objects
         EastGrinstead,
         [StringValue("EKL")]
         EastKilbride,
+        [StringValue("ELT")]
+        EastLinton,
         [StringValue("EML")]
         EastMalling,
+        [StringValue("EMA")]
+        EastMidlandsAirportBus,
         [StringValue("EMD")]
         EastMidlandsParkway,
         [StringValue("ETL")]
@@ -1578,15 +1778,19 @@ namespace DarwinNet.Objects
         [StringValue("EBB")]
         EbbwValeTown,
         [StringValue("ECC")]
-        EcclesManchester,
+        Eccles,
         [StringValue("ECS")]
         EcclesRoad,
         [StringValue("ECL")]
         EcclestonPark,
         [StringValue("EDL")]
         Edale,
+        [StringValue("EDZ")]
+        EdenCampBus,
         [StringValue("EDN")]
         EdenPark,
+        [StringValue("XFJ")]
+        EdenProjectBus,
         [StringValue("EBR")]
         Edenbridge,
         [StringValue("EBT")]
@@ -1595,6 +1799,10 @@ namespace DarwinNet.Objects
         EdgeHill,
         [StringValue("EDB")]
         Edinburgh,
+        [StringValue("EDA")]
+        EdinburghAirportBusOrTram,
+        [StringValue("EBS")]
+        EdinburghBusStation,
         [StringValue("EGY")]
         EdinburghGateway,
         [StringValue("EDP")]
@@ -1609,10 +1817,12 @@ namespace DarwinNet.Objects
         Egham,
         [StringValue("EGT")]
         Egton,
+        [StringValue("EIG")]
+        EiggBus,
         [StringValue("EPH")]
-        ElephantAndCastle,
+        ElephantCastle,
         [StringValue("ZEL")]
-        ElephantAndCastleUnderground,
+        ElephantCastleUnderground,
         [StringValue("ELG")]
         Elgin,
         [StringValue("ELP")]
@@ -1626,13 +1836,13 @@ namespace DarwinNet.Objects
         [StringValue("ELR")]
         Elsecar,
         [StringValue("ESM")]
-        ElsenhamEssex,
+        Elsenham,
         [StringValue("ELS")]
-        ElstreeAndBorehamwood,
+        ElstreeBorehamwood,
         [StringValue("ELW")]
         Eltham,
         [StringValue("ELO")]
-        EltonAndOrston,
+        EltonOrston,
         [StringValue("ELY")]
         Ely,
         [StringValue("EMP")]
@@ -1640,7 +1850,7 @@ namespace DarwinNet.Objects
         [StringValue("EMS")]
         Emsworth,
         [StringValue("ECP")]
-        EnerglynAndChurchillPark,
+        EnerglynChurchillPark,
         [StringValue("ENC")]
         EnfieldChase,
         [StringValue("ENL")]
@@ -1650,7 +1860,7 @@ namespace DarwinNet.Objects
         [StringValue("ENT")]
         Entwistle,
         [StringValue("EPS")]
-        EpsomSurrey,
+        Epsom,
         [StringValue("EPD")]
         EpsomDowns,
         [StringValue("ERD")]
@@ -1675,6 +1885,8 @@ namespace DarwinNet.Objects
         EwellEast,
         [StringValue("EWW")]
         EwellWest,
+        [StringValue("XXT")]
+        ExeterAirportBus,
         [StringValue("EXC")]
         ExeterCentral,
         [StringValue("EXD")]
@@ -1682,13 +1894,17 @@ namespace DarwinNet.Objects
         [StringValue("EXT")]
         ExeterStThomas,
         [StringValue("EXG")]
-        ExhibitionCentreGlasgow,
+        ExhibitionCentre,
         [StringValue("EXM")]
         Exmouth,
         [StringValue("EXN")]
         Exton,
         [StringValue("EYN")]
         Eynsford,
+        [StringValue("EYM")]
+        EynshamChurchBus,
+        [StringValue("FLS")]
+        Failsworth,
         [StringValue("FRB")]
         Fairbourne,
         [StringValue("FRF")]
@@ -1704,7 +1920,7 @@ namespace DarwinNet.Objects
         [StringValue("FKK")]
         FalkirkHigh,
         [StringValue("FOC")]
-        FallsofCruachan,
+        FallsOfCruachan,
         [StringValue("FMR")]
         Falmer,
         [StringValue("FAL")]
@@ -1741,6 +1957,8 @@ namespace DarwinNet.Objects
         Featherstone,
         [StringValue("FLX")]
         Felixstowe,
+        [StringValue("FEG")]
+        FellgateTWMetro,
         [StringValue("FEL")]
         Feltham,
         [StringValue("FNT")]
@@ -1760,25 +1978,29 @@ namespace DarwinNet.Objects
         [StringValue("FIT")]
         FiltonAbbeyWood,
         [StringValue("FNY")]
-        FinchleyRoadAndFrognal,
+        FinchleyRoadFrognal,
         [StringValue("FPK")]
         FinsburyPark,
         [StringValue("FIN")]
         Finstock,
         [StringValue("FSB")]
-        FishbourneSussex,
+        FishbourneWestSussex,
         [StringValue("FSG")]
         Fishersgate,
         [StringValue("FGW")]
-        FishguardAndGoodwick,
+        FishguardGoodwick,
         [StringValue("FGH")]
         FishguardHarbour,
         [StringValue("FSK")]
         Fiskerton,
+        [StringValue("FIZ")]
+        FitzalanSquareTram,
         [StringValue("FZW")]
         Fitzwilliam,
         [StringValue("FWY")]
         FiveWays,
+        [StringValue("FLZ")]
+        FlamingoLandBus,
         [StringValue("FLE")]
         Fleet,
         [StringValue("FLM")]
@@ -1793,6 +2015,8 @@ namespace DarwinNet.Objects
         FloweryField,
         [StringValue("FKC")]
         FolkestoneCentral,
+        [StringValue("FKH")]
+        FolkestoneHarbourBus,
         [StringValue("FKW")]
         FolkestoneWest,
         [StringValue("FOD")]
@@ -1813,6 +2037,8 @@ namespace DarwinNet.Objects
         FortWilliam,
         [StringValue("FOK")]
         FourOaks,
+        [StringValue("XAS")]
+        FoweyBus,
         [StringValue("FOX")]
         Foxfield,
         [StringValue("FXN")]
@@ -1835,6 +2061,8 @@ namespace DarwinNet.Objects
         Frodsham,
         [StringValue("FRO")]
         Frome,
+        [StringValue("XAU")]
+        FromeTownBus,
         [StringValue("FLW")]
         Fulwell,
         [StringValue("FNV")]
@@ -1847,6 +2075,8 @@ namespace DarwinNet.Objects
         GainsboroughLeaRoad,
         [StringValue("GAL")]
         Galashiels,
+        [StringValue("XAA")]
+        GalashielsBus,
         [StringValue("GCH")]
         Garelochhead,
         [StringValue("GRF")]
@@ -1905,12 +2135,16 @@ namespace DarwinNet.Objects
         Glaisdale,
         [StringValue("GCW")]
         GlanConwy,
+        [StringValue("GGT")]
+        GlasgowAirportBus,
         [StringValue("GLC")]
         GlasgowCentral,
         [StringValue("GLQ")]
         GlasgowQueenStreet,
         [StringValue("GLH")]
         Glasshoughton,
+        [StringValue("XEA")]
+        GlastonburyBus,
         [StringValue("GLZ")]
         Glazebrook,
         [StringValue("GLE")]
@@ -1920,13 +2154,15 @@ namespace DarwinNet.Objects
         [StringValue("GLG")]
         Glengarnock,
         [StringValue("GLT")]
-        GlenrotheswithThornton,
+        GlenrothesWithThornton,
         [StringValue("GLO")]
         Glossop,
         [StringValue("GCR")]
         Gloucester,
         [StringValue("GLY")]
         Glynde,
+        [StringValue("XGZ")]
+        Goathland,
         [StringValue("GOB")]
         Gobowen,
         [StringValue("GOD")]
@@ -1937,6 +2173,8 @@ namespace DarwinNet.Objects
         Godstone,
         [StringValue("GOE")]
         Goldthorpe,
+        [StringValue("GOZ")]
+        GoldthorpeBus,
         [StringValue("GOF")]
         GolfStreet,
         [StringValue("GOL")]
@@ -1954,7 +2192,7 @@ namespace DarwinNet.Objects
         [StringValue("GBG")]
         Gorebridge,
         [StringValue("GOR")]
-        GoringAndStreatley,
+        GoringStreatley,
         [StringValue("GBS")]
         GoringBySea,
         [StringValue("GTO")]
@@ -1963,6 +2201,8 @@ namespace DarwinNet.Objects
         GospelOak,
         [StringValue("GRK")]
         Gourock,
+        [StringValue("GXX")]
+        GourockPierBus,
         [StringValue("GWN")]
         Gowerton,
         [StringValue("GOX")]
@@ -1971,8 +2211,10 @@ namespace DarwinNet.Objects
         GrangePark,
         [StringValue("GOS")]
         GrangeOverSands,
+        [StringValue("GGM")]
+        GrangemouthBus,
         [StringValue("GTN")]
-        GrangetownCardiff,
+        Grangetown,
         [StringValue("GRA")]
         Grantham,
         [StringValue("GRT")]
@@ -2010,7 +2252,7 @@ namespace DarwinNet.Objects
         [StringValue("GFD")]
         Greenford,
         [StringValue("GNH")]
-        Greenhithe,
+        GreenhitheForBluewater,
         [StringValue("GKC")]
         GreenockCentral,
         [StringValue("GKW")]
@@ -2025,6 +2267,8 @@ namespace DarwinNet.Objects
         GrimsbyTown,
         [StringValue("GRN")]
         Grindleford,
+        [StringValue("GRO")]
+        GroombridgeBus,
         [StringValue("GMT")]
         Grosmont,
         [StringValue("GRP")]
@@ -2056,7 +2300,7 @@ namespace DarwinNet.Objects
         [StringValue("HKW")]
         HackneyWick,
         [StringValue("HDM")]
-        HaddenhamAndThameParkway,
+        HaddenhamThameParkway,
         [StringValue("HAD")]
         Haddiscoe,
         [StringValue("HDF")]
@@ -2072,7 +2316,7 @@ namespace DarwinNet.Objects
         [StringValue("HMY")]
         Hairmyres,
         [StringValue("HAL")]
-        HaleManchester,
+        Hale,
         [StringValue("HAS")]
         Halesworth,
         [StringValue("HED")]
@@ -2081,12 +2325,12 @@ namespace DarwinNet.Objects
         Halifax,
         [StringValue("HLG")]
         HallGreen,
+        [StringValue("HID")]
+        HallIThWood,
         [StringValue("HLR")]
         HallRoad,
         [StringValue("HAI")]
         Halling,
-        [StringValue("HID")]
-        HallIThWood,
         [StringValue("HWH")]
         Haltwhistle,
         [StringValue("HMT")]
@@ -2095,16 +2339,20 @@ namespace DarwinNet.Objects
         Hamble,
         [StringValue("HNC")]
         HamiltonCentral,
+        [StringValue("BKQ")]
+        HamiltonSquare,
         [StringValue("HNW")]
         HamiltonWest,
+        [StringValue("ZHA")]
+        HammersmithUnderground,
         [StringValue("HMM")]
         Hammerton,
         [StringValue("HMD")]
-        HampdenParkSussex,
+        HampdenPark,
         [StringValue("HDH")]
         HampsteadHeath,
         [StringValue("HMP")]
-        HamptonLondon,
+        Hampton,
         [StringValue("HMC")]
         HamptonCourt,
         [StringValue("HMW")]
@@ -2112,13 +2360,15 @@ namespace DarwinNet.Objects
         [StringValue("HIA")]
         HamptonInArden,
         [StringValue("HSD")]
-        HamsteadBirmingham,
+        Hamstead,
         [StringValue("HAM")]
         Hamworthy,
         [StringValue("HND")]
         Hanborough,
         [StringValue("HTH")]
         Handforth,
+        [StringValue("HNY")]
+        HanleyBus,
         [StringValue("HAN")]
         Hanwell,
         [StringValue("HPN")]
@@ -2130,7 +2380,7 @@ namespace DarwinNet.Objects
         [StringValue("HRD")]
         HarlingRoad,
         [StringValue("HLN")]
-        HarlingtonBeds,
+        Harlington,
         [StringValue("HWM")]
         HarlowMill,
         [StringValue("HWN")]
@@ -2150,11 +2400,11 @@ namespace DarwinNet.Objects
         [StringValue("HGT")]
         Harrogate,
         [StringValue("HRW")]
-        HarrowAndWealdstone,
+        HarrowWealdstone,
         [StringValue("HOH")]
         HarrowOnTheHill,
         [StringValue("HTF")]
-        HartfordCheshire,
+        Hartford,
         [StringValue("HBY")]
         Hartlebury,
         [StringValue("HPL")]
@@ -2173,10 +2423,10 @@ namespace DarwinNet.Objects
         Hastings,
         [StringValue("HTE")]
         HatchEnd,
-        [StringValue("HFS")]
-        HatfieldAndStainforth,
         [StringValue("HAT")]
-        HatfieldHerts,
+        Hatfield,
+        [StringValue("HFS")]
+        HatfieldStainforth,
         [StringValue("HAP")]
         HatfieldPeverel,
         [StringValue("HSG")]
@@ -2185,6 +2435,8 @@ namespace DarwinNet.Objects
         Hattersley,
         [StringValue("HTN")]
         Hatton,
+        [StringValue("XHC")]
+        HattonCrossBus,
         [StringValue("HAV")]
         Havant,
         [StringValue("HVN")]
@@ -2195,16 +2447,20 @@ namespace DarwinNet.Objects
         Hawarden,
         [StringValue("HWB")]
         HawardenBridge,
+        [StringValue("HWK")]
+        HawickBus,
         [StringValue("HKH")]
         Hawkhead,
+        [StringValue("HWT")]
+        HaworthBus,
         [StringValue("HDB")]
         HaydonBridge,
         [StringValue("HYR")]
         HaydonsRoad,
-        [StringValue("HAY")]
-        HayesAndHarlington,
         [StringValue("HYS")]
         HayesKent,
+        [StringValue("HAY")]
+        HayesHarlington,
         [StringValue("HYL")]
         Hayle,
         [StringValue("HYM")]
@@ -2227,12 +2483,24 @@ namespace DarwinNet.Objects
         HeathHighLevel,
         [StringValue("HLL")]
         HeathLowLevel,
-        [StringValue("HAF")]
-        HeathrowAirportTerminal4,
-        [StringValue("HWV")]
-        HeathrowAirportTerminal5,
+        [StringValue("HWO")]
+        HeathrowAirportT1Bus,
         [StringValue("HXX")]
-        HeathrowAirportTerminals12And3,
+        HeathrowAirportT123,
+        [StringValue("HWA")]
+        HeathrowAirportT2Bus,
+        [StringValue("HWE")]
+        HeathrowAirportT3Bus,
+        [StringValue("HAF")]
+        HeathrowAirportT4,
+        [StringValue("HWF")]
+        HeathrowAirportT4Bus,
+        [StringValue("HWV")]
+        HeathrowAirportT5,
+        [StringValue("HWX")]
+        HeathrowAirportT5Bus,
+        [StringValue("HTR")]
+        HeathrowCentralBusStn,
         [StringValue("HTC")]
         HeatonChapel,
         [StringValue("HBD")]
@@ -2255,6 +2523,8 @@ namespace DarwinNet.Objects
         Helmsdale,
         [StringValue("HSB")]
         Helsby,
+        [StringValue("XAV")]
+        HelstonBus,
         [StringValue("HML")]
         HemelHempstead,
         [StringValue("HEN")]
@@ -2287,28 +2557,30 @@ namespace DarwinNet.Objects
         Hever,
         [StringValue("HEW")]
         Heworth,
+        [StringValue("HEZ")]
+        HeworthTWMetro,
         [StringValue("HEX")]
         Hexham,
         [StringValue("HYD")]
         Heyford,
         [StringValue("HHB")]
         HeyshamPort,
+        [StringValue("ZHB")]
+        HighBarnet,
         [StringValue("HIB")]
         HighBrooms,
         [StringValue("HST")]
-        HighStreetGlasgow,
-        [StringValue("ZHS")]
-        HighStreetKensingtonUnderground,
+        HighStreet,
         [StringValue("HWY")]
         HighWycombe,
         [StringValue("HGM")]
-        HighamKent,
+        Higham,
         [StringValue("HIP")]
         HighamsPark,
         [StringValue("HIG")]
-        HighbridgeAndBurnham,
+        HighbridgeBurnham,
         [StringValue("HHY")]
-        HighburyAndIslington,
+        HighburyIslington,
         [StringValue("HTO")]
         Hightown,
         [StringValue("HLB")]
@@ -2326,23 +2598,31 @@ namespace DarwinNet.Objects
         [StringValue("HYW")]
         HinchleyWood,
         [StringValue("HNK")]
-        HinckleyLeics,
+        Hinckley,
         [StringValue("HIN")]
         Hindley,
         [StringValue("HNA")]
         HintonAdmiral,
+        [StringValue("XHW")]
+        HirwaunBus,
         [StringValue("HIT")]
         Hitchin,
         [StringValue("HGR")]
         HitherGreen,
         [StringValue("HOC")]
         Hockley,
+        [StringValue("HVH")]
+        HoekVanHolland,
         [StringValue("HBN")]
         Hollingbourne,
+        [StringValue("HOD")]
+        Hollinwood,
         [StringValue("HCH")]
         HolmesChapel,
         [StringValue("HLM")]
         Holmwood,
+        [StringValue("XEE")]
+        HolsworthyBus,
         [StringValue("HOL")]
         HoltonHeath,
         [StringValue("HHD")]
@@ -2396,13 +2676,13 @@ namespace DarwinNet.Objects
         [StringValue("HOV")]
         Hove,
         [StringValue("HXM")]
-        HovetonAndWroxham,
+        HovetonWroxham,
         [StringValue("HWW")]
-        HowWoodHerts,
+        HowWood,
         [StringValue("HOW")]
         Howden,
         [StringValue("HOZ")]
-        HowwoodRenfrewshire,
+        Howwood,
         [StringValue("HOX")]
         Hoxton,
         [StringValue("HYK")]
@@ -2415,6 +2695,8 @@ namespace DarwinNet.Objects
         Huddersfield,
         [StringValue("HUL")]
         Hull,
+        [StringValue("HUU")]
+        HullBus,
         [StringValue("HUP")]
         HumphreyPark,
         [StringValue("HCT")]
@@ -2423,12 +2705,16 @@ namespace DarwinNet.Objects
         Hungerford,
         [StringValue("HUB")]
         Hunmanby,
+        [StringValue("HUS")]
+        HunstantonBus,
         [StringValue("HUN")]
         Huntingdon,
         [StringValue("HNT")]
         Huntly,
         [StringValue("HNX")]
         HuntsCross,
+        [StringValue("HSE")]
+        HursleyPostOfficeBus,
         [StringValue("HUR")]
         HurstGreen,
         [StringValue("HUT")]
@@ -2439,14 +2725,20 @@ namespace DarwinNet.Objects
         HydeCentral,
         [StringValue("HYT")]
         HydeNorth,
+        [StringValue("HYP")]
+        HydeParkTram,
         [StringValue("HKM")]
         Hykeham,
+        [StringValue("HCR")]
+        HykehamCrossroadsBus,
         [StringValue("HYN")]
         Hyndland,
         [StringValue("HYH")]
-        HytheEssex,
+        Hythe,
+        [StringValue("HYZ")]
+        HytheWatersideBus,
         [StringValue("IBM")]
-        IBM,
+        Ibm,
         [StringValue("IFI")]
         Ifield,
         [StringValue("IFD")]
@@ -2457,10 +2749,10 @@ namespace DarwinNet.Objects
         Ilkley,
         [StringValue("IMW")]
         ImperialWharf,
-        [StringValue("INE")]
-        InceAndElton,
         [StringValue("INC")]
-        InceManchester,
+        Ince,
+        [StringValue("INE")]
+        InceElton,
         [StringValue("INT")]
         Ingatestone,
         [StringValue("INS")]
@@ -2475,6 +2767,8 @@ namespace DarwinNet.Objects
         Inverkip,
         [StringValue("INV")]
         Inverness,
+        [StringValue("IVA")]
+        InvernessAirport,
         [StringValue("INH")]
         Invershin,
         [StringValue("INR")]
@@ -2495,18 +2789,20 @@ namespace DarwinNet.Objects
         Ivybridge,
         [StringValue("JCH")]
         JamesCook,
+        [StringValue("LVJ")]
+        JamesStreet,
         [StringValue("JEQ")]
         JewelleryQuarter,
         [StringValue("JOH")]
-        JohnstonPembs,
+        Johnston,
         [StringValue("JHN")]
-        JohnstoneStrathclyde,
+        Johnstone,
         [StringValue("JOR")]
         Jordanhill,
         [StringValue("KSL")]
-        KearsleyManchester,
+        Kearsley,
         [StringValue("KSN")]
-        KearsneyKent,
+        Kearsney,
         [StringValue("KEI")]
         Keighley,
         [StringValue("KEH")]
@@ -2520,7 +2816,7 @@ namespace DarwinNet.Objects
         [StringValue("KMH")]
         KempstonHardwick,
         [StringValue("KMP")]
-        KemptonParkRacecourse,
+        KemptonPark,
         [StringValue("KMS")]
         Kemsing,
         [StringValue("KML")]
@@ -2539,6 +2835,8 @@ namespace DarwinNet.Objects
         KensalGreen,
         [StringValue("KNR")]
         KensalRise,
+        [StringValue("ZHS")]
+        KensingtonHighStUnderground,
         [StringValue("KPA")]
         KensingtonOlympia,
         [StringValue("KTH")]
@@ -2551,8 +2849,12 @@ namespace DarwinNet.Objects
         Kenton,
         [StringValue("KBK")]
         KentsBank,
+        [StringValue("KWK")]
+        KeswickBusStation,
         [StringValue("KET")]
         Kettering,
+        [StringValue("KEZ")]
+        KetteringBus,
         [StringValue("KWB")]
         KewBridge,
         [StringValue("KWG")]
@@ -2571,6 +2873,8 @@ namespace DarwinNet.Objects
         Kidwelly,
         [StringValue("KBN")]
         KilburnHighRoad,
+        [StringValue("KCG")]
+        KilcregganBus,
         [StringValue("KLD")]
         Kildale,
         [StringValue("KIL")]
@@ -2595,6 +2899,8 @@ namespace DarwinNet.Objects
         KingsLangley,
         [StringValue("KLN")]
         KingsLynn,
+        [StringValue("KLB")]
+        KingsLynnBusStation,
         [StringValue("KNN")]
         KingsNorton,
         [StringValue("KGN")]
@@ -2603,26 +2909,32 @@ namespace DarwinNet.Objects
         KingsPark,
         [StringValue("KGS")]
         KingsSutton,
+        [StringValue("XAW")]
+        KingsbridgeBus,
         [StringValue("KGE")]
         Kingsknowe,
         [StringValue("KNG")]
         Kingston,
+        [StringValue("KWR")]
+        Kingswear,
         [StringValue("KND")]
         Kingswood,
         [StringValue("KIN")]
         Kingussie,
         [StringValue("KIT")]
         Kintbury,
+        [StringValue("KTR")]
+        Kintore,
         [StringValue("KBX")]
         KirbyCross,
         [StringValue("KKS")]
         KirkSandall,
         [StringValue("KIR")]
-        KirkbyMerseyside,
-        [StringValue("KSW")]
-        KirkbyStephen,
+        Kirkby,
         [StringValue("KKB")]
         KirkbyInAshfield,
+        [StringValue("KSW")]
+        KirkbyStephen,
         [StringValue("KBF")]
         KirkbyInFurness,
         [StringValue("KDY")]
@@ -2632,7 +2944,7 @@ namespace DarwinNet.Objects
         [StringValue("KKD")]
         Kirkdale,
         [StringValue("KKM")]
-        KirkhamAndWesham,
+        KirkhamWesham,
         [StringValue("KKH")]
         Kirkhill,
         [StringValue("KKN")]
@@ -2662,7 +2974,9 @@ namespace DarwinNet.Objects
         [StringValue("KNF")]
         Knutsford,
         [StringValue("KYL")]
-        KyleofLochalsh,
+        KyleOfLochalsh,
+        [StringValue("KYK")]
+        KyleakinSkyeBus,
         [StringValue("LDY")]
         Ladybank,
         [StringValue("LAD")]
@@ -2689,8 +3003,10 @@ namespace DarwinNet.Objects
         Langbank,
         [StringValue("LHO")]
         Langho,
+        [StringValue("LHL")]
+        LangholmBus,
         [StringValue("LNY")]
-        LangleyBerks,
+        Langley,
         [StringValue("LGG")]
         LangleyGreen,
         [StringValue("LGM")]
@@ -2711,14 +3027,18 @@ namespace DarwinNet.Objects
         Largs,
         [StringValue("LRH")]
         Larkhall,
+        [StringValue("LRN")]
+        LarneHarbourBus,
+        [StringValue("XAZ")]
+        LauncestonBus,
         [StringValue("LAU")]
         Laurencekirk,
         [StringValue("LWH")]
         LawrenceHill,
         [StringValue("LAY")]
-        LaytonLancs,
+        Layton,
         [StringValue("LZB")]
-        LazonbyAndKirkoswald,
+        LazonbyKirkoswald,
         [StringValue("LEB")]
         LeaBridge,
         [StringValue("LEG")]
@@ -2738,9 +3058,15 @@ namespace DarwinNet.Objects
         [StringValue("LED")]
         Ledbury,
         [StringValue("LEE")]
-        LeeLondon,
+        Lee,
         [StringValue("LDS")]
         Leeds,
+        [StringValue("XLB")]
+        LeedsBradfordAirportBus,
+        [StringValue("XLD")]
+        LeedsFestivalBus,
+        [StringValue("LZZ")]
+        LeedsWhitehallBus,
         [StringValue("LEI")]
         Leicester,
         [StringValue("LIH")]
@@ -2762,9 +3088,11 @@ namespace DarwinNet.Objects
         [StringValue("LET")]
         LetchworthGardenCity,
         [StringValue("LEU")]
-        LeucharsForStAndrews,
+        Leuchars,
         [StringValue("LVM")]
         Levenshulme,
+        [StringValue("XLA")]
+        Levisham,
         [StringValue("LWS")]
         Lewes,
         [StringValue("LEW")]
@@ -2781,10 +3109,16 @@ namespace DarwinNet.Objects
         LichfieldTrentValley,
         [StringValue("LID")]
         Lidlington,
+        [StringValue("LIU")]
+        LilleEurope,
         [StringValue("LHS")]
         Limehouse,
+        [StringValue("LBS")]
+        LincolnBusStation,
         [StringValue("LCN")]
         LincolnCentral,
+        [StringValue("LNF")]
+        LindfordBus,
         [StringValue("LFD")]
         Lingfield,
         [StringValue("LGD")]
@@ -2795,10 +3129,12 @@ namespace DarwinNet.Objects
         Liphook,
         [StringValue("LSK")]
         Liskeard,
+        [StringValue("LSM")]
+        LismoreBus,
         [StringValue("LIS")]
         Liss,
         [StringValue("LVT")]
-        LisvaneAndThornhill,
+        LisvaneThornhill,
         [StringValue("LTK")]
         LittleKimble,
         [StringValue("LTT")]
@@ -2813,8 +3149,8 @@ namespace DarwinNet.Objects
         Littleport,
         [StringValue("LVC")]
         LiverpoolCentral,
-        [StringValue("LVJ")]
-        LiverpoolJamesStreet,
+        [StringValue("LVS")]
+        LiverpoolLandingStage,
         [StringValue("LIV")]
         LiverpoolLimeStreet,
         [StringValue("LPY")]
@@ -2889,12 +3225,16 @@ namespace DarwinNet.Objects
         LochEilOutwardBound,
         [StringValue("LCL")]
         Lochailort,
+        [StringValue("LCB")]
+        LochboisdaleSouthUistBus,
         [StringValue("LCS")]
         Locheilside,
         [StringValue("LCG")]
         Lochgelly,
         [StringValue("LCC")]
         Lochluichart,
+        [StringValue("LCH")]
+        LochmaddyNorthUistBus,
         [StringValue("LHW")]
         Lochwinnoch,
         [StringValue("LOC")]
@@ -2927,10 +3267,8 @@ namespace DarwinNet.Objects
         LondonRoadBrighton,
         [StringValue("LRD")]
         LondonRoadGuildford,
-        [StringValue("SPX")]
-        LondonStPancrasIntl,
         [StringValue("STP")]
-        LondonStPancrasInternational,
+        LondonStPancrasIntl,
         [StringValue("VIC")]
         LondonVictoria,
         [StringValue("WAT")]
@@ -2983,6 +3321,10 @@ namespace DarwinNet.Objects
         Ludlow,
         [StringValue("LUT")]
         Luton,
+        [StringValue("LUB")]
+        LutonBus,
+        [StringValue("LUA")]
+        LutonAirportBus,
         [StringValue("LTN")]
         LutonAirportParkway,
         [StringValue("LUX")]
@@ -2990,7 +3332,7 @@ namespace DarwinNet.Objects
         [StringValue("LYD")]
         Lydney,
         [StringValue("LYE")]
-        LyeWestMidlands,
+        Lye,
         [StringValue("LYP")]
         LymingtonPier,
         [StringValue("LYT")]
@@ -2999,6 +3341,8 @@ namespace DarwinNet.Objects
         LympstoneCommando,
         [StringValue("LYM")]
         LympstoneVillage,
+        [StringValue("XBD")]
+        LynehamCampBus,
         [StringValue("LTM")]
         Lytham,
         [StringValue("MAC")]
@@ -3038,7 +3382,7 @@ namespace DarwinNet.Objects
         [StringValue("MAN")]
         ManchesterPiccadilly,
         [StringValue("MUF")]
-        ManchesterUnitedFootballGround,
+        ManchesterUnitedFc,
         [StringValue("MCV")]
         ManchesterVictoria,
         [StringValue("MNE")]
@@ -3053,6 +3397,8 @@ namespace DarwinNet.Objects
         Manorbier,
         [StringValue("MAS")]
         Manors,
+        [StringValue("MRM")]
+        ManorsTWMetro,
         [StringValue("MFT")]
         Mansfield,
         [StringValue("MSW")]
@@ -3060,7 +3406,7 @@ namespace DarwinNet.Objects
         [StringValue("MCH")]
         March,
         [StringValue("MRN")]
-        MardenKent,
+        Marden,
         [StringValue("MAR")]
         Margate,
         [StringValue("MHR")]
@@ -3071,12 +3417,20 @@ namespace DarwinNet.Objects
         Markinch,
         [StringValue("MKT")]
         MarksTey,
+        [StringValue("XBH")]
+        MarlboroughBus,
         [StringValue("MLW")]
         Marlow,
+        [StringValue("MCK")]
+        MarneLaVallee,
         [StringValue("MPL")]
         Marple,
         [StringValue("MSN")]
-        MarsdenYorks,
+        Marsden,
+        [StringValue("MSC")]
+        MarseilleStCharles,
+        [StringValue("MBT")]
+        MarshBarton,
         [StringValue("MSK")]
         Marske,
         [StringValue("MGN")]
@@ -3111,8 +3465,12 @@ namespace DarwinNet.Objects
         Meldreth,
         [StringValue("MKM")]
         Melksham,
+        [StringValue("XBO")]
+        MelkshamMarketPlaceBus,
+        [StringValue("MLS")]
+        MelroseBus,
         [StringValue("MES")]
-        MeltonSuffolk,
+        Melton,
         [StringValue("MMO")]
         MeltonMowbray,
         [StringValue("MEN")]
@@ -3139,6 +3497,8 @@ namespace DarwinNet.Objects
         Metheringham,
         [StringValue("MCE")]
         MetroCentre,
+        [StringValue("XEF")]
+        MevagisseyBus,
         [StringValue("MEX")]
         Mexborough,
         [StringValue("MIC")]
@@ -3151,28 +3511,40 @@ namespace DarwinNet.Objects
         Middlewood,
         [StringValue("MDG")]
         Midgham,
+        [StringValue("XBR")]
+        MidsomerNortonBus,
         [StringValue("MLF")]
         MilfordSurrey,
         [StringValue("MFH")]
         MilfordHaven,
         [StringValue("MLH")]
-        MillHillLancs,
+        MillHillLancashire,
         [StringValue("MIL")]
         MillHillBroadway,
         [StringValue("MLB")]
-        MillbrookBeds,
+        MillbrookBedfordshire,
         [StringValue("MBK")]
-        MillbrookHants,
+        MillbrookHampshire,
+        [StringValue("MIF")]
+        MillfieldTWMetro,
         [StringValue("MIN")]
         MillikenPark,
         [StringValue("MLM")]
         Millom,
         [StringValue("MIH")]
-        MillsHillManchester,
+        MillsHill,
         [StringValue("MLN")]
         Milngavie,
+        [StringValue("MLR")]
+        Milnrow,
         [StringValue("MKC")]
         MiltonKeynesCentral,
+        [StringValue("MHD")]
+        Minehead,
+        [StringValue("XBW")]
+        MineheadBus,
+        [StringValue("XBV")]
+        MineheadButlinsBus,
         [StringValue("MFF")]
         Minffordd,
         [StringValue("MSR")]
@@ -3217,6 +3589,8 @@ namespace DarwinNet.Objects
         MoretonMerseyside,
         [StringValue("MIM")]
         MoretonInMarsh,
+        [StringValue("XEK")]
+        MoretonhampsteadBus,
         [StringValue("MFA")]
         MorfaMawddach,
         [StringValue("MLY")]
@@ -3232,7 +3606,7 @@ namespace DarwinNet.Objects
         [StringValue("MOS")]
         MossSide,
         [StringValue("MSL")]
-        MossleyManchester,
+        Mossley,
         [StringValue("MSH")]
         MossleyHill,
         [StringValue("MPK")]
@@ -3246,7 +3620,7 @@ namespace DarwinNet.Objects
         [StringValue("MTG")]
         Mottingham,
         [StringValue("DBG")]
-        MottisfontAndDunbridge,
+        MottisfontDunbridge,
         [StringValue("MLD")]
         Mouldsworth,
         [StringValue("MCB")]
@@ -3257,8 +3631,10 @@ namespace DarwinNet.Objects
         MountVernon,
         [StringValue("MTA")]
         MountainAsh,
+        [StringValue("MUK")]
+        MuckBus,
         [StringValue("MOO")]
-        MuirofOrd,
+        MuirOfOrd,
         [StringValue("MUI")]
         Muirend,
         [StringValue("MUB")]
@@ -3268,7 +3644,7 @@ namespace DarwinNet.Objects
         [StringValue("NFN")]
         Nafferton,
         [StringValue("NLS")]
-        NailseaAndBackwell,
+        NailseaBackwell,
         [StringValue("NRN")]
         Nairn,
         [StringValue("NAN")]
@@ -3311,6 +3687,8 @@ namespace DarwinNet.Objects
         NewCumnock,
         [StringValue("NEH")]
         NewEltham,
+        [StringValue("NHY")]
+        NewHey,
         [StringValue("NHL")]
         NewHolland,
         [StringValue("NHE")]
@@ -3337,16 +3715,24 @@ namespace DarwinNet.Objects
         Newbridge,
         [StringValue("NBY")]
         Newbury,
+        [StringValue("ZNP")]
+        NewburyParkUnderground,
         [StringValue("NRC")]
         NewburyRacecourse,
         [StringValue("NCL")]
         Newcastle,
+        [StringValue("APN")]
+        NewcastleAirport,
+        [StringValue("NCZ")]
+        NewcastleCentralMetro,
         [StringValue("NCO")]
         Newcourt,
         [StringValue("NEW")]
         Newcraighall,
         [StringValue("NVH")]
         NewhavenHarbour,
+        [StringValue("NVM")]
+        NewhavenMarineBus,
         [StringValue("NVN")]
         NewhavenTown,
         [StringValue("NGT")]
@@ -3362,23 +3748,23 @@ namespace DarwinNet.Objects
         [StringValue("NSD")]
         Newstead,
         [StringValue("NTN")]
-        NewtonLanark,
+        Newton,
         [StringValue("NTA")]
         NewtonAbbot,
         [StringValue("NAY")]
         NewtonAycliffe,
         [StringValue("NWN")]
-        NewtonforHyde,
+        NewtonForHyde,
         [StringValue("NTC")]
         NewtonStCyres,
-        [StringValue("NEG")]
-        Newtongrange,
         [StringValue("NLW")]
         NewtonLeWillows,
-        [StringValue("NWR")]
-        Newtonmore,
         [StringValue("NOA")]
         NewtonOnAyr,
+        [StringValue("NEG")]
+        Newtongrange,
+        [StringValue("NWR")]
+        Newtonmore,
         [StringValue("NWT")]
         NewtownPowys,
         [StringValue("NNP")]
@@ -3406,7 +3792,7 @@ namespace DarwinNet.Objects
         [StringValue("NQU")]
         NorthQueensferry,
         [StringValue("NRD")]
-        NorthRoadDarlington,
+        NorthRoad,
         [StringValue("NSH")]
         NorthSheen,
         [StringValue("NWA")]
@@ -3427,6 +3813,10 @@ namespace DarwinNet.Objects
         NorthumberlandPark,
         [StringValue("NWI")]
         Northwich,
+        [StringValue("NTB")]
+        NortonBridge,
+        [StringValue("NBS")]
+        NortonBridgeBus,
         [StringValue("NRW")]
         Norwich,
         [StringValue("NWD")]
@@ -3437,18 +3827,24 @@ namespace DarwinNet.Objects
         Nuneaton,
         [StringValue("NHD")]
         Nunhead,
+        [StringValue("NUR")]
+        NunnerySquareTram,
         [StringValue("NNT")]
         Nunthorpe,
         [StringValue("NUT")]
         Nutbourne,
         [StringValue("NUF")]
         Nutfield,
+        [StringValue("XET")]
+        NutfieldMemorialHallBus,
         [StringValue("OKN")]
         Oakengates,
         [StringValue("OKM")]
         Oakham,
         [StringValue("OKL")]
         OakleighPark,
+        [StringValue("ZOA")]
+        OakwoodLulEnfield,
         [StringValue("OBN")]
         Oban,
         [StringValue("OCK")]
@@ -3457,6 +3853,8 @@ namespace DarwinNet.Objects
         Ockley,
         [StringValue("OKE")]
         Okehampton,
+        [StringValue("XCG")]
+        OkehamptonBus,
         [StringValue("OHL")]
         OldHill,
         [StringValue("ORN")]
@@ -3465,6 +3863,10 @@ namespace DarwinNet.Objects
         OldStreet,
         [StringValue("OLF")]
         OldfieldPark,
+        [StringValue("OLM")]
+        OldhamMumps,
+        [StringValue("OLW")]
+        OldhamWerneth,
         [StringValue("OLT")]
         Olton,
         [StringValue("ORE")]
@@ -3479,10 +3881,14 @@ namespace DarwinNet.Objects
         OrrellPark,
         [StringValue("OTF")]
         Otford,
+        [StringValue("OTL")]
+        OtleyBusStation,
         [StringValue("OUN")]
         OultonBroadNorth,
         [StringValue("OUS")]
         OultonBroadSouth,
+        [StringValue("OUD")]
+        OundleMarketPlaceBus,
         [StringValue("OUT")]
         Outwood,
         [StringValue("OVE")]
@@ -3491,6 +3897,8 @@ namespace DarwinNet.Objects
         Overton,
         [StringValue("OXN")]
         OxenholmeLakeDistrict,
+        [StringValue("XOB")]
+        Oxenhope,
         [StringValue("OXF")]
         Oxford,
         [StringValue("OXP")]
@@ -3503,6 +3911,8 @@ namespace DarwinNet.Objects
         PaddockWood,
         [StringValue("PDG")]
         Padgate,
+        [StringValue("PDT")]
+        PadstowBusTerminus,
         [StringValue("PGN")]
         Paignton,
         [StringValue("PCN")]
@@ -3511,6 +3921,8 @@ namespace DarwinNet.Objects
         PaisleyGilmourStreet,
         [StringValue("PYJ")]
         PaisleyStJames,
+        [StringValue("PAI")]
+        PallionTWMetro,
         [StringValue("PAL")]
         PalmersGreen,
         [StringValue("PAN")]
@@ -3521,10 +3933,18 @@ namespace DarwinNet.Objects
         Pantyffynnon,
         [StringValue("PAR")]
         Par,
+        [StringValue("XDR")]
+        ParBus,
         [StringValue("PBL")]
         Parbold,
+        [StringValue("PBN")]
+        ParisNord,
+        [StringValue("CIC")]
+        ParkLaneBus,
         [StringValue("PKT")]
         ParkStreet,
+        [StringValue("PAQ")]
+        Parkgate,
         [StringValue("PKS")]
         ParkstoneDorset,
         [StringValue("PSN")]
@@ -3543,16 +3963,24 @@ namespace DarwinNet.Objects
         Peartree,
         [StringValue("PMR")]
         PeckhamRye,
+        [StringValue("PBS")]
+        PeeblesBusStop,
         [StringValue("PEG")]
         Pegswood,
+        [StringValue("PAW")]
+        PelawTWMetro,
         [StringValue("PEM")]
         Pemberton,
         [StringValue("PBY")]
-        PembreyAndBurryPort,
+        PembreyBurryPort,
         [StringValue("PMB")]
         Pembroke,
         [StringValue("PMD")]
         PembrokeDock,
+        [StringValue("PDK")]
+        PembrokeDockFerryTerm,
+        [StringValue("PNY")]
+        PenYBont,
         [StringValue("PNA")]
         Penally,
         [StringValue("PEN")]
@@ -3580,23 +4008,25 @@ namespace DarwinNet.Objects
         [StringValue("PRH")]
         Penrhyndeudraeth,
         [StringValue("PNR")]
-        PenrithNorthLakes,
+        Penrith,
         [StringValue("PYN")]
-        PenrynCornwall,
+        Penryn,
         [StringValue("PES")]
-        PensarnGwynedd,
+        Pensarn,
         [StringValue("PHR")]
         Penshurst,
         [StringValue("PTB")]
         PentreBach,
-        [StringValue("PNY")]
-        PenYBont,
         [StringValue("PNC")]
         Penychain,
         [StringValue("PNF")]
         Penyffordd,
+        [StringValue("XPZ")]
+        PenywaunBus,
         [StringValue("PNZ")]
         Penzance,
+        [StringValue("XCL")]
+        PerranporthBus,
         [StringValue("PRW")]
         Perranwell,
         [StringValue("PRY")]
@@ -3607,16 +4037,24 @@ namespace DarwinNet.Objects
         Perth,
         [StringValue("PBO")]
         Peterborough,
+        [StringValue("PBU")]
+        PeterboroughQueensgateBus,
         [StringValue("PTR")]
         Petersfield,
         [StringValue("PET")]
         PettsWood,
         [StringValue("PEV")]
-        PevenseyAndWestham,
+        PevenseyWestham,
         [StringValue("PEB")]
         PevenseyBay,
         [StringValue("PEW")]
         Pewsey,
+        [StringValue("ZPC")]
+        PiccadillyCircusUnderground,
+        [StringValue("XPK")]
+        Pickering,
+        [StringValue("PIZ")]
+        PickeringEastgateBus,
         [StringValue("PIL")]
         Pilning,
         [StringValue("PIN")]
@@ -3625,6 +4063,8 @@ namespace DarwinNet.Objects
         Pitlochry,
         [StringValue("PSE")]
         Pitsea,
+        [StringValue("ZPS")]
+        Plaistow,
         [StringValue("PLS")]
         Pleasington,
         [StringValue("PLK")]
@@ -3639,6 +4079,8 @@ namespace DarwinNet.Objects
         Plumstead,
         [StringValue("PLY")]
         Plymouth,
+        [StringValue("XDJ")]
+        PlymouthSaltashRoadBus,
         [StringValue("POK")]
         Pokesdown,
         [StringValue("PLG")]
@@ -3659,6 +4101,8 @@ namespace DarwinNet.Objects
         PolsloeBridge,
         [StringValue("PON")]
         PondersEnd,
+        [StringValue("PYP")]
+        PontYPant,
         [StringValue("PTD")]
         Pontarddulais,
         [StringValue("PFR")]
@@ -3671,10 +4115,8 @@ namespace DarwinNet.Objects
         Pontlottyn,
         [StringValue("PYC")]
         Pontyclun,
-        [StringValue("PYP")]
-        PontYPant,
         [StringValue("PPL")]
-        PontypoolAndNewInn,
+        PontypoolNewInn,
         [StringValue("PPD")]
         Pontypridd,
         [StringValue("POO")]
@@ -3691,20 +4133,24 @@ namespace DarwinNet.Objects
         Portchester,
         [StringValue("POR")]
         Porth,
+        [StringValue("XEO")]
+        PorthcawlBus,
         [StringValue("PTM")]
         Porthmadog,
+        [StringValue("PMG")]
+        PorthmadogHarbourBus,
         [StringValue("PLN")]
         Portlethen,
         [StringValue("PLD")]
         Portslade,
         [StringValue("PMS")]
-        PortsmouthAndSouthsea,
+        PortsmouthSouthsea,
         [StringValue("PMA")]
         PortsmouthArms,
         [StringValue("PMH")]
         PortsmouthHarbour,
         [StringValue("PPK")]
-        PossilparkAndParkhouse,
+        PossilparkParkhouse,
         [StringValue("PBR")]
         PottersBar,
         [StringValue("PFY")]
@@ -3720,21 +4166,29 @@ namespace DarwinNet.Objects
         [StringValue("PRB")]
         Prestbury,
         [StringValue("PRE")]
-        PrestonLancs,
+        Preston,
+        [StringValue("XPT")]
+        PrestonCSFerry,
         [StringValue("PRP")]
         PrestonPark,
         [StringValue("PST")]
         Prestonpans,
+        [StringValue("PWC")]
+        PrestwichMetrolinkBus,
         [StringValue("PRA")]
-        PrestwickInternationalAirport,
+        PrestwickIntlAirport,
         [StringValue("PTW")]
         PrestwickTown,
         [StringValue("PTL")]
-        PriesthillAndDarnley,
+        PriesthillDarnley,
         [StringValue("PRR")]
         PrincesRisborough,
+        [StringValue("XPF")]
+        PrincetownBus,
         [StringValue("PRL")]
         Prittlewell,
+        [StringValue("SIR")]
+        PrivateCharter,
         [StringValue("PRU")]
         Prudhoe,
         [StringValue("PUL")]
@@ -3753,6 +4207,8 @@ namespace DarwinNet.Objects
         PyeCorner,
         [StringValue("PYL")]
         Pyle,
+        [StringValue("QRD")]
+        QuaintonRoad,
         [StringValue("QYD")]
         QuakersYard,
         [StringValue("QBR")]
@@ -3768,11 +4224,15 @@ namespace DarwinNet.Objects
         [StringValue("QUI")]
         QuintrellDowns,
         [StringValue("RDF")]
-        RadcliffeOnTrent,
+        RadcliffeNottinghamshire,
+        [StringValue("RCF")]
+        RadcliffeMetrolinkBus,
         [StringValue("RDT")]
         Radlett,
         [StringValue("RAD")]
         Radley,
+        [StringValue("XEQ")]
+        RadstockBus,
         [StringValue("RDR")]
         Radyr,
         [StringValue("RNF")]
@@ -3785,14 +4245,16 @@ namespace DarwinNet.Objects
         Rainhill,
         [StringValue("RAM")]
         Ramsgate,
+        [StringValue("RMG")]
+        RamsgateHarbourBus,
         [StringValue("RGW")]
-        RamsgreaveAndWilpshire,
+        RamsgreaveWilpshire,
         [StringValue("RAN")]
         Rannoch,
         [StringValue("RAU")]
         Rauceby,
         [StringValue("RAV")]
-        RavenglassforEskdale,
+        RavenglassForEskdale,
         [StringValue("RVB")]
         Ravensbourne,
         [StringValue("RVN")]
@@ -3811,8 +4273,6 @@ namespace DarwinNet.Objects
         RectoryRoad,
         [StringValue("RDB")]
         Redbridge,
-        [StringValue("RBS")]
-        RedcarBritishSteel,
         [StringValue("RCC")]
         RedcarCentral,
         [StringValue("RCE")]
@@ -3833,28 +4293,40 @@ namespace DarwinNet.Objects
         ReedhamNorfolk,
         [StringValue("RHM")]
         ReedhamSurrey,
+        [StringValue("REG")]
+        RegentCentreBus,
         [StringValue("REI")]
         Reigate,
         [StringValue("RTN")]
         Renton,
+        [StringValue("RSN")]
+        Reston,
         [StringValue("RET")]
         Retford,
+        [StringValue("RHG")]
+        RhigosBus,
         [StringValue("RHI")]
         Rhiwbina,
         [StringValue("RIA")]
-        RhooseCardiffInternationalAirport,
+        RhooseCardiffIntlAirport,
         [StringValue("RHO")]
         Rhosneigr,
+        [StringValue("RHU")]
+        RhumBus,
         [StringValue("RHL")]
         Rhyl,
         [StringValue("RHY")]
         Rhymney,
+        [StringValue("XTV")]
+        RhymneyTredegarBus,
         [StringValue("RHD")]
         Ribblehead,
         [StringValue("RIL")]
         RiceLane,
         [StringValue("RMD")]
-        RichmondLondon,
+        Richmond,
+        [StringValue("RMK")]
+        RichmondNthYorksBus,
         [StringValue("RIC")]
         Rickmansworth,
         [StringValue("RDD")]
@@ -3864,11 +4336,13 @@ namespace DarwinNet.Objects
         [StringValue("RDM")]
         RidingMill,
         [StringValue("RCA")]
-        RiscaAndPontymister,
+        RiscaPontymister,
         [StringValue("RIS")]
         Rishton,
         [StringValue("RBR")]
         Robertsbridge,
+        [StringValue("RHA")]
+        RobinHoodAirportBus,
         [StringValue("RRN")]
         Robroyston,
         [StringValue("ROB")]
@@ -3897,18 +4371,24 @@ namespace DarwinNet.Objects
         Romiley,
         [StringValue("ROM")]
         Romsey,
+        [StringValue("REB")]
+        RomseyBusStation,
         [StringValue("ROO")]
         Roose,
         [StringValue("RSG")]
         RoseGrove,
         [StringValue("RSH")]
         RoseHillMarple,
+        [StringValue("RSB")]
+        RosslareEuroport,
         [StringValue("ROS")]
         Rosyth,
         [StringValue("RMC")]
         RotherhamCentral,
         [StringValue("ROE")]
         Rotherhithe,
+        [StringValue("RTY")]
+        RothesayButeBus,
         [StringValue("RNR")]
         RoughtonRoad,
         [StringValue("RLN")]
@@ -3950,15 +4430,17 @@ namespace DarwinNet.Objects
         [StringValue("RRB")]
         RyderBrow,
         [StringValue("RYE")]
-        RyeSussex,
+        Rye,
         [StringValue("RYH")]
         RyeHouse,
+        [StringValue("SLE")]
+        SaleMetrolinkBus,
         [StringValue("SFD")]
         SalfordCentral,
         [StringValue("SLD")]
         SalfordCrescent,
         [StringValue("SAF")]
-        SalfordsSurrey,
+        Salfords,
         [StringValue("SAH")]
         Salhouse,
         [StringValue("SAL")]
@@ -3978,7 +4460,7 @@ namespace DarwinNet.Objects
         [StringValue("SMC")]
         SampfordCourtenay,
         [StringValue("SNA")]
-        SandalAndAgbrigg,
+        SandalAgbrigg,
         [StringValue("SDB")]
         Sandbach,
         [StringValue("SNR")]
@@ -3986,21 +4468,23 @@ namespace DarwinNet.Objects
         [StringValue("SDL")]
         Sandhills,
         [StringValue("SND")]
-        SandhurstBerks,
+        Sandhurst,
         [StringValue("SDG")]
         Sandling,
         [StringValue("SAN")]
         Sandown,
         [StringValue("SDP")]
         Sandplace,
+        [StringValue("XSA")]
+        SandringhamBus,
         [StringValue("SAD")]
-        SandwellAndDudley,
+        SandwellDudley,
         [StringValue("SDW")]
         Sandwich,
         [StringValue("SDY")]
         Sandy,
         [StringValue("SNK")]
-        SankeyforPenketh,
+        SankeyForPenketh,
         [StringValue("SQH")]
         Sanquhar,
         [StringValue("SRR")]
@@ -4021,14 +4505,18 @@ namespace DarwinNet.Objects
         Scotscalder,
         [StringValue("SCH")]
         Scotstounhill,
+        [StringValue("SCB")]
+        ScrabsterBus,
         [StringValue("SCU")]
         Scunthorpe,
         [StringValue("SML")]
         SeaMills,
+        [StringValue("SEB")]
+        SeaburnTWMetro,
         [StringValue("SEF")]
-        SeafordSussex,
+        Seaford,
         [StringValue("SFL")]
-        SeaforthAndLitherland,
+        SeaforthLitherland,
         [StringValue("SEA")]
         Seaham,
         [StringValue("SEM")]
@@ -4037,12 +4525,16 @@ namespace DarwinNet.Objects
         Seascale,
         [StringValue("SEC")]
         SeatonCarew,
+        [StringValue("SSF")]
+        SeatonDevonBus,
         [StringValue("SRG")]
-        SeerGreenAndJordans,
+        SeerGreen,
         [StringValue("SBY")]
         Selby,
         [StringValue("SRS")]
         Selhurst,
+        [StringValue("SKK")]
+        SelkirkBus,
         [StringValue("SEL")]
         Sellafield,
         [StringValue("SEG")]
@@ -4063,10 +4555,14 @@ namespace DarwinNet.Objects
         SevernTunnelJunction,
         [StringValue("SDE")]
         Shadwell,
+        [StringValue("SWH")]
+        ShaftesburyTownHallBus,
         [StringValue("SFR")]
-        ShalfordSurrey,
+        Shalford,
         [StringValue("SHN")]
         Shanklin,
+        [StringValue("SHA")]
+        ShawCrompton,
         [StringValue("SFI")]
         Shawfair,
         [StringValue("SHW")]
@@ -4077,8 +4573,12 @@ namespace DarwinNet.Objects
         SheernessOnSea,
         [StringValue("SHF")]
         Sheffield,
+        [StringValue("SAI")]
+        SheffieldArenaTram,
+        [StringValue("SHQ")]
+        SheffieldCathedralTram,
         [StringValue("SED")]
-        ShelfordCambs,
+        Shelford,
         [StringValue("SNF")]
         Shenfield,
         [StringValue("SEN")]
@@ -4110,7 +4610,7 @@ namespace DarwinNet.Objects
         [StringValue("SHI")]
         Shiplake,
         [StringValue("SHY")]
-        ShipleyYorks,
+        Shipley,
         [StringValue("SPP")]
         ShippeaHill,
         [StringValue("SIP")]
@@ -4191,6 +4691,8 @@ namespace DarwinNet.Objects
         Snodland,
         [StringValue("SWO")]
         Snowdown,
+        [StringValue("SOJ")]
+        Soham,
         [StringValue("SOR")]
         SoleStreet,
         [StringValue("SOL")]
@@ -4207,12 +4709,16 @@ namespace DarwinNet.Objects
         SouthCroydon,
         [StringValue("SES")]
         SouthElmsall,
+        [StringValue("SGH")]
+        SouthGosforthTWMetro,
         [StringValue("SGN")]
         SouthGreenford,
         [StringValue("SGL")]
         SouthGyle,
         [StringValue("SOH")]
         SouthHampstead,
+        [StringValue("SHZ")]
+        SouthHyltonTWMetro,
         [StringValue("SOK")]
         SouthKenton,
         [StringValue("SMO")]
@@ -4233,6 +4739,12 @@ namespace DarwinNet.Objects
         SouthamptonAirportParkway,
         [StringValue("SOU")]
         SouthamptonCentral,
+        [StringValue("XSN")]
+        SouthamptonEasternDocks,
+        [StringValue("STQ")]
+        SouthamptonTownQuayBus,
+        [StringValue("XSK")]
+        SouthamptonWesternDocks,
         [StringValue("SOB")]
         Southbourne,
         [StringValue("SBU")]
@@ -4251,6 +4763,12 @@ namespace DarwinNet.Objects
         Southminster,
         [StringValue("SOP")]
         Southport,
+        [StringValue("SOZ")]
+        SouthportLordStreetBus,
+        [StringValue("SHV")]
+        SouthseaHoverportBus,
+        [StringValue("SLZ")]
+        SouthwellBus,
         [StringValue("SWK")]
         Southwick,
         [StringValue("SOW")]
@@ -4273,14 +4791,16 @@ namespace DarwinNet.Objects
         Springfield,
         [StringValue("SQU")]
         SquiresGate,
+        [StringValue("SAC")]
+        StAlbans,
         [StringValue("SAA")]
         StAlbansAbbey,
-        [StringValue("SAC")]
-        StAlbansCity,
+        [StringValue("SAO")]
+        StAndrewsBus,
         [StringValue("SAR")]
         StAndrewsRoad,
         [StringValue("SAS")]
-        StAnnesOnSea,
+        StAnnesOnTheSea,
         [StringValue("SAU")]
         StAustell,
         [StringValue("SBS")]
@@ -4302,21 +4822,23 @@ namespace DarwinNet.Objects
         [StringValue("SHJ")]
         StHelensJunction,
         [StringValue("SIH")]
-        StHelierSurrey,
+        StHelier,
         [StringValue("SIV")]
-        StIvesCornwall,
-        [StringValue("SJP")]
-        StJamesParkExeter,
+        StIves,
+        [StringValue("SJN")]
+        StJamesTWMetro,
         [StringValue("SJS")]
-        StJamesStreetWalthamstow,
+        StJamesStreet,
+        [StringValue("SJP")]
+        StJamesPark,
         [StringValue("SAJ")]
-        StJohnsLondon,
+        StJohns,
         [StringValue("SKN")]
         StKeyneWishingWellHalt,
         [StringValue("SLQ")]
         StLeonardsWarriorSquare,
         [StringValue("SMT")]
-        StMargaretsHerts,
+        StMargaretsHertfordshire,
         [StringValue("SMG")]
         StMargaretsLondon,
         [StringValue("SMY")]
@@ -4325,6 +4847,12 @@ namespace DarwinNet.Objects
         StMichaels,
         [StringValue("SNO")]
         StNeots,
+        [StringValue("XEI")]
+        StNeotsBus,
+        [StringValue("STZ")]
+        StPetersTWMetro,
+        [StringValue("STI")]
+        StadiumOfLightTWMetro,
         [StringValue("STA")]
         Stafford,
         [StringValue("SNS")]
@@ -4334,15 +4862,19 @@ namespace DarwinNet.Objects
         [StringValue("SYB")]
         Stalybridge,
         [StringValue("SMD")]
-        StamfordLincs,
+        Stamford,
         [StringValue("SMH")]
         StamfordHill,
         [StringValue("SFO")]
         StanfordLeHope,
+        [StringValue("SNP")]
+        Stanhope,
         [StringValue("SNT")]
-        StanlowAndThornton,
+        StanlowThornton,
         [StringValue("SSD")]
         StanstedAirport,
+        [StringValue("XTH")]
+        StanstedAirportBusStop,
         [StringValue("SST")]
         StanstedMountfitchet,
         [StringValue("SPU")]
@@ -4354,11 +4886,11 @@ namespace DarwinNet.Objects
         [StringValue("SCS")]
         Starcross,
         [StringValue("SVL")]
-        StaveleyCumbria,
+        Staveley,
         [StringValue("SCF")]
         Stechford,
         [StringValue("SON")]
-        SteetonAndSilsden,
+        SteetonSilsden,
         [StringValue("SPS")]
         Stepps,
         [StringValue("SVG")]
@@ -4386,9 +4918,13 @@ namespace DarwinNet.Objects
         [StringValue("SOT")]
         StokeOnTrent,
         [StringValue("SNE")]
-        StoneStaffs,
+        Stone,
         [StringValue("SCG")]
         StoneCrossing,
+        [StringValue("SCN")]
+        StoneCrownStreetBus,
+        [StringValue("SGQ")]
+        StoneGranvilleSquareBus,
         [StringValue("SBP")]
         StonebridgePark,
         [StringValue("SOG")]
@@ -4399,6 +4935,8 @@ namespace DarwinNet.Objects
         Stonehouse,
         [StringValue("SNL")]
         Stoneleigh,
+        [StringValue("SOY")]
+        StornowayLewisBus,
         [StringValue("SBJ")]
         StourbridgeJunction,
         [StringValue("SBT")]
@@ -4409,42 +4947,48 @@ namespace DarwinNet.Objects
         Stowmarket,
         [StringValue("STR")]
         Stranraer,
+        [StringValue("SWP")]
+        StranraerWestPierBus,
         [StringValue("SRA")]
         StratfordLondon,
         [StringValue("SFA")]
         StratfordInternational,
+        [StringValue("STY")]
+        StratfordParkway,
         [StringValue("SAV")]
         StratfordUponAvon,
-        [StringValue("STY")]
-        StratfordUponAvonParkway,
         [StringValue("STC")]
         Strathcarron,
         [StringValue("STW")]
         StrawberryHill,
         [StringValue("STE")]
-        StreathamGreaterLondon,
+        Streatham,
         [StringValue("SRC")]
         StreathamCommon,
         [StringValue("SRH")]
         StreathamHill,
+        [StringValue("XCU")]
+        StreetBus,
         [StringValue("SHC")]
         Streethouse,
+        [StringValue("SRF")]
+        StretfordMetrolinkBus,
         [StringValue("SRN")]
         Strines,
         [StringValue("STF")]
         Stromeferry,
         [StringValue("SOO")]
-        StroodKent,
+        Strood,
         [StringValue("STD")]
-        StroudGloucs,
+        Stroud,
         [StringValue("STU")]
         Sturry,
         [StringValue("SYA")]
         Styal,
-        [StringValue("SUD")]
-        SudburyAndHarrowRoad,
         [StringValue("SUY")]
-        SudburySuffolk,
+        Sudbury,
+        [StringValue("SUD")]
+        SudburyHarrowRoad,
         [StringValue("SDH")]
         SudburyHillHarrow,
         [StringValue("SUG")]
@@ -4466,13 +5010,15 @@ namespace DarwinNet.Objects
         [StringValue("SQE")]
         SurreyQuays,
         [StringValue("SUO")]
-        SuttonSurrey,
+        SuttonLondon,
         [StringValue("SUT")]
         SuttonColdfield,
         [StringValue("SUC")]
         SuttonCommon,
         [StringValue("SPK")]
         SuttonParkway,
+        [StringValue("SWB")]
+        SwaffhamTouristInfCtrBus,
         [StringValue("SWL")]
         Swale,
         [StringValue("SAY")]
@@ -4481,6 +5027,8 @@ namespace DarwinNet.Objects
         Swanscombe,
         [StringValue("SWA")]
         Swansea,
+        [StringValue("SWF")]
+        SwanseaDocksBus,
         [StringValue("SNW")]
         Swanwick,
         [StringValue("SWY")]
@@ -4489,16 +5037,20 @@ namespace DarwinNet.Objects
         Swaythling,
         [StringValue("SWD")]
         Swinderby,
+        [StringValue("SWC")]
+        SwinderbyA46RoundaboutBus,
         [StringValue("SWI")]
-        SwindonWilts,
+        Swindon,
+        [StringValue("XDK")]
+        SwindonBusStation,
         [StringValue("SWE")]
         Swineshead,
         [StringValue("SNN")]
         SwintonManchester,
         [StringValue("SWN")]
-        SwintonSouthYorks,
+        SwintonSouthYorkshire,
         [StringValue("SYD")]
-        SydenhamLondon,
+        Sydenham,
         [StringValue("SYH")]
         SydenhamHill,
         [StringValue("SYL")]
@@ -4513,26 +5065,36 @@ namespace DarwinNet.Objects
         TaffsWell,
         [StringValue("TAI")]
         Tain,
+        [StringValue("TLC")]
+        TalYCafn,
         [StringValue("TAL")]
         Talsarnau,
         [StringValue("TLB")]
         Talybont,
-        [StringValue("TLC")]
-        TalYCafn,
         [StringValue("TAB")]
         TameBridgeParkway,
         [StringValue("TAM")]
         Tamworth,
+        [StringValue("TYB")]
+        TanYBwlchBus,
         [StringValue("TAP")]
         Taplow,
+        [StringValue("TBT")]
+        TarbertHarrisBus,
         [StringValue("TAT")]
         TattenhamCorner,
         [StringValue("TAU")]
         Taunton,
+        [StringValue("XDQ")]
+        TauntonBus,
+        [StringValue("XCV")]
+        TavistockBus,
         [StringValue("TAY")]
         Taynuilt,
         [StringValue("TED")]
         Teddington,
+        [StringValue("TVA")]
+        TeesValleyAirportBus,
         [StringValue("TEA")]
         TeesSideAirport,
         [StringValue("TGM")]
@@ -4554,7 +5116,7 @@ namespace DarwinNet.Objects
         [StringValue("THW")]
         TheHawthorns,
         [StringValue("TLK")]
-        TheLakesWarks,
+        TheLakes,
         [StringValue("THE")]
         Theale,
         [StringValue("TEO")]
@@ -4597,20 +5159,32 @@ namespace DarwinNet.Objects
         Thurso,
         [StringValue("TRS")]
         Thurston,
+        [StringValue("TBR")]
+        TilburyRiversideBus,
         [StringValue("TIL")]
         TilburyTown,
         [StringValue("THL")]
         TileHill,
         [StringValue("TLH")]
         Tilehurst,
+        [StringValue("TIN")]
+        TinsleyMeadowhallTram,
+        [StringValue("XCY")]
+        TintagelBus,
         [StringValue("TIP")]
         Tipton,
         [StringValue("TIR")]
         TirPhil,
+        [StringValue("TEE")]
+        TireeBus,
         [StringValue("TIS")]
         Tisbury,
+        [StringValue("XDA")]
+        TivertonBus,
         [StringValue("TVP")]
         TivertonParkway,
+        [StringValue("TOB")]
+        TobermoryMullBus,
         [StringValue("TOD")]
         Todmorden,
         [StringValue("TOL")]
@@ -4635,14 +5209,20 @@ namespace DarwinNet.Objects
         Torre,
         [StringValue("TOT")]
         Totnes,
+        [StringValue("TCR")]
+        TottenhamCourtRoad,
         [StringValue("TOM")]
         TottenhamHale,
         [StringValue("TTN")]
         Totton,
+        [StringValue("ZTH")]
+        TowerHillUnderground,
         [StringValue("TWN")]
         TownGreen,
         [StringValue("TRA")]
         TraffordPark,
+        [StringValue("XTO")]
+        TrecynonBus,
         [StringValue("TRF")]
         Trefforest,
         [StringValue("TRE")]
@@ -4673,8 +5253,12 @@ namespace DarwinNet.Objects
         TunbridgeWells,
         [StringValue("TUR")]
         TurkeyStreet,
+        [StringValue("ZTG")]
+        TurnhamGreenUnderground,
+        [StringValue("ZTL")]
+        TurnpikeLane,
         [StringValue("TUT")]
-        TutburyAndHatton,
+        TutburyHatton,
         [StringValue("TWB")]
         Tweedbank,
         [StringValue("TWI")]
@@ -4689,6 +5273,8 @@ namespace DarwinNet.Objects
         Tygwyn,
         [StringValue("TYL")]
         TyndrumLower,
+        [StringValue("TYP")]
+        TynemouthTWMetro,
         [StringValue("TYS")]
         Tyseley,
         [StringValue("TYW")]
@@ -4697,8 +5283,12 @@ namespace DarwinNet.Objects
         Uckfield,
         [StringValue("UDD")]
         Uddingston,
+        [StringValue("UIG")]
+        UigSkyeBus,
         [StringValue("ULC")]
         Ulceby,
+        [StringValue("ULP")]
+        UllapoolBus,
         [StringValue("ULL")]
         Ulleskelf,
         [StringValue("ULV")]
@@ -4706,13 +5296,17 @@ namespace DarwinNet.Objects
         [StringValue("UMB")]
         Umberleigh,
         [StringValue("UNI")]
-        UniversityBirmingham,
+        University,
+        [StringValue("UNV")]
+        UniversityTWMetro,
         [StringValue("UHA")]
         Uphall,
         [StringValue("UPL")]
         Upholland,
         [StringValue("UPM")]
         Upminster,
+        [StringValue("ZUM")]
+        UpminsterUnderground,
         [StringValue("UPH")]
         UpperHalliford,
         [StringValue("UHL")]
@@ -4722,7 +5316,7 @@ namespace DarwinNet.Objects
         [StringValue("UWL")]
         UpperWarlingham,
         [StringValue("UPT")]
-        UptonMerseyside,
+        Upton,
         [StringValue("UPW")]
         Upwey,
         [StringValue("URM")]
@@ -4731,12 +5325,16 @@ namespace DarwinNet.Objects
         Uttoxeter,
         [StringValue("VAL")]
         Valley,
+        [StringValue("VAE")]
+        ValleyCentertainmentTram,
         [StringValue("VXH")]
         Vauxhall,
         [StringValue("VIR")]
         VirginiaWater,
         [StringValue("WDO")]
         Waddon,
+        [StringValue("WBE")]
+        WadebridgeBusStation,
         [StringValue("WAD")]
         Wadhurst,
         [StringValue("WFL")]
@@ -4751,6 +5349,8 @@ namespace DarwinNet.Objects
         WallaseyGroveRoad,
         [StringValue("WLV")]
         WallaseyVillage,
+        [StringValue("XWX")]
+        WallingfordMarketPlaceBus,
         [StringValue("WLT")]
         Wallington,
         [StringValue("WAF")]
@@ -4783,14 +5383,16 @@ namespace DarwinNet.Objects
         WandsworthTown,
         [StringValue("WNP")]
         WansteadPark,
+        [StringValue("XDC")]
+        WantageBus,
         [StringValue("WPE")]
         Wapping,
         [StringValue("WBL")]
         Warblington,
         [StringValue("WAR")]
-        WareHerts,
+        Ware,
         [StringValue("WRM")]
-        WarehamDorset,
+        Wareham,
         [StringValue("WGV")]
         Wargrave,
         [StringValue("WMN")]
@@ -4807,6 +5409,10 @@ namespace DarwinNet.Objects
         Warwick,
         [StringValue("WRP")]
         WarwickParkway,
+        [StringValue("XWU")]
+        WarwickUniversityBus,
+        [StringValue("WCT")]
+        WatchetBus,
         [StringValue("WTO")]
         WaterOrton,
         [StringValue("WBC")]
@@ -4815,6 +5421,8 @@ namespace DarwinNet.Objects
         Wateringbury,
         [StringValue("WLO")]
         WaterlooMerseyside,
+        [StringValue("ZWA")]
+        WaterlooUnderground,
         [StringValue("WFH")]
         WatfordHighStreet,
         [StringValue("WFJ")]
@@ -4828,9 +5436,11 @@ namespace DarwinNet.Objects
         [StringValue("WNG")]
         WaunGronPark,
         [StringValue("WAV")]
-        WavertreeTechnologyPark,
+        WavertreeTechPark,
         [StringValue("WED")]
         Wedgwood,
+        [StringValue("WER")]
+        WedgwoodOldRoadBridgeBus,
         [StringValue("WEE")]
         Weeley,
         [StringValue("WET")]
@@ -4843,6 +5453,10 @@ namespace DarwinNet.Objects
         Wellingborough,
         [StringValue("WLN")]
         WellingtonShropshire,
+        [StringValue("XDH")]
+        WellsBus,
+        [StringValue("WEN")]
+        WellsNextTheSeaBus,
         [StringValue("WLP")]
         Welshpool,
         [StringValue("WGC")]
@@ -4906,7 +5520,9 @@ namespace DarwinNet.Objects
         [StringValue("WWO")]
         WestWorthing,
         [StringValue("WSB")]
-        WestburyWilts,
+        Westbury,
+        [StringValue("XDS")]
+        WestburyBus,
         [StringValue("WCF")]
         Westcliff,
         [StringValue("WCB")]
@@ -4933,10 +5549,12 @@ namespace DarwinNet.Objects
         Weybridge,
         [StringValue("WEY")]
         Weymouth,
+        [StringValue("WYQ")]
+        WeymouthQuayBus,
         [StringValue("WBR")]
         WhaleyBridge,
         [StringValue("WHE")]
-        WhalleyLancs,
+        Whalley,
         [StringValue("WTS")]
         Whatstandwell,
         [StringValue("WFF")]
@@ -4949,10 +5567,12 @@ namespace DarwinNet.Objects
         Whiston,
         [StringValue("WTB")]
         Whitby,
+        [StringValue("WTZ")]
+        WhitbyBusStation,
         [StringValue("WHT")]
-        WhitchurchCardiff,
+        WhitchurchGlamorgan,
         [StringValue("WCH")]
-        WhitchurchHants,
+        WhitchurchHampshire,
         [StringValue("WTC")]
         WhitchurchShropshire,
         [StringValue("WHL")]
@@ -4965,6 +5585,8 @@ namespace DarwinNet.Objects
         Whitecraigs,
         [StringValue("WTH")]
         Whitehaven,
+        [StringValue("WHH")]
+        WhitehillPrinceOfWalesBus,
         [StringValue("WTL")]
         Whitland,
         [StringValue("WBD")]
@@ -4978,9 +5600,9 @@ namespace DarwinNet.Objects
         [StringValue("WLF")]
         WhittlesfordParkway,
         [StringValue("WTN")]
-        WhittonLondon,
+        Whitton,
         [StringValue("WWL")]
-        WhitwellDerbyshire,
+        Whitwell,
         [StringValue("WHY")]
         Whyteleafe,
         [StringValue("WHS")]
@@ -5016,7 +5638,7 @@ namespace DarwinNet.Objects
         [StringValue("WML")]
         Wilmslow,
         [StringValue("WNE")]
-        WilnecoteStaffs,
+        Wilnecote,
         [StringValue("WIM")]
         Wimbledon,
         [StringValue("WBO")]
@@ -5032,23 +5654,27 @@ namespace DarwinNet.Objects
         [StringValue("WDM")]
         Windermere,
         [StringValue("WNC")]
-        WindsorAndEtonCentral,
+        WindsorEtonCentral,
         [StringValue("WNR")]
-        WindsorAndEtonRiverside,
+        WindsorEtonRiverside,
         [StringValue("WNS")]
         Winnersh,
         [StringValue("WTI")]
         WinnershTriangle,
         [StringValue("WSF")]
         Winsford,
+        [StringValue("WIS")]
+        WisbechHorsefairBus,
         [StringValue("WSH")]
         Wishaw,
         [StringValue("WTM")]
         Witham,
         [StringValue("WTY")]
         Witley,
+        [StringValue("WMP")]
+        WitneyMarketPlaceBus,
         [StringValue("WTT")]
-        WittonWestMidlands,
+        Witton,
         [StringValue("WVF")]
         Wivelsfield,
         [StringValue("WIV")]
@@ -5073,6 +5699,8 @@ namespace DarwinNet.Objects
         WoodStreet,
         [StringValue("WDB")]
         Woodbridge,
+        [StringValue("WOD")]
+        WoodburnRoadTram,
         [StringValue("WGR")]
         WoodgrangePark,
         [StringValue("WDL")]
@@ -5083,6 +5711,8 @@ namespace DarwinNet.Objects
         Woodlesford,
         [StringValue("WLY")]
         Woodley,
+        [StringValue("WDY")]
+        WoodleyHuntersInnBus,
         [StringValue("WME")]
         Woodmansterne,
         [StringValue("WSR")]
@@ -5091,10 +5721,14 @@ namespace DarwinNet.Objects
         Wool,
         [StringValue("WLS")]
         Woolston,
+        [StringValue("WWC")]
+        WoolwichElizabethLine,
         [StringValue("WWA")]
         WoolwichArsenal,
         [StringValue("WWD")]
         WoolwichDockyard,
+        [StringValue("XDI")]
+        WoottonBassettBus,
         [StringValue("WWW")]
         WoottonWawen,
         [StringValue("WOF")]
@@ -5107,6 +5741,8 @@ namespace DarwinNet.Objects
         WorcestershireParkway,
         [StringValue("WKG")]
         Workington,
+        [StringValue("WOX")]
+        WorkingtonBusStation,
         [StringValue("WRK")]
         Worksop,
         [StringValue("WOR")]
@@ -5145,12 +5781,16 @@ namespace DarwinNet.Objects
         YardleyWood,
         [StringValue("YRM")]
         Yarm,
+        [StringValue("YMH")]
+        YarmouthIsleOfWight,
         [StringValue("YAE")]
         Yate,
         [StringValue("YAT")]
         Yatton,
         [StringValue("YEO")]
         Yeoford,
+        [StringValue("YVB")]
+        YeovilBusStation,
         [StringValue("YVJ")]
         YeovilJunction,
         [StringValue("YVP")]
