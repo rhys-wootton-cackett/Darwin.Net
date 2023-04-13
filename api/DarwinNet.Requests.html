@@ -16,9 +16,20 @@
       
       <meta name="docfx:rel" content="../">
       
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
   </head>
 
-  <body data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -26,14 +37,16 @@
             <img id="logo" class="svg" src="../images/logo.png" alt="Darwin.Net">
             Darwin.Net
           </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <form class="d-flex ms-auto" role="search" id="search">
-              <i class="bi bi-search"></i>
-              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
-            </form>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -73,14 +86,16 @@
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Requests.Requests.html">Requests</a></dt>
-      <dd>
-Represents a collection of methods for making requests to the Darwin API.
-</dd>
+      <dd>Represents a collection of methods for making requests to the Darwin API.</dd>
     </dl>
+
+
 </article>
 
         <div class="contribution d-print-none">
         </div>
+
+        
       </div>
 
       <div class="affix">
@@ -97,8 +112,5 @@ Represents a collection of methods for making requests to the Darwin API.
         </div>
       </div>
     </footer>
-
-    <script type="text/javascript" src="../styles/docfx.min.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

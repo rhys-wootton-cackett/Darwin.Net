@@ -16,9 +16,20 @@
       
       <meta name="docfx:rel" content="../">
       
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
   </head>
 
-  <body data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -26,14 +37,16 @@
             <img id="logo" class="svg" src="../images/logo.png" alt="Darwin.Net">
             Darwin.Net
           </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <form class="d-flex ms-auto" role="search" id="search">
-              <i class="bi bi-search"></i>
-              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
-            </form>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -73,81 +86,55 @@
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.CallingPoint.html">CallingPoint</a></dt>
-      <dd>
-Defines a calling point of a station in a journey
-</dd>
+      <dd>Defines a calling point of a station in a journey</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.CoachData.html">CoachData</a></dt>
-      <dd>
-Provides details about a specific coach on a train
-</dd>
+      <dd>Provides details about a specific coach on a train</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.DepartureItem.html">DepartureItem</a></dt>
-      <dd>
-Defines a departure item for a train
-</dd>
+      <dd>Defines a departure item for a train</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.DepartureItemWithCallingPoints.html">DepartureItemWithCallingPoints</a></dt>
-      <dd>
-Defines a departure item for a train
-</dd>
+      <dd>Defines a departure item for a train</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.DeparturesBoard.html">DeparturesBoard</a></dt>
-      <dd>
-Defines a departure board for a station
-</dd>
+      <dd>Defines a departure board for a station</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.DeparturesBoardWithDetails.html">DeparturesBoardWithDetails</a></dt>
-      <dd>
-Defines a departure board for station with additional details
-</dd>
+      <dd>Defines a departure board for station with additional details</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.FormationData.html">FormationData</a></dt>
-      <dd>
-Provides details about the formation of a train
-</dd>
+      <dd>Provides details about the formation of a train</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.ServiceDetails.html">ServiceDetails</a></dt>
-      <dd>
-Defines a service details response
-</dd>
+      <dd>Defines a service details response</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.ServiceItem.html">ServiceItem</a></dt>
-      <dd>
-Defines a service item
-</dd>
+      <dd>Defines a service item</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.ServiceItemWithCallingPoints.html">ServiceItemWithCallingPoints</a></dt>
-      <dd>
-Defines a train service with lists of <a class="xref" href="DarwinNet.Objects.CallingPoint.html">CallingPoint</a>
-</dd>
+      <dd>Defines a train service with lists of <a class="xref" href="DarwinNet.Objects.CallingPoint.html">CallingPoint</a></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.ServiceLocation.html">ServiceLocation</a></dt>
-      <dd>
-Provides a service location for a train.
-</dd>
+      <dd>Provides a service location for a train.</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.StationBoard.html">StationBoard</a></dt>
-      <dd>
-Defines a station board located at a station
-</dd>
+      <dd>Defines a station board located at a station</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="DarwinNet.Objects.StationBoardWithDetails.html">StationBoardWithDetails</a></dt>
-      <dd>
-Defines a station board located at a station with additional details
-</dd>
+      <dd>Defines a station board located at a station with additional details</dd>
     </dl>
     <h3 id="enums">Enums
 </h3>
@@ -171,10 +158,14 @@ Defines a station board located at a station with additional details
       <dt><a class="xref" href="DarwinNet.Objects.Toilet.html">Toilet</a></dt>
       <dd></dd>
     </dl>
+
+
 </article>
 
         <div class="contribution d-print-none">
         </div>
+
+        
       </div>
 
       <div class="affix">
@@ -191,8 +182,5 @@ Defines a station board located at a station with additional details
         </div>
       </div>
     </footer>
-
-    <script type="text/javascript" src="../styles/docfx.min.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
