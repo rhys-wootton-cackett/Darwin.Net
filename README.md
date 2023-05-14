@@ -4,9 +4,7 @@
 <div align="center">
   <img src=".gitassets/Long Logo.svg" alt="Logo" width="500">
   <div align="center">
-    <img src="https://img.shields.io/github/actions/workflow/status/rhys-wootton/Darwin.Net/build_and_test.yml?style=flat-square"></img>
     <a href="https://github.com/rhys-wootton/Darwin.Net/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/rhys-wootton/Darwin.Net?style=flat-square"></img></a>
-    <img src="https://img.shields.io/codefactor/grade/github/rhys-wootton/Darwin.Net/master?style=flat-square"></img>
     <a href="https://github.com/rhys-wootton/Darwin.Net/issues"><img src="https://img.shields.io/github/issues-raw/rhys-wootton/Darwin.Net?style=flat-square"></img></a>
     <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/-Powered%20by%20.NET-%23512bd4?style=flat-square"></img></a>
     <a href="https://www.linkedin.com/in/rhyswootton2212/"><img src="https://img.shields.io/badge/-Connect%20with%20me!-0077b5?style=flat-square&logo=LinkedIn"></img></a>
